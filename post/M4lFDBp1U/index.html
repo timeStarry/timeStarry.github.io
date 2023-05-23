@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+<title>
+    光溯星河
+</title>
+<!--[if lt IE 9]><script src="//cdn.bootcss.com/html5shiv/r29/html5.js"></script><![endif]-->
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+<meta http-equiv="x-dns-prefetch-control" content="on">
+<link rel="dns-prefetch" href="https://fastly.jsdelivr.net">
+<meta name="author" content="timeStarry">
+<meta name="description" content="博学笃志，切问近思。">
+<meta name="keywords" content="博客,技术,笔记,分享,生活">
+<script async src="//instant.page/3.0.0" type="module" defer integrity="sha384-OeDn4XE77tdHo8pGtE1apMPmAipjoxUQ++eeJa6EtJCfHlvijigWiJpD7VDPWXV1"></script>
+<link rel="stylesheet" href="https://blog.timestarry.asia/styles/main.css" />
+<link href="https://fastly.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script type="text/javascript" src="https://apps.bdimg.com/libs/jquery/1.7.1/jquery.min.js"></script>
+
+        <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/css/style.min.css" />
+        <script src="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/tocbot.min.js"></script>
+        <script src="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/script.min.js"></script>
+        <script src="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/icon.min.js"></script>
+        
+            <script src="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/js/Card/prism.min.js"></script>
+            <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/css/Card/prism.min.css" />
+            <link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.css">
+            <script defer src="https://fastly.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.js"></script>
+            
+                        <!--CDN样式-->
+                        <script src="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/js/hit-kounter-lc-0.3.0.js"></script>
+                        <script src="https://cdn1.lncld.net/static/js/av-min-1.5.0.js"></script>
+                        
+                            <script>
+                                (function() {
+                                    var bp = document.createElement('script');
+                                    var curProtocol = window.location.protocol.split(':')[0];
+                                    if (curProtocol === 'https') {
+                                        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+                                    } else {
+                                        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+                                    }
+                                    var s = document.getElementsByTagName("script")[0];
+                                    s.parentNode.insertBefore(bp, s);
+                                })();
+                            </script>
+                            
+                                    <script type="text/javascript">
+                                        var _hmt = _hmt || [];
+                                        (function() {
+                                            var hm = document.createElement("script");
+                                            hm.src = "https://hm.baidu.com/hm.js?996b348e80ff3bbd39a129200e99bb6e";
+                                            var s = document.getElementsByTagName("script")[0];
+                                            s.parentNode.insertBefore(hm, s);
+                                        })();
+                                    </script>
+                                    
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo">
+                <a href="https://blog.timestarry.asia">
+                    光溯星河
+                </a>
+            </div>
+            <div id="tp-weather-widget"></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/posts">
+                        全部文章
+                    </a>
+                    
+                    <a class="menu-item" href="https://quan.timestarry.asia/">
+                        短文随笔
+                    </a>
+                    
+                    <a class="menu-item" href="/post/log">
+                        日志
+                    </a>
+                    
+                    <a class="menu-item" href="/archives">
+                        归档
+                    </a>
+                    
+                    <a class="menu-item" href="/post/about">
+                        关于
+                    </a>
+                    
+                        <input id="switch_default" type="checkbox" class="switch_default">
+                        <label for="switch_default" class="toggleBtn"></label>
+            </div>
+            <form id="gridea-search-form" data-update="1684825376781" action="/search/index.html">
+                <input class="search-input" autocomplete="off" spellcheck="false" name="q" autofocus="true" placeholder="Search...">
+            </form>
+        </div>
+    </nav>
+
+    
+        <nav class="navbar-mobile" id="nav-mobile">
+            <div class="container">
+                <div class="navbar-header">
+                    <div>
+                        <a href="https://blog.timestarry.asia">
+                            光溯星河
+                        </a>
+                        <!--en-->
+                        <a id="mobile-toggle-theme-en" class="a en">&nbsp;Dark</a>
+                        <!--zh-->
+                        <a id="mobile-toggle-theme-zh" class="a zh">&nbsp;&#x6697;&#x9ED1;</a>
+                    </div>
+                    <form id="gridea-search-form" data-update="1684825376781" action="/search/index.html">
+                        <input class="search-input" autocomplete="off" spellcheck="false" name="q" autofocus="true" placeholder="Search...">
+                    </form>
+                    <!--en-->
+                    <div class="menu-toggle" id="menu-toggle-en" onclick="mobileBtn()">&#9776; Menu</div>
+                    <!--zh-->
+                    <div class="menu-toggle" id="menu-toggle-zh" onclick="mobileBtn()">&#9776; &#x83DC;&#x5355;</div>
+
+                </div>
+                <div class="menu" id="mobile-menu">
+                    
+                        <a class="menu-item" href="/posts">
+                            全部文章
+                        </a>
+                        
+                        <a class="menu-item" href="https://quan.timestarry.asia/">
+                            短文随笔
+                        </a>
+                        
+                        <a class="menu-item" href="/post/log">
+                            日志
+                        </a>
+                        
+                        <a class="menu-item" href="/archives">
+                            归档
+                        </a>
+                        
+                        <a class="menu-item" href="/post/about">
+                            关于
+                        </a>
+                        
+                </div>
+            </div>
+        </nav>
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementById("menu-toggle-en");
+        var toggleMenu_zh = document.getElementById("menu-toggle-zh");
+
+        var mobileMenu = document.getElementById("mobile-menu");
+        if (toggleMenu.display != "none") {
+            if (toggleMenu.classList.contains("active")) {
+                toggleMenu.classList.remove("active")
+                mobileMenu.classList.remove("active")
+            } else {
+                toggleMenu.classList.add("active")
+                mobileMenu.classList.add("active")
+            }
+        } else if (toggleMenu_zh.display != "none") {
+            if (toggleMenu_zh.classList.contains("active")) {
+                toggleMenu_zh.classList.remove("active")
+                mobileMenu.classList.remove("active")
+            } else {
+                toggleMenu_zh.classList.add("active")
+                mobileMenu.classList.add("active")
+            }
+        }
+
+    }
+</script>
+
+            <div class="main">
+                <div class="container">
+                    <article class="post-wrap">
+                        <header class="post-header">
+                            <h1 class="post-title">
+                                清灰记（划掉，清灰寄）
+                            </h1>
+                            
+                                    <!--zh-->
+                                    <div class="post-meta zh">
+                                        &#x4F5C;&#x8005;:
+                                        <a itemprop="author" rel="author" href="/">
+                                            光溯星河
+                                        </a>
+                                        <span class="post-time">&#x65E5;&#x671F;: <a href="#">2023-02-14</a></span>
+                                        <span class="post-readtime">&#x9605;&#x8BFB;&#x65F6;&#x95F4;:<a
+                                    href="#">2.4
+                                    &#x5206;&#x949F;</a></span>
+                                        <span class="post-words">&#x5B57;&#x6570;:<a href="#">716</a></span>
+                                        
+                                            <span class="post-category">&#x5206;&#x7C7B;:
+                                
+                                <a href="https://blog.timestarry.asia/tag/TypeLife/">分类：生活吐槽</a>
+                                
+                                <a href="https://blog.timestarry.asia/tag/1K2fL5Ya7/">清灰</a>
+                                
+                                <a href="https://blog.timestarry.asia/tag/LdIYfTy6Di/">硬件</a>
+                                
+                                <a href="https://blog.timestarry.asia/tag/WYBntCH2Q/">折腾</a>
+                                
+                            </span>
+                                            
+                                                阅读量:
+                                                <span data-hk-page="current"> - </span>
+                                                
+                                    </div>
+                                    
+                        </header>
+                        
+                            <img class="post-feature-image" src="https://cloud.timestarry.asia/Gridea%E5%8D%9A%E5%AE%A2%E5%9B%BE%E7%89%87/%E6%B8%85%E7%81%B0%E8%AE%B0/%E5%85%83%E4%BB%B6%E5%9B%BE.jpg" alt="">
+                          
+                        <div class="post-content">
+                            <h1 id="警告后来者拆机有风险清灰需谨慎">警告后来者：拆机有风险，清灰需谨慎！</h1>
+<p>如你所见，清了灰，但是寄了。</p>
+<!-- more -->
+<p>拆机之前，我看了很多教程，也看了不少清灰失败的视频，做好了一切操作和心理准备。还问了周边一些搞机的同学，清灰的、换硬盘的，还有换屏幕的，大家都成功的完成了操作，并开机了。</p>
+<p>于是乎，我准备好了一切工具，为了稳妥，我还把<a href="https://www.bilibili.com/video/BV1LX4y157Qo/">官方教程</a>截成笔记放在桌子前，然后开始操作。</p>
+<figure data-type="image" tabindex="1"><img src="https://cloud.timestarry.asia/Gridea%E5%8D%9A%E5%AE%A2%E5%9B%BE%E7%89%87/%E6%B8%85%E7%81%B0%E8%AE%B0/%E7%AC%94%E8%AE%B0%E6%88%AA%E5%9B%BE.png" alt="清灰教程" loading="lazy"></figure>
+<h1 id="清灰">清灰</h1>
+<figure data-type="image" tabindex="2"><img src="https://cloud.timestarry.asia/Gridea%E5%8D%9A%E5%AE%A2%E5%9B%BE%E7%89%87/%E6%B8%85%E7%81%B0%E8%AE%B0/%E5%85%83%E4%BB%B6%E5%9B%BE.jpg" alt="元件图" loading="lazy"></figure>
+<ul>
+<li>首先</li>
+</ul>
+<p><strong>关机、拆盖子、带上指套</strong>。卖家一共送了五个指套（伏笔）</p>
+<p>有问题吗，没有问题（除了后盖有点紧）</p>
+<ul>
+<li>然后</li>
+</ul>
+<p><strong>拔掉电源排线</strong></p>
+<p>没有问题吧，第一步拔电源线，非常正规的操作，但是这里就<strong>有问题</strong>！</p>
+<p>这个地方要说的是，我这台笔记本电源排线露出来的部分出奇地少（见图），大家都知道电源排线难拔，没想到我这个尤其难拔，用镊子扯，又不敢太用力，怕划伤排线。前前后后折腾了好久**（伏笔）**，最后的解决方案是：卸掉电池螺丝，<strong>拆下整块电池（很怪吧，欸，记住，这就是小新Air15 2021拆机的正确操作）</strong>，拔出来（；´д｀）ゞ。</p>
+<ul>
+<li>再然后</li>
+</ul>
+<p><strong>拔去风扇排线、拆卸风扇、取下散热模组</strong></p>
+<p>很合理吧。</p>
+<ul>
+<li>再接着</li>
+</ul>
+<p><strong>清理、更换硅脂</strong></p>
+<p>也没问题对吧。</p>
+<ul>
+<li>最后</li>
+</ul>
+<p><strong>复原，合盖</strong>。</p>
+<p>开机。</p>
+<p>没亮。</p>
+<p>嗯，没亮。</p>
+<h1 id="寄">寄</h1>
+<p>开盖没亮，可能是得摁一下电源，还是没亮。</p>
+<p>那一定是电源排线没插紧吧。拆开，把电源排线再怼一下，嗯这下应该好了。</p>
+<p>开盖，没亮，摁电源，没亮。</p>
+<p>然后我又把电源线接上去，电源指示灯也没亮，好了，我的心凉了，这下子不得不猜最糟糕的可能性了——主板烧了。</p>
+<p>寄！</p>
+<h1 id="送修">送修</h1>
+<p>没办法了，只能送修。在地图上搜到了联想官方售后服务点，第二天早上就预约送修了。到店面，联想的小哥问我什么情况，我说完全点不亮。他用我的电源线插上，一看，电源指示灯也不亮，得了，多半主板烧了，然后说：你这没啥好说的了，直接换主板吧。</p>
+<p>重点来了，我问多少钱，小哥说，你这还在保修期啊，免费换，<strong>用户拆机、清灰、更换硬盘不影响保修</strong>。彳亍，联想还是能处。非常干脆，这样我悲伤的心情又好受了些。</p>
+<p>12号送修，14号去到电脑，到店去电脑，解开Bitlocker，一切正常。</p>
+<p>据我了解，焊在主板上的CPU也一并换新了，电脑续命，彳亍，没亏，血赚。</p>
+<h1 id="最后拆机有风险清灰需谨慎">最后：拆机有风险，清灰需谨慎！</h1>
+
+                        </div>
+                        
+                            <div class="post-toc">
+                                <ul class="markdownIt-TOC">
+<li><a href="#%E8%AD%A6%E5%91%8A%E5%90%8E%E6%9D%A5%E8%80%85%E6%8B%86%E6%9C%BA%E6%9C%89%E9%A3%8E%E9%99%A9%E6%B8%85%E7%81%B0%E9%9C%80%E8%B0%A8%E6%85%8E">警告后来者：拆机有风险，清灰需谨慎！</a></li>
+<li><a href="#%E6%B8%85%E7%81%B0">清灰</a></li>
+<li><a href="#%E5%AF%84">寄</a></li>
+<li><a href="#%E9%80%81%E4%BF%AE">送修</a></li>
+<li><a href="#%E6%9C%80%E5%90%8E%E6%8B%86%E6%9C%BA%E6%9C%89%E9%A3%8E%E9%99%A9%E6%B8%85%E7%81%B0%E9%9C%80%E8%B0%A8%E6%85%8E">最后：拆机有风险，清灰需谨慎！</a></li>
+</ul>
+
+                            </div>
+                            
+                                
+                                                    
+                                                                    <!--Share-->
+                                                                    <span style="margin-right:15px">
+                        <i class="post-share"></i>
+                        <span>&#x5206;&#x4EAB;:</span>
+                                                                    <a title="QR 码" target="_blank" href="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://blog.timestarry.asia/post/M4lFDBp1U/"><i class="fa fa-qrcode"></i></a>
+                                                                    <a title="QQ" target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://blog.timestarry.asia/post/M4lFDBp1U/&sharesource=qzone&title=清灰记（划掉，清灰寄）&pics=https://blog.timestarry.asia/images/avatar.png?v=1684825376781&summary=&lt;h1 id=&#34;警告后来者拆机有风险清灰需谨慎&#34;&gt;警告后来者：拆机有风险，清灰需谨慎！&lt;/h1&gt;
+&lt;p&gt;如你所见，清了灰，但是寄了。&lt;/p&gt;
+"><i class="fa fa-qq"></i></a>
+                                                                    <a title="新浪微博" target="_blank" href="https://service.weibo.com/share/share.php?url=https://blog.timestarry.asia/post/M4lFDBp1U/&sharesource=weibo&title=清灰记（划掉，清灰寄） + " - " + &lt;h1 id=&#34;警告后来者拆机有风险清灰需谨慎&#34;&gt;警告后来者：拆机有风险，清灰需谨慎！&lt;/h1&gt;
+&lt;p&gt;如你所见，清了灰，但是寄了。&lt;/p&gt;
+&pic="https://blog.timestarry.asia/images/avatar.png?v=1684825376781 "><i class="fa fa-weibo "></i></a>
+
+                                                                    </span>
+                                                                    
+                                                                            <!--zh-->
+                                                                            <section class="post-tags zh ">
+                                                                                <div>
+                                                                                    <span>&#x6807;&#x7B7E;:</span>
+                                                                                    <span class="tag ">
+                        
+                        
+                        <a href="https://blog.timestarry.asia/tag/TypeLife/">#
+                    分类：生活吐槽
+                        </a>
+                        
+                        <a href="https://blog.timestarry.asia/tag/1K2fL5Ya7/">#
+                    清灰
+                        </a>
+                        
+                        <a href="https://blog.timestarry.asia/tag/LdIYfTy6Di/">#
+                    硬件
+                        </a>
+                        
+                        <a href="https://blog.timestarry.asia/tag/WYBntCH2Q/">#
+                    折腾
+                        </a>
+                        
+                            
+                                </span>
+                                                                                </div>
+                                                                                <div>
+                                                                                    <a href="javascript:window.history.back();">
+                        &#x8FD4;&#x56DE;</a>
+                                                                                    <span>&dot;</span>
+                                                                                    <a href="#">&#x4E3B;&#x9875;</a>
+                                                                                </div>
+                                                                            </section>
+
+                                                                            
+                                                                                <!---->
+                                                                                <section class="post-nav">
+                                                                                    
+                                                                                        <a class="prev" rel="prev" href="https://blog.timestarry.asia/post/EzzyWBiWY/">
+                                                                                            【经验分享】我的第一次ICP备案
+                                                                                        </a>
+                                                                                        
+                                                                                            
+                                                                                                <a class="next" rel="next" href="https://blog.timestarry.asia/post/2Mhj0DmDE/">
+                                                                                                    【杂思】聊一聊近期由ChatGPT引起的人工智能热议
+                                                                                                </a>
+                                                                                                
+                                                                                </section>
+                    </article>
+                </div>
+                
+                                            
+            </div>
+    </div>
+    </div>
+    </div>
+    
+        <footer id="footer" class="footer">
+            <div class="copyright">
+                
+                        <p>
+<a href="https://beian.miit.gov.cn">蜀ICP备2023002327号</a>
+</p>
+                            
+                                        <svg viewBox="0 0 1024 1024" style="margin-left: 5px;margin-right: 5px;" version="1.0" width="8" height="8" class="my-face">
+            <path
+                d="M863.597631 513.574282l-271.33965-140.213484L729.783667 81.926656c3.583731-7.87141 7.167462-15.742819 7.167462-25.214109C736.887134 25.226908 708.345275 0.012799 672.635953 0.012799a63.611229 63.611229 0 0 0-39.293053 12.607055c-1.791866 1.59988-3.519736 3.19976-5.311602 3.19976L147.87531 418.925381a55.547834 55.547834 0 0 0-19.646527 47.356448c1.791866 17.278704 14.27093 33.021523 32.125591 42.492813l271.33965 141.749369L292.504463 945.221908c-12.479064 25.214109-1.791866 53.563983 23.166262 69.306802 10.751194 6.335525 23.230258 9.47129 35.709322 9.47129 16.062795 0 32.125591-4.735645 44.604655-15.742819l480.091993-403.297753a55.547834 55.547834 0 0 0 19.646526-47.228458 61.243407 61.243407 0 0 0-32.12559-44.156688z"
+                fill="#93b5cf"></path>
+        </svg>
+                                        光溯星河 &copy;Copyright
+                                            <script>
+                                                var date = new Date();
+                                                document.write("" + date.getFullYear());
+                                            </script>
+                                            | Powered by
+                                            <a href="https://github.com/getgridea/gridea" target="_blank">
+                                                Gridea
+                                            </a>
+            </div>
+            <div id="update" style="display:none;">
+                off
+            </div>
+            
+                    <script>
+                        var port = '';
+                        
+                        document.write('<div id="home_path" style="display:none;">' + document.location.protocol + '//' + window.document.location.hostname + port + '</div>')
+                    </script>
+        </footer>
+        
+                <script>
+                    
+                    
+                    
+                    getStar();
+                    hljs.initHighlighting();
+                    console.clear();
+                    
+                    var newDate = new Date();
+                    newDate.setTime(1684825376781);
+                    console.log(" Blog Update Time: " + newDate.toLocaleDateString());
+                    console.log("\n %c \u26a1Theme:Chic Author's Blog:https://blog.itjoker.cn  Write By ITJoker  \n\n", "color: #ffffff; background: rgba(49, 49, 49, 0.85); padding:5px 0;border-radius:5px;");
+                </script>
+        </div>
+</body>
+<script>
+    scroll();
+</script>
+
+</html>

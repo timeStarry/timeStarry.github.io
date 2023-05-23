@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+<title>
+    光溯星河
+</title>
+<!--[if lt IE 9]><script src="//cdn.bootcss.com/html5shiv/r29/html5.js"></script><![endif]-->
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+<meta http-equiv="x-dns-prefetch-control" content="on">
+<link rel="dns-prefetch" href="https://fastly.jsdelivr.net">
+<meta name="author" content="timeStarry">
+<meta name="description" content="博学笃志，切问近思。">
+<meta name="keywords" content="博客,技术,笔记,分享,生活">
+<script async src="//instant.page/3.0.0" type="module" defer integrity="sha384-OeDn4XE77tdHo8pGtE1apMPmAipjoxUQ++eeJa6EtJCfHlvijigWiJpD7VDPWXV1"></script>
+<link rel="stylesheet" href="https://blog.timestarry.asia/styles/main.css" />
+<link href="https://fastly.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script type="text/javascript" src="https://apps.bdimg.com/libs/jquery/1.7.1/jquery.min.js"></script>
+
+        <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/css/style.min.css" />
+        <script src="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/tocbot.min.js"></script>
+        <script src="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/script.min.js"></script>
+        <script src="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/icon.min.js"></script>
+        
+            <script src="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/js/Card/prism.min.js"></script>
+            <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/css/Card/prism.min.css" />
+            <link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.css">
+            <script defer src="https://fastly.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.js"></script>
+            
+                        <!--CDN样式-->
+                        <script src="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/js/hit-kounter-lc-0.3.0.js"></script>
+                        <script src="https://cdn1.lncld.net/static/js/av-min-1.5.0.js"></script>
+                        
+                            <script>
+                                (function() {
+                                    var bp = document.createElement('script');
+                                    var curProtocol = window.location.protocol.split(':')[0];
+                                    if (curProtocol === 'https') {
+                                        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+                                    } else {
+                                        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+                                    }
+                                    var s = document.getElementsByTagName("script")[0];
+                                    s.parentNode.insertBefore(bp, s);
+                                })();
+                            </script>
+                            
+                                    <script type="text/javascript">
+                                        var _hmt = _hmt || [];
+                                        (function() {
+                                            var hm = document.createElement("script");
+                                            hm.src = "https://hm.baidu.com/hm.js?996b348e80ff3bbd39a129200e99bb6e";
+                                            var s = document.getElementsByTagName("script")[0];
+                                            s.parentNode.insertBefore(hm, s);
+                                        })();
+                                    </script>
+                                    
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo">
+                <a href="https://blog.timestarry.asia">
+                    光溯星河
+                </a>
+            </div>
+            <div id="tp-weather-widget"></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/posts">
+                        全部文章
+                    </a>
+                    
+                    <a class="menu-item" href="https://quan.timestarry.asia/">
+                        短文随笔
+                    </a>
+                    
+                    <a class="menu-item" href="/post/log">
+                        日志
+                    </a>
+                    
+                    <a class="menu-item" href="/archives">
+                        归档
+                    </a>
+                    
+                    <a class="menu-item" href="/post/about">
+                        关于
+                    </a>
+                    
+                        <input id="switch_default" type="checkbox" class="switch_default">
+                        <label for="switch_default" class="toggleBtn"></label>
+            </div>
+            <form id="gridea-search-form" data-update="1684825376781" action="/search/index.html">
+                <input class="search-input" autocomplete="off" spellcheck="false" name="q" autofocus="true" placeholder="Search...">
+            </form>
+        </div>
+    </nav>
+
+    
+        <nav class="navbar-mobile" id="nav-mobile">
+            <div class="container">
+                <div class="navbar-header">
+                    <div>
+                        <a href="https://blog.timestarry.asia">
+                            光溯星河
+                        </a>
+                        <!--en-->
+                        <a id="mobile-toggle-theme-en" class="a en">&nbsp;Dark</a>
+                        <!--zh-->
+                        <a id="mobile-toggle-theme-zh" class="a zh">&nbsp;&#x6697;&#x9ED1;</a>
+                    </div>
+                    <form id="gridea-search-form" data-update="1684825376781" action="/search/index.html">
+                        <input class="search-input" autocomplete="off" spellcheck="false" name="q" autofocus="true" placeholder="Search...">
+                    </form>
+                    <!--en-->
+                    <div class="menu-toggle" id="menu-toggle-en" onclick="mobileBtn()">&#9776; Menu</div>
+                    <!--zh-->
+                    <div class="menu-toggle" id="menu-toggle-zh" onclick="mobileBtn()">&#9776; &#x83DC;&#x5355;</div>
+
+                </div>
+                <div class="menu" id="mobile-menu">
+                    
+                        <a class="menu-item" href="/posts">
+                            全部文章
+                        </a>
+                        
+                        <a class="menu-item" href="https://quan.timestarry.asia/">
+                            短文随笔
+                        </a>
+                        
+                        <a class="menu-item" href="/post/log">
+                            日志
+                        </a>
+                        
+                        <a class="menu-item" href="/archives">
+                            归档
+                        </a>
+                        
+                        <a class="menu-item" href="/post/about">
+                            关于
+                        </a>
+                        
+                </div>
+            </div>
+        </nav>
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementById("menu-toggle-en");
+        var toggleMenu_zh = document.getElementById("menu-toggle-zh");
+
+        var mobileMenu = document.getElementById("mobile-menu");
+        if (toggleMenu.display != "none") {
+            if (toggleMenu.classList.contains("active")) {
+                toggleMenu.classList.remove("active")
+                mobileMenu.classList.remove("active")
+            } else {
+                toggleMenu.classList.add("active")
+                mobileMenu.classList.add("active")
+            }
+        } else if (toggleMenu_zh.display != "none") {
+            if (toggleMenu_zh.classList.contains("active")) {
+                toggleMenu_zh.classList.remove("active")
+                mobileMenu.classList.remove("active")
+            } else {
+                toggleMenu_zh.classList.add("active")
+                mobileMenu.classList.add("active")
+            }
+        }
+
+    }
+</script>
+
+            <div class="main">
+                <div class="container">
+                    <article class="post-wrap">
+                        <header class="post-header">
+                            <h1 class="post-title">
+                                【杂思】聊一聊近期由ChatGPT引起的人工智能热议
+                            </h1>
+                            
+                                    <!--zh-->
+                                    <div class="post-meta zh">
+                                        &#x4F5C;&#x8005;:
+                                        <a itemprop="author" rel="author" href="/">
+                                            光溯星河
+                                        </a>
+                                        <span class="post-time">&#x65E5;&#x671F;: <a href="#">2023-02-10</a></span>
+                                        <span class="post-readtime">&#x9605;&#x8BFB;&#x65F6;&#x95F4;:<a
+                                    href="#">23.1
+                                    &#x5206;&#x949F;</a></span>
+                                        <span class="post-words">&#x5B57;&#x6570;:<a href="#">6686</a></span>
+                                        
+                                            <span class="post-category">&#x5206;&#x7C7B;:
+                                
+                                <a href="https://blog.timestarry.asia/tag/TypeTechnology/">分类：技术博客</a>
+                                
+                                <a href="https://blog.timestarry.asia/tag/v6uEVAQDA/">人工智能</a>
+                                
+                                <a href="https://blog.timestarry.asia/tag/A3qoiCHu8R/">AI</a>
+                                
+                                <a href="https://blog.timestarry.asia/tag/7NPhchLpAY/">ChatGPT</a>
+                                
+                                <a href="https://blog.timestarry.asia/tag/ClassThink/">大类标签：思考</a>
+                                
+                            </span>
+                                            
+                                                阅读量:
+                                                <span data-hk-page="current"> - </span>
+                                                
+                                    </div>
+                                    
+                        </header>
+                        
+                            <img class="post-feature-image" src="https://blog.timestarry.asia/post-images/2Mhj0DmDE.png" alt="">
+                          
+                        <div class="post-content">
+                            <p>  近年来，人工智能的发展越来越受关注，声浪渐高，最近chatGPT的爆火和媒体的推波助澜更是将关于人工智能的讨论热度推向峰顶。</p>
+<!-- more -->
+<p>  但我认为，人工智能的实际发展和媒体所传相差甚远。在这件事上，媒体不但没有起到引导人们理性关注新技术的作用，反而大肆渲染威胁，散布焦虑。那么今天我便将最近的一些见闻、chatGPT的使用想法和一些自己的观点理解写出来，本文内容非常浅薄，肯定会有很多不准确甚至出错的地方，仅供自己以后回来参考，也感谢来访者斧正。</p>
+<p>  本文分几个部分：人工智能技术发展概要、近日见闻、我和ChatGPT、和推荐资料，全文贯穿现在我对AI的理解和看法。</p>
+<h1 id="人工智能技术发展概要">人工智能技术发展概要</h1>
+<p>  人工智能（Artificial Intelligence），英文缩写为AI。它是研究、开发用于模拟、延伸和扩展人的智能的理论、方法、技术及应用系统的一门新的技术科学。</p>
+<p>  人工智能是计算机科学的一个分支，它企图了解智能的实质，并生产出一种新的能以人类智能相似的方式做出反应的智能机器，该领域的研究包括机器人、语言识别、图像识别、自然语言处理和专家系统等。人工智能从诞生以来，理论和技术日益成熟，应用领域也不断扩大，可以设想，未来人工智能带来的科技产品，将会是人类智慧的“容器”。人工智能可以对人的意识、思维的信息过程的模拟。人工智能不是人的智能，但能像人那样思考、也可能超过人的智能。</p>
+<p>（<a href="https://baike.baidu.com/item/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD">百度百科词条：人工智能</a>）</p>
+<h2 id="发展简述">发展简述</h2>
+<p>  人工智能并不是新世纪的新技术。它的发展历程可以追溯到20实际50年代，当时计算机科学家开始研究如何让计算机具有智能。</p>
+<ul>
+<li>
+<p>1956 年，美国计算机科学家 John McCarthy、Marvin Minsky、Claude Shannon 等人在 Dartmouth College 举办了一次会议，<strong>正式定义了人工智能这一新兴学科</strong>。</p>
+</li>
+<li>
+<p>1960 年代，人工智能研究开始进入热潮，计算机科学家们开始研究规则语言、知识表示、问题求解等方面的技术。</p>
+</li>
+<li>
+<p>1980 年代，随着计算机硬件的飞速发展，人工智能的研究逐渐从符号处理转向了<strong>机器学习</strong>。随着数据量的增加，机器学习技术也开始取得重要的突破。</p>
+</li>
+<li>
+<p>1990 年代，随着因特网的普及，人工智能的研究逐渐向网络方向发展，许多关于人工智能的新技术诞生，如<strong>深度学习</strong>等。</p>
+</li>
+<li>
+<p>21 世纪初，随着硬件计算能力的提高，人工智能技术开始在<strong>语音识别、自然语言处理、图像识别</strong>等领域取得了重要的突破。</p>
+</li>
+<li>
+<p>近年来，人工智能技术在很多与消费者直接相关的领域取得了成果，例如：自动驾驶、语音识别、图像识别等。</p>
+</li>
+</ul>
+<h2 id="分支学科">分支学科</h2>
+<p>  人工智能是计算机科学的一个分支，经过多年的发展，它已产生多个成熟的分支领域，包括：</p>
+<ol>
+<li>机器学习(ML, Machine Learning)：人工智能的主要领域，聚焦于如何使用算法和数据让计算机来学习。</li>
+<li>自然语言处理：让人工智能理解、处理和生成自然语言。chatGPT就是一个大型自然语言处理模型。</li>
+<li>计算机视觉：作为一个科学学科，计算机视觉研究相关的理论和技术，试图建立能够从图像或者多维数据中获取‘信息’的人工智能系统；</li>
+<li>机器人技术：使用人工智能设计和控制机器人；</li>
+<li>深度学习(DL, Deep Learning)：是机器学习领域中一个新的研究方向，典型的深度学习模型有卷积神经网络(convolutional neural network)、DBN和堆栈自编码网络(stacked auto-encoder network)模型等；</li>
+<li>自动驾驶技术：因为起明显且广阔的商业前景，这玩意的发展极为迅速；</li>
+<li>人机交互：关于使用人工智能来提高人机交互效率和体验的领域;</li>
+<li>人工智能安全：关于保护人工智能系统免受恶意攻击和威胁的领域。</li>
+</ol>
+<h2 id="重要里程碑">重要里程碑</h2>
+<p>  人工智能在不同的领域有着不同的发展时期标志，这里仅拣选一些与本文相关的内容。</p>
+<ul>
+<li>1956 年，<a href="https://en.wikipedia.org/wiki/Dartmouth_workshop">第一次人工智能会议</a>在 Dartmouth College 举办。此次会议是人工智能领域的开展和认同的起点。</li>
+<li>1966 年，艾伦·图灵提出了“[图灵测试](<a href="https://baike.baidu.com/item/%E5%9B%BE%E7%81%B5%E6%B5%8B%E8%AF%95/1701255">图灵测试（科学研究实验）_百度百科 (baidu.com)</a>)”的概念，它提供了一种评估人工智能系统的标准。</li>
+<li>1997年，深蓝计算机战胜国际象棋冠军Gary Kasparov。</li>
+<li>1998年，[Yann LeCun提出了卷积神经网络（Convolutional Neural Network，CNN）](<a href="https://baike.baidu.com/item/%E5%8D%B7%E7%A7%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/17541100">卷积神经网络_百度百科 (baidu.com)</a>)，这是一种针对图像分类问题的神经网络模型，它使用了卷积和池化层来提取图像的特征。</li>
+<li>2014 年，谷歌的 DeepMind 研发的人工智能程序 AlphaGo 成功地击败了围棋世界冠军。</li>
+<li>2020 年 5 月，OpenAI 发布了大型语言训练模型 GPT-3.</li>
+</ul>
+<h1 id="近日见闻">近日见闻</h1>
+<h2 id="chatgpt引起的热潮和行业巨头的迎战">ChatGPT引起的热潮和行业巨头的迎战</h2>
+<p>  我想在最近关于ChatGPT的话题中，除了OpenAI和微软必应，最活跃的应该就是谷歌了。谷歌最近就没停过，先是发布“红色代码”警告，表示浏览器业务收到重大影响（消息参考：<a href="https://new.qq.com/rain/a/20221227A020CK00">ChatGPT让谷歌拉响“红色警报”，内部吐槽：我们起大早赶晚集_腾讯新闻 (qq.com)</a>），紧接着又发布了对标挑战ChatGPT的AI服务Bard（消息参考：<a href="https://linux.cn/article-15519-1.html">硬核观察|硬核观察 #905 谷歌宣布了挑战 ChatGPT 的 AI 服务 Bard (linux.cn)</a>）。看起来它真得很慌（消息参考：<a href="https://blog.csdn.net/techforward/article/details/128950105">谷歌版ChatGPT灾难级发布，市值一夜狂跌7000亿，熬夜网友：退钱！_IT界那些事儿的博客-CSDN博客</a>）。</p>
+<p>  在基于GPT-3开发的ChatGPT爆火的同时，有消息称微软正准备将更先进的版本GPT-4嵌入bing搜索引擎中（消息参考：<a href="https://linux.cn/article-15503-1.html">硬核观察|硬核观察 #900 微软准备将 GPT-4 接入到必应搜索引擎 (linux.cn)</a>）。敢问，之前有多少人想到了直面消费者的AI大战最激烈的第一场会在搜索引擎这个领域开打。另外，我在2月8日早晨就尝试登录了新bing，我尝试将地区修改为美国、加拿大和日本，均成功打开了新bing，上面确实已经继承了ChatGPT的功能，不过仅仅开放了几个尝试案例，若需使用完整版本的新bing需要加入“等待名单（waitlist）”，我尝试了几次均以网页错误告终，不知道是我的网络问题还是申请者过于热情，或是新bing目前仅对少数人开放。</p>
+<blockquote>
+<p>2月10日，本文写到这个地方时我切换节点再次进入必应官网，选择加入等待名单，成功了</p>
+<figure data-type="image" tabindex="1"><img src="https://blog.timestarry.asia/post-images/1676020734195.png" alt="" loading="lazy"></figure>
+</blockquote>
+<p>  此外，国内大厂百度也宣布了自己的AI聊天机器人ERNIE。媒体有很多夸大其词的宣传，我认为并不可靠，做个参考（消息参考：<a href="https://www.guancha.cn/economy/2023_02_07_678881.shtml">百度确认将发布“中国版ChatGPT”，三月完成内测 (guancha.cn)</a>），网上也能查到ERNIE的<a href="(https://ai.baidu.com/ai-doc/ERNIE/ukmlm6ce2)">开放文档</a>。作为消费者，对百度还是抱有期待的，虽然近年来百度干的烂事不少，但是也很期待他们能复刻当年“世界上最好用的中文互联网搜索引擎”的传奇，不说超过谁，至少能做到目前最好用的中文对话AI就好。</p>
+<p>  无论如何，站在消费者的立场，都希望这场大战再激烈些，范围再大些，国内的大厂也是，都别憋着了，都下场吧，大战一场，谁死谁生没关系，要给后人的消费级AI应用竞争开个好头。</p>
+<h2 id="关于ai对抗的一些见闻">关于AI对抗的一些见闻</h2>
+<p>  近年来AI图像识别领域进步迅速，普通人能接触到的有关程序也越来越多，AI修图、智能美化、人车识别等等。</p>
+<p>  然而偶然间刷到的有关“人工智能对抗攻击”的视频让我眼界大开（内容参考：<a href="https://www.bilibili.com/video/BV1B24y1m7fa/">“对抗攻击”让人工智能失了智，没有绝对安全的AI识别系统</a>），这个视频让我对AI发展的看法有了些变化。视频中提到，在图片中加入“噪点”或其他干扰因素，可以不干扰人的识别，而让AI识别差之千里，其中最让我印象深刻的例子，就是给STOP标识牌贴上一些不干扰人类正常识别的遮挡条，就让AI将其识别为限速标识，大开眼界（我这眼界确实小了）。</p>
+<p>  虽然我对人工智能了解几乎为0，但是这个领域的深度让我联想到了网络攻防的发展进程。先有网络，然后互联，然后出现网络攻击、信息窃取，再然后有了网络安防，此后网络攻防便成了一场旷日持久的战争，成为了一门独立的学科，攻防双方都有矛有盾，又都在研究矛与盾。AI对抗也是，攻防双方已经登上了擂台，大戏刚刚开场，不过好在，从一开始研究攻防的都是研究人员，如视频中提到的，研究攻击的人大部分不会成为攻击者，既然AI攻击的危险性是存在的，我们不如鼓励更多人去研究攻防手段。</p>
+<h2 id="ai对内容创作者的影响">AI对内容创作者的影响</h2>
+<p>  今天互联网流媒体平台已经成为了人们了解信息、、欣赏内容和日常娱乐的绝对主力。流媒体平台不仅彻底击碎了传统媒体的宣传体系，更是通过全新的视频流技术和喜好分析算法等多种方式全面占据了普通人的空闲时间，当然，由此带来的内容收益也不可小觑。在流媒体时代，出现了一大批全职内容创作者，他们靠在平台产出内容获得收益，产出的方式包括图文、视频、直播等，获得收益的方式也很丰富，包括平台奖励、内容打赏和广告合作等。从这里我们可以看出什么呢？我认为有两点：一、产出具有吸引力的内容是内容创作者的核心任务；二、流量是衡量收益的最大权重数据。那么我们就可以总结出一条简陋的收益链：<strong>内容产出-获得流量-流量变现</strong>，这个归纳是简陋的，但是我们仍可从中看出这种机制带来的问题：可以通过批量生产爆款内容获取大量流量，从而牟取暴利。</p>
+<p>  在互联网资源空前丰富，创作门槛空前降低的今天，这样的流程随处可见：创建营销号、批量生产低质量内容、打上热点标签、无限制地向观众推送……在这些低成本的内容中，只要有一款或几款爆火就可以收到远高于前期垃圾制造的收益。而AI创作的加入，无疑更加降低了这一作恶的成本。今天的AI创作距离人类的创造力和想象力显然还差得远，但是对于营销号的经营者来说已经足够了，AI创作的作品质量远远高于它们胡编乱造的流水线制作产出的垃圾内容。</p>
+<p>  当然，在这里也要强调，工具本身没有善恶之分，AI也是。AI创作让普通人看到了全新的可能，现有的AI制作能力也给人们带来了很多惊喜，比如网上随处可见的AI绘画、AI配音等等。在电影制作领域，今年春节档的《流浪地球2》就在很多地方使用了AI学习：使用AI修复了李雪健老师的原生、复原刘德华、吴京两位主演年轻时的样子，以及CG复原致敬吴孟达先生。此外，还可以预见，AI创作将为预拍摄和前期排练带来很大的便利，减少试错率，降低摄制成本。对于普通的个人创作者或原创团队来说，AI创作也可在一定程度上辅助创作，从而降低开发周期，让一个人就可以充当多面手。最明显的就是AI配音。近年来，AI配音从单字阅读，到连词断句，再到语气模仿，一些较好的AI配音已经和人直接配音别无二致。举个例子，AI配音再加上AI图文匹配，可以让一些只会写稿的个人创作者直接成为视频输出者，极大地提高了视频产出效率。</p>
+<h2 id="一些直接引起人们焦虑的领域">一些直接引起人们焦虑的领域</h2>
+<p>  我认为AI引起的焦虑和曾经工业化、信息化带来的焦虑一样，这些焦虑最终都将消失在时代的进步中，但又会在特定的时期给人们造成严重的困扰，而这个时期正在到来。依我看来，人们对AI的焦虑可按时期分为远、中、近。<strong>先讲远的</strong>，很久以前有人在讲，AI会不会产生自主意识，然后消灭人类，这类话在我看来可以休矣，这种焦虑对技术进步没有意义，也解决不了问题。<strong>再说中期些的</strong>，也是现在媒体讲得很多的，那就是AI将造成大量工人下岗、程序员被替代、甚至是插画作家、作曲家这类艺术岗位……技术迭代，高效取缔低效、低成本取缔高成本、智能取缔不智能、先进生产力取缔落后生产力，这是必然的，企图以此为由阻挠AI技术发展者就和当年的纺织工人打砸纺织工具一样，不能阻挠历史的前进。而我最想讲的，是离我们很近的一些担忧，这些忧虑很有可能在未来几年内被打消或变为现实，是我们真正应该关注的。</p>
+<p>  离我们最近的，便是AI带来的安全问题。一是AI本身及其操纵机械造成的安全问题，二是由AI仿制造成的人身安全问题。先说<strong>AI本身及其操纵机械造成的安全问题</strong>，直到今天，AI仍是学习了大量训练数据的算法模型，而学习数据就有可能是片面的、不准确的，这样的AI大量应用在家居控制、无人驾驶、工业调度等领域无疑会造成严重的安全隐患。再说由由<strong>AI仿制造成的人身安全问题</strong>，在强大的计算硬件和学习算法的支持下，AI仿制的人脸、人声、乃至完整的人类行为让人类都无法分辨。现在只需要获取你的一小段视频和音频，就可以学习模仿你的声音、修改嘴型，再辅以稍微的精修，足以篡改你的视频原意，近则让家人误会，远则造成严重的社会影响。</p>
+<p>  我相信，技术发展带来的问题终将由技术发展解决。正如前面AI对抗中讲到那样。但是不得不说，我们现有AI技术给有心之人用于邪门歪道，比如欺骗老人或者小孩这类判断能力较弱的人群是绰绰有余的，类似于这样的身份安全问题是我们亟须解决的，也是人们真正应该关注的，而媒体应当正确引导人们认识威胁、辨认威胁，最终解决威胁。</p>
+<h2 id="贴上几个有趣的ai网站项目">贴上几个有趣的AI网站/项目</h2>
+<ul>
+<li>
+<p>随机生成人脸，而这些脸是并不真实存在于世界上的。</p>
+<p><a href="https://thispersondoesnotexist.com/">This Person Does Not Exist</a></p>
+</li>
+<li>
+<p>达摩院的视觉开放平台（有AI绘画）</p>
+<p><a href="https://vision.aliyun.com/">阿里云|达摩院视觉智能开放平台 (aliyun.com)</a></p>
+</li>
+<li>
+<p>AI绘画</p>
+<p><a href="http://beta.dreamstudio.ai/">DreamStudio</a></p>
+</li>
+<li>
+<p>人脸属性替换</p>
+<p>https://github.com/clovaai/stargan-v2</p>
+</li>
+<li>
+<p>表情识别</p>
+<p>https://github.com/XiuweiHe/EmotionClassifier</p>
+</li>
+</ul>
+<h1 id="我和chatgpt">我和ChatGPT</h1>
+<p>  这是最近的爆火话题，也是今天我很想讲的一个东西。首先表明简单的看法：ChatGPT的里程碑意义更多地在社会上，而非技术上。ChatGPT让很多不关心AI技术发展的人一下子直观地了解了当今自然语言模型的发展程度。很多人惊讶于AI竟然发展到了如此“智慧”的地步，惊讶于它的“全知全能”，殊不知这样的“智慧”来自于人工智能技术数十年累计的基础和海量的训练数据。正如网上流传的一段话：现在的人工智能仍然是<strong>有多少人工就有多少智能</strong>。ChatGPT甚至可能不是最先进的自然语言处理模型，不过是目前这一批消费产品中最为强大的。下面就来聊一聊我注册ChatGPT以来的使用感受。</p>
+<h2 id="什么是chatgpt这是chatgpt的回答">什么是ChatGPT?这是ChatGPT的回答</h2>
+<blockquote>
+<p>ChatGPT 是一个由 OpenAI 训练的大型语言模型。它使用了 Transformer 技术，可以生成文本和回答问题。模型被训练在大量的文本数据上，因此具有很高的知识水平，可以解答各种问题，生成各种文本，并对对话进行响应。</p>
+</blockquote>
+<h2 id="我的使用感受">我的使用感受</h2>
+<p>  12月31日注册ChatGPT，到今天（2月10日），一个多月的体验，确实让我感受到了它的与众不同，以至于在与同学的交流中我讲出这样的结论：人类历史上从未有一项技术的发展本身在推动它自己的发展，这是正反馈，直接的、广泛的正反馈，这个正反馈不仅仅局限于人工智能领域，而是整个计算机科学技术本身。计算机科学技术的发展正在从人才培养、性能提升、算法迭代、应用推广等多个领域发展它自己！ChatGPT就是AI人才培养和应用推广的直接体现，对于计算机初学者来说，ChatGPT就是一个绝佳的辅助工具。举个例子，曾经一个什么都不懂的初学者想要制作一个Python程序，用于在桌面上检测网速的工具，他需要到处查找资料，了解Python语法、tkinter库的调用、系统资源的读取等等，写完还不知道对不对。</p>
+<p>  而现在他只需要对ChatGPT说：“请使用Python制作一个网速检测窗口，并将关键代码写上注释，告诉我应该学习哪些知识以制作这个程序”。他将得到类似这样的回答，而这个回答是ChatGPT在不到30秒间做出的：</p>
+<blockquote>
+<p>这是一份简单的 Python 代码，实现了网速检测的功能。</p>
+<pre><code>import speedtest
+import tkinter as tk
+
+def test_speed():
+    st = speedtest.Speedtest()
+    st.get_best_server()
+    download_speed = st.download() / 1_000_000
+    upload_speed = st.upload() / 1_000_000
+    speed_result.config(text=f&quot;下载速度：{download_speed:.2f} Mbps\n上传速度：{upload_speed:.2f} Mbps&quot;)
+
+root = tk.Tk()
+root.title(&quot;网速检测&quot;)
+
+speed_result = tk.Label(root, text=&quot;点击按钮开始测速&quot;)
+speed_result.pack()
+
+test_speed_button = tk.Button(root, text=&quot;开始测速&quot;, command=test_speed)
+test_speed_button.pack()
+
+root.mainloop()
+</code></pre>
+<p>需要学习的知识：</p>
+<ul>
+<li>Python 基础语法</li>
+<li>使用 <code>speedtest</code> 库进行网速测试</li>
+<li>使用 <code>tkinter</code> 库创建图形用户界面</li>
+<li>了解 <code>Tk</code>、<code>Label</code>、<code>Button</code> 等 tkinter 组件的使用方法</li>
+</ul>
+</blockquote>
+<p>  很多人就因为这个说AI将会取缔低级的程序员，但我看待这个问题的观点不太一样，我认为，低级程序员/初学者从未有过像ChatGPT这样方便快捷的学习辅助工具，学习从未像现在这样有效，普通程序员制作小工具也从未像这样方便过。不是所有人都能在初学时就能高效地查找资料，也不是所有人都能在完成主业时，熟练掌握一门工具语言，而AI提供了这个能力。</p>
+<h2 id="chatgpt的常识性错误">ChatGPT的常识性错误</h2>
+<p>  除了写代码和咨询技术问题，我也尝试过和ChatGPT闲聊，它的自然语言数据库很强大，可也无法阻止它在一些常识性的地方犯错，而且是一本正经的胡说八道，如果你没有相关方面的知识的话极有可能被它误导。比如它会斩钉截铁地告诉你SunnyUI是一个基于C++开发的GUI库，然而我并没有查到这个东西。</p>
+<figure data-type="image" tabindex="2"><img src="https://blog.timestarry.asia/post-images/1676020803063.png" alt="关于SunnyUI的讨论" loading="lazy"></figure>
+<p>  当然，有网友提出了可以纠正它的错误，然而在纠错之后它的回答更会直接逻辑混乱前后矛盾：</p>
+<figure data-type="image" tabindex="3"><img src="https://blog.timestarry.asia/post-images/1676020834944.png" alt="关于SunnyUI的讨论" loading="lazy"></figure>
+<p>  当然，你可以讲它说的这个SunnyUI是我从未了解到的，中文互联网上并不流行的一个GUI库，那么关于成都机场的讨论就更为荒谬的，不过我认为这个是可以理解的，天府机场的正式开通时间已经临近它数据库的最后期限了，并且它的中文训练数据应该并不充分。</p>
+<figure data-type="image" tabindex="4"><img src="https://blog.timestarry.asia/post-images/1676020866258.png" alt="关于成都机场的讨论" loading="lazy"></figure>
+<figure data-type="image" tabindex="5"><img src="https://blog.timestarry.asia/post-images/1676020879823.png" alt="关于成都机场的讨论" loading="lazy"></figure>
+<p>  但它的语义前后矛盾和知错乱改是不可原谅的，不过我相信，这应该会在不久后的版本更新中得到优化。它现在的表现足以让包括我在内的许多人对自然语言处理模型未来的发展充满期待。</p>
+<h2 id="chatgpt与搜索引擎">ChatGPT与搜索引擎</h2>
+<p>  这是一场必然的战争，将会激烈且彻底。</p>
+<p>  我用搜索引擎的大多数时候干什么？问问题、查资料。嗯这就是90%的搜索时间了吧。</p>
+<p>  我用ChatGPT的大多数时候干什么？问问题、查资料。</p>
+<p>  而前者的搜索结果常常混乱而充满广告，后者的回答在大多数时候是精准的且按条目归纳的。但前者已经霸占互联网用户的搜索入口数十年了，显然冲突自此而始，这是一场必然的战争，将会激烈且彻底。现在，战争刚刚拉开序幕，这还仅仅是微软必应和谷歌搜索之间的战争，可以预见，很快大厂们就将出手。战争会什么时候结束，我们不知道，最后的胜者是谁我们也不知道，也许现在这些大厂将信息时代的离去而消逝，新的势力将随着智能时代的到来而到来。</p>
+<h1 id="写在最后">写在最后</h1>
+<p>  我不知道我再回头来读这篇文章的时候是什么样子，也不知道那时人工智能技术发展成什么样了，但我相信，人工智能技术的发展必将给人类带来全新的世界，这是全新的技术革命。几年前，应该是刚上高中的时候就看到了这样一个说法：第四次工业革命将带领人类走向信息时代。我当时并不理解这个说法，因为我对人工智能了解甚少，也不知道这类技术意味着什么。随着大学以来的知识面拓展，见识了越来越多的东西，看到了近几年面向消费者的人工智能产品真正的开始“智能”起来，顺着消费级产品了解了一些人工智能的工业应用和前沿研究领域，我意识到我们正处于第四次工业革命的过程中，作为计算机学子，也许我意识到的晚了些。</p>
+<p>  插个题外话，也不算太外，人们常讲艺术作品应当契合时代，表现时代。我想《流浪地球2》做到了这一点，我们身处一个人工智能和互联网技术空前发展的时代，并且整个世界正在经历巨大的变化，这部作品成功的表现了我们的时代，表现了当下人们对工业发展、人工智能和元宇宙等概念的综合看法，于我而言，这部科幻作品带给我的现实意义的思考远大于了对剧情本身的思考，我想多年后回来回顾现在的人们对人工智能的看法时，不妨再去看一看。</p>
+<p>  从人类第一次亲手点燃火苗，步伐踏遍四海八荒；到蒸汽推动机车前进，汽笛在大海上奏响；再到工业大机器彻夜轰鸣，能量通过电线传入千家万户；再到电子计算机高速运转，互联网连接了整个世界。下一次，又是什么？人工智能？虚拟现实？无尽能源？生物科学？还是全都有。我曾看到过一个说法：我们不要做历史的见证者，没什么好见证的，我们是历史的创造者。下一次，就是我们。</p>
+<h1 id="部分参考资料及推荐观看">部分参考资料及推荐观看</h1>
+<p><a href="https://www.bilibili.com/video/BV1QD4y117Fn/?spm_id_from=333.337.search-card.all.click&amp;vd_source=73bd1ac087e2c0f331e1f4f02033024d">人工智能与人最大的区别是什么，李飞飞访谈，讲的太好了！_哔哩哔哩_bilibili</a></p>
+<p><a href="https://www.bilibili.com/video/BV1dF411i7tb/">【亦】警惕AI诈骗！我用AI复制了一个朋友，效果可太刑了_哔哩哔哩_bilibili</a></p>
+<p><a href="https://www.bilibili.com/video/BV1hM411F7Aa/">【水蛭】我在AI的帮助下，20小时完成了这个阿凡达动画！_哔哩哔哩_bilibili</a></p>
+<p><a href="https://baike.baidu.com/item/%E6%96%B0%E4%B8%80%E4%BB%A3%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E4%BC%A6%E7%90%86%E8%A7%84%E8%8C%83/58655047">新一代人工智能伦理规范（百度百科）</a></p>
+<p><a href="https://www.safea.gov.cn/kjbgz/202109/t20210926_177063.html">《新一代人工智能伦理规范》发布 -中华人民共和国科学技术部 (safea.gov.cn)</a></p>
+<p><a href="https://www.cnblogs.com/lsm-boke/p/11715323.html">人工智能导论——人工智能的发展历史、现状及发展趋势 - 泰初 - 博客园 (cnblogs.com)</a></p>
+<p><a href="http://47.113.146.53:5244/d/guest/%E5%8D%9A%E5%AE%A2%E9%93%BE%E6%8E%A5%E6%9C%89%E5%85%B3%E6%9D%90%E6%96%99/%E4%B8%96%E7%95%8C%E5%B7%A5%E4%B8%9A%E9%9D%A9%E5%91%BD%E7%9A%84%E7%BC%98%E8%B5%B7%E3%80%81%E5%8E%86%E7%A8%8B%E4%B8%8E%E8%B6%8B%E5%8A%BF_%E9%87%91%E7%A2%9A.pdf?sign=kvWLEoEeGUHPEq05FOE_P0yfI07sRnqMvgvHwvtk6sM=:0">金碚.世界工业革命的缘起、历程与趋势[J].南京政治学院学报,2015</a></p>
+<p><a href="http://47.113.146.53:5244/d/guest/%E5%8D%9A%E5%AE%A2%E9%93%BE%E6%8E%A5%E6%9C%89%E5%85%B3%E6%9D%90%E6%96%99/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E7%94%9F%E6%88%90%E5%86%85%E5%AE%B9%E7%9A%84%E8%91%97%E4%BD%9C%E6%9D%83%E8%AE%A4%E5%AE%9A_%E7%86%8A%E7%90%A6.pdf?sign=CBH5Kd_qIqjikbO5GOAuY5c0rAWq73ed2-Qxdi5pnv0=:0">熊琦.人工智能生成内容的著作权认定[J].知识产权,2017</a></p>
+
+                        </div>
+                        
+                            <div class="post-toc">
+                                <ul class="markdownIt-TOC">
+<li><a href="#%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E6%8A%80%E6%9C%AF%E5%8F%91%E5%B1%95%E6%A6%82%E8%A6%81">人工智能技术发展概要</a>
+<ul>
+<li><a href="#%E5%8F%91%E5%B1%95%E7%AE%80%E8%BF%B0">发展简述</a></li>
+<li><a href="#%E5%88%86%E6%94%AF%E5%AD%A6%E7%A7%91">分支学科</a></li>
+<li><a href="#%E9%87%8D%E8%A6%81%E9%87%8C%E7%A8%8B%E7%A2%91">重要里程碑</a></li>
+</ul>
+</li>
+<li><a href="#%E8%BF%91%E6%97%A5%E8%A7%81%E9%97%BB">近日见闻</a>
+<ul>
+<li><a href="#chatgpt%E5%BC%95%E8%B5%B7%E7%9A%84%E7%83%AD%E6%BD%AE%E5%92%8C%E8%A1%8C%E4%B8%9A%E5%B7%A8%E5%A4%B4%E7%9A%84%E8%BF%8E%E6%88%98">ChatGPT引起的热潮和行业巨头的迎战</a></li>
+<li><a href="#%E5%85%B3%E4%BA%8Eai%E5%AF%B9%E6%8A%97%E7%9A%84%E4%B8%80%E4%BA%9B%E8%A7%81%E9%97%BB">关于AI对抗的一些见闻</a></li>
+<li><a href="#ai%E5%AF%B9%E5%86%85%E5%AE%B9%E5%88%9B%E4%BD%9C%E8%80%85%E7%9A%84%E5%BD%B1%E5%93%8D">AI对内容创作者的影响</a></li>
+<li><a href="#%E4%B8%80%E4%BA%9B%E7%9B%B4%E6%8E%A5%E5%BC%95%E8%B5%B7%E4%BA%BA%E4%BB%AC%E7%84%A6%E8%99%91%E7%9A%84%E9%A2%86%E5%9F%9F">一些直接引起人们焦虑的领域</a></li>
+<li><a href="#%E8%B4%B4%E4%B8%8A%E5%87%A0%E4%B8%AA%E6%9C%89%E8%B6%A3%E7%9A%84ai%E7%BD%91%E7%AB%99%E9%A1%B9%E7%9B%AE">贴上几个有趣的AI网站/项目</a></li>
+</ul>
+</li>
+<li><a href="#%E6%88%91%E5%92%8Cchatgpt">我和ChatGPT</a>
+<ul>
+<li><a href="#%E4%BB%80%E4%B9%88%E6%98%AFchatgpt%E8%BF%99%E6%98%AFchatgpt%E7%9A%84%E5%9B%9E%E7%AD%94">什么是ChatGPT?这是ChatGPT的回答</a></li>
+<li><a href="#%E6%88%91%E7%9A%84%E4%BD%BF%E7%94%A8%E6%84%9F%E5%8F%97">我的使用感受</a></li>
+<li><a href="#chatgpt%E7%9A%84%E5%B8%B8%E8%AF%86%E6%80%A7%E9%94%99%E8%AF%AF">ChatGPT的常识性错误</a></li>
+<li><a href="#chatgpt%E4%B8%8E%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E">ChatGPT与搜索引擎</a></li>
+</ul>
+</li>
+<li><a href="#%E5%86%99%E5%9C%A8%E6%9C%80%E5%90%8E">写在最后</a></li>
+<li><a href="#%E9%83%A8%E5%88%86%E5%8F%82%E8%80%83%E8%B5%84%E6%96%99%E5%8F%8A%E6%8E%A8%E8%8D%90%E8%A7%82%E7%9C%8B">部分参考资料及推荐观看</a></li>
+</ul>
+
+                            </div>
+                            
+                                
+                                                    
+                                                                    <!--Share-->
+                                                                    <span style="margin-right:15px">
+                        <i class="post-share"></i>
+                        <span>&#x5206;&#x4EAB;:</span>
+                                                                    <a title="QR 码" target="_blank" href="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://blog.timestarry.asia/post/2Mhj0DmDE/"><i class="fa fa-qrcode"></i></a>
+                                                                    <a title="QQ" target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://blog.timestarry.asia/post/2Mhj0DmDE/&sharesource=qzone&title=【杂思】聊一聊近期由ChatGPT引起的人工智能热议&pics=https://blog.timestarry.asia/images/avatar.png?v=1684825376781&summary=&lt;p&gt;  近年来，人工智能的发展越来越受关注，声浪渐高，最近chatGPT的爆火和媒体的推波助澜更是将关于人工智能的讨论热度推向峰顶。&lt;/p&gt;
+"><i class="fa fa-qq"></i></a>
+                                                                    <a title="新浪微博" target="_blank" href="https://service.weibo.com/share/share.php?url=https://blog.timestarry.asia/post/2Mhj0DmDE/&sharesource=weibo&title=【杂思】聊一聊近期由ChatGPT引起的人工智能热议 + " - " + &lt;p&gt;  近年来，人工智能的发展越来越受关注，声浪渐高，最近chatGPT的爆火和媒体的推波助澜更是将关于人工智能的讨论热度推向峰顶。&lt;/p&gt;
+&pic="https://blog.timestarry.asia/images/avatar.png?v=1684825376781 "><i class="fa fa-weibo "></i></a>
+
+                                                                    </span>
+                                                                    
+                                                                            <!--zh-->
+                                                                            <section class="post-tags zh ">
+                                                                                <div>
+                                                                                    <span>&#x6807;&#x7B7E;:</span>
+                                                                                    <span class="tag ">
+                        
+                        
+                        <a href="https://blog.timestarry.asia/tag/TypeTechnology/">#
+                    分类：技术博客
+                        </a>
+                        
+                        <a href="https://blog.timestarry.asia/tag/v6uEVAQDA/">#
+                    人工智能
+                        </a>
+                        
+                        <a href="https://blog.timestarry.asia/tag/A3qoiCHu8R/">#
+                    AI
+                        </a>
+                        
+                        <a href="https://blog.timestarry.asia/tag/7NPhchLpAY/">#
+                    ChatGPT
+                        </a>
+                        
+                        <a href="https://blog.timestarry.asia/tag/ClassThink/">#
+                    大类标签：思考
+                        </a>
+                        
+                            
+                                </span>
+                                                                                </div>
+                                                                                <div>
+                                                                                    <a href="javascript:window.history.back();">
+                        &#x8FD4;&#x56DE;</a>
+                                                                                    <span>&dot;</span>
+                                                                                    <a href="#">&#x4E3B;&#x9875;</a>
+                                                                                </div>
+                                                                            </section>
+
+                                                                            
+                                                                                <!---->
+                                                                                <section class="post-nav">
+                                                                                    
+                                                                                        <a class="prev" rel="prev" href="https://blog.timestarry.asia/post/M4lFDBp1U/">
+                                                                                            清灰记（划掉，清灰寄）
+                                                                                        </a>
+                                                                                        
+                                                                                            
+                                                                                                <a class="next" rel="next" href="https://blog.timestarry.asia/post/BQMAgaZqO/">
+                                                                                                    【Python学习笔记】基础之三：模块
+                                                                                                </a>
+                                                                                                
+                                                                                </section>
+                    </article>
+                </div>
+                
+                                            
+            </div>
+    </div>
+    </div>
+    </div>
+    
+        <footer id="footer" class="footer">
+            <div class="copyright">
+                
+                        <p>
+<a href="https://beian.miit.gov.cn">蜀ICP备2023002327号</a>
+</p>
+                            
+                                        <svg viewBox="0 0 1024 1024" style="margin-left: 5px;margin-right: 5px;" version="1.0" width="8" height="8" class="my-face">
+            <path
+                d="M863.597631 513.574282l-271.33965-140.213484L729.783667 81.926656c3.583731-7.87141 7.167462-15.742819 7.167462-25.214109C736.887134 25.226908 708.345275 0.012799 672.635953 0.012799a63.611229 63.611229 0 0 0-39.293053 12.607055c-1.791866 1.59988-3.519736 3.19976-5.311602 3.19976L147.87531 418.925381a55.547834 55.547834 0 0 0-19.646527 47.356448c1.791866 17.278704 14.27093 33.021523 32.125591 42.492813l271.33965 141.749369L292.504463 945.221908c-12.479064 25.214109-1.791866 53.563983 23.166262 69.306802 10.751194 6.335525 23.230258 9.47129 35.709322 9.47129 16.062795 0 32.125591-4.735645 44.604655-15.742819l480.091993-403.297753a55.547834 55.547834 0 0 0 19.646526-47.228458 61.243407 61.243407 0 0 0-32.12559-44.156688z"
+                fill="#93b5cf"></path>
+        </svg>
+                                        光溯星河 &copy;Copyright
+                                            <script>
+                                                var date = new Date();
+                                                document.write("" + date.getFullYear());
+                                            </script>
+                                            | Powered by
+                                            <a href="https://github.com/getgridea/gridea" target="_blank">
+                                                Gridea
+                                            </a>
+            </div>
+            <div id="update" style="display:none;">
+                off
+            </div>
+            
+                    <script>
+                        var port = '';
+                        
+                        document.write('<div id="home_path" style="display:none;">' + document.location.protocol + '//' + window.document.location.hostname + port + '</div>')
+                    </script>
+        </footer>
+        
+                <script>
+                    
+                    
+                    
+                    getStar();
+                    hljs.initHighlighting();
+                    console.clear();
+                    
+                    var newDate = new Date();
+                    newDate.setTime(1684825376781);
+                    console.log(" Blog Update Time: " + newDate.toLocaleDateString());
+                    console.log("\n %c \u26a1Theme:Chic Author's Blog:https://blog.itjoker.cn  Write By ITJoker  \n\n", "color: #ffffff; background: rgba(49, 49, 49, 0.85); padding:5px 0;border-radius:5px;");
+                </script>
+        </div>
+</body>
+<script>
+    scroll();
+</script>
+
+</html>

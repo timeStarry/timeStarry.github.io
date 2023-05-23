@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+<title>
+    光溯星河
+</title>
+<!--[if lt IE 9]><script src="//cdn.bootcss.com/html5shiv/r29/html5.js"></script><![endif]-->
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+<meta http-equiv="x-dns-prefetch-control" content="on">
+<link rel="dns-prefetch" href="https://fastly.jsdelivr.net">
+<meta name="author" content="timeStarry">
+<meta name="description" content="博学笃志，切问近思。">
+<meta name="keywords" content="博客,技术,笔记,分享,生活">
+<script async src="//instant.page/3.0.0" type="module" defer integrity="sha384-OeDn4XE77tdHo8pGtE1apMPmAipjoxUQ++eeJa6EtJCfHlvijigWiJpD7VDPWXV1"></script>
+<link rel="stylesheet" href="https://blog.timestarry.asia/styles/main.css" />
+<link href="https://fastly.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script type="text/javascript" src="https://apps.bdimg.com/libs/jquery/1.7.1/jquery.min.js"></script>
+
+        <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/css/style.min.css" />
+        <script src="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/tocbot.min.js"></script>
+        <script src="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/script.min.js"></script>
+        <script src="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/icon.min.js"></script>
+        
+            <script src="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/js/Card/prism.min.js"></script>
+            <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/css/Card/prism.min.css" />
+            <link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.css">
+            <script defer src="https://fastly.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.js"></script>
+            
+                        <!--CDN样式-->
+                        <script src="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/js/hit-kounter-lc-0.3.0.js"></script>
+                        <script src="https://cdn1.lncld.net/static/js/av-min-1.5.0.js"></script>
+                        
+                            <script>
+                                (function() {
+                                    var bp = document.createElement('script');
+                                    var curProtocol = window.location.protocol.split(':')[0];
+                                    if (curProtocol === 'https') {
+                                        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+                                    } else {
+                                        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+                                    }
+                                    var s = document.getElementsByTagName("script")[0];
+                                    s.parentNode.insertBefore(bp, s);
+                                })();
+                            </script>
+                            
+                                    <script type="text/javascript">
+                                        var _hmt = _hmt || [];
+                                        (function() {
+                                            var hm = document.createElement("script");
+                                            hm.src = "https://hm.baidu.com/hm.js?996b348e80ff3bbd39a129200e99bb6e";
+                                            var s = document.getElementsByTagName("script")[0];
+                                            s.parentNode.insertBefore(hm, s);
+                                        })();
+                                    </script>
+                                    
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo">
+                <a href="https://blog.timestarry.asia">
+                    光溯星河
+                </a>
+            </div>
+            <div id="tp-weather-widget"></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/posts">
+                        全部文章
+                    </a>
+                    
+                    <a class="menu-item" href="https://quan.timestarry.asia/">
+                        短文随笔
+                    </a>
+                    
+                    <a class="menu-item" href="/post/log">
+                        日志
+                    </a>
+                    
+                    <a class="menu-item" href="/archives">
+                        归档
+                    </a>
+                    
+                    <a class="menu-item" href="/post/about">
+                        关于
+                    </a>
+                    
+                        <input id="switch_default" type="checkbox" class="switch_default">
+                        <label for="switch_default" class="toggleBtn"></label>
+            </div>
+            <form id="gridea-search-form" data-update="1684825376781" action="/search/index.html">
+                <input class="search-input" autocomplete="off" spellcheck="false" name="q" autofocus="true" placeholder="Search...">
+            </form>
+        </div>
+    </nav>
+
+    
+        <nav class="navbar-mobile" id="nav-mobile">
+            <div class="container">
+                <div class="navbar-header">
+                    <div>
+                        <a href="https://blog.timestarry.asia">
+                            光溯星河
+                        </a>
+                        <!--en-->
+                        <a id="mobile-toggle-theme-en" class="a en">&nbsp;Dark</a>
+                        <!--zh-->
+                        <a id="mobile-toggle-theme-zh" class="a zh">&nbsp;&#x6697;&#x9ED1;</a>
+                    </div>
+                    <form id="gridea-search-form" data-update="1684825376781" action="/search/index.html">
+                        <input class="search-input" autocomplete="off" spellcheck="false" name="q" autofocus="true" placeholder="Search...">
+                    </form>
+                    <!--en-->
+                    <div class="menu-toggle" id="menu-toggle-en" onclick="mobileBtn()">&#9776; Menu</div>
+                    <!--zh-->
+                    <div class="menu-toggle" id="menu-toggle-zh" onclick="mobileBtn()">&#9776; &#x83DC;&#x5355;</div>
+
+                </div>
+                <div class="menu" id="mobile-menu">
+                    
+                        <a class="menu-item" href="/posts">
+                            全部文章
+                        </a>
+                        
+                        <a class="menu-item" href="https://quan.timestarry.asia/">
+                            短文随笔
+                        </a>
+                        
+                        <a class="menu-item" href="/post/log">
+                            日志
+                        </a>
+                        
+                        <a class="menu-item" href="/archives">
+                            归档
+                        </a>
+                        
+                        <a class="menu-item" href="/post/about">
+                            关于
+                        </a>
+                        
+                </div>
+            </div>
+        </nav>
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementById("menu-toggle-en");
+        var toggleMenu_zh = document.getElementById("menu-toggle-zh");
+
+        var mobileMenu = document.getElementById("mobile-menu");
+        if (toggleMenu.display != "none") {
+            if (toggleMenu.classList.contains("active")) {
+                toggleMenu.classList.remove("active")
+                mobileMenu.classList.remove("active")
+            } else {
+                toggleMenu.classList.add("active")
+                mobileMenu.classList.add("active")
+            }
+        } else if (toggleMenu_zh.display != "none") {
+            if (toggleMenu_zh.classList.contains("active")) {
+                toggleMenu_zh.classList.remove("active")
+                mobileMenu.classList.remove("active")
+            } else {
+                toggleMenu_zh.classList.add("active")
+                mobileMenu.classList.add("active")
+            }
+        }
+
+    }
+</script>
+
+            <div class="main">
+                <div class="container">
+                    <article class="post-wrap">
+                        <header class="post-header">
+                            <h1 class="post-title">
+                                上头！斥6元巨资买了个顶级域名
+                            </h1>
+                            
+                                    <!--zh-->
+                                    <div class="post-meta zh">
+                                        &#x4F5C;&#x8005;:
+                                        <a itemprop="author" rel="author" href="/">
+                                            光溯星河
+                                        </a>
+                                        <span class="post-time">&#x65E5;&#x671F;: <a href="#">2023-01-09</a></span>
+                                        <span class="post-readtime">&#x9605;&#x8BFB;&#x65F6;&#x95F4;:<a
+                                    href="#">2.3
+                                    &#x5206;&#x949F;</a></span>
+                                        <span class="post-words">&#x5B57;&#x6570;:<a href="#">649</a></span>
+                                        
+                                            <span class="post-category">&#x5206;&#x7C7B;:
+                                
+                                <a href="https://blog.timestarry.asia/tag/TypeTechnology/">分类：技术博客</a>
+                                
+                                <a href="https://blog.timestarry.asia/tag/qHHUw40s0B/">域名</a>
+                                
+                                <a href="https://blog.timestarry.asia/tag/5MxeXga9V/">网络</a>
+                                
+                                <a href="https://blog.timestarry.asia/tag/ClassInterest/">大类标签：图一乐</a>
+                                
+                                <a href="https://blog.timestarry.asia/tag/Mt_9O5qqK/">博客搭建</a>
+                                
+                            </span>
+                                            
+                                                阅读量:
+                                                <span data-hk-page="current"> - </span>
+                                                
+                                    </div>
+                                    
+                        </header>
+                        
+                            <img class="post-feature-image" src="https://blog.timestarry.asia/post-images/HtisZ_6ui.png" alt="">
+                          
+                        <div class="post-content">
+                            <p>timestarry.asia</p>
+<!-- more -->
+<h1 id="开端">开端</h1>
+<p>每一次服务器搭建都把域名购买和ICP备案写在最后一步，但是每次都没能走到那一步。<br>
+这次在搭建完Gridea博客后正好是周一，放了天假，有些空闲时间，又想起Github pages支持自定义域名访问，所以又手痒去搜了下域名。</p>
+<p>不搜不要紧，一搜就看上了.aisa，首年6块，图一乐嘛，用一年就用一年。当场下单。</p>
+<p>搜索、选择、购买、注册到审核通过，全程不到半个小时。</p>
+<h1 id="解析设置">解析设置</h1>
+<p>有两个部分需要设置，分别是域名注册服务商（我这里是在阿里云万网）和github.io仓库CNAME文件。</p>
+<h2 id="阿里云域名控制台">阿里云域名控制台</h2>
+<ul>
+<li>进入“云解析DNS”</li>
+<li>找到当前购买的域名timestarry.asia，点击操作选项中的“解析设置”</li>
+<li>然后点击添加记录</li>
+<li>记录类型选择<code>CNAME</code>，主机记录填写<code>@</code>，直接解析主域名，记录值填写github pages的默认域名</li>
+</ul>
+<h2 id="为网页仓库添加cname文件">为网页仓库添加CNAME文件</h2>
+<ul>
+<li>在Gridea的“远程”选项中找到CNAME选项</li>
+<li>填写刚刚在注册商处设置的域名timestarry.asia</li>
+<li>保存，同步<br>
+这是你可以看到仓库中多了一个CNAME文件，再稍等一会儿就可以愉快访问啦！🎉</li>
+</ul>
+<h1 id="知识拓展-什么是cname">知识拓展-什么是CNAME</h1>
+<p>CNAME，即Canonical Name，是DNS中的一种记录类型，用于为某个域名指定别名。<br>
+CNAME 记录有助于解决域名重定向和负载均衡等问题。它可以使用户在访问某个域名时自动跳转到另一个域名，而用户无需知道实际的 IP 地址。这样就可以在不改变用户习惯的情况下，对网站进行更新或迁移，或将流量分发到多台服务器上。</p>
+<p>以本站为例，原有一个名为timestarry.github.io的域名，现在我需要为其指定一个timestarry.asia的别名。此时应该在DNS服务器上创建一条CNAME记录（这是在阿里云控制台完成的步骤），将timestarry.asia的CNAME指向timestarry.github.io。这样，当用户访问timestarry.asia时，DNS服务器就会将其重新定向到timestarry.github.io。</p>
+<p>那么在Github仓库中添加CNAME文件的作用是什么呢？<br>
+这是因为 GitHub Pages 服务使用 CNAME 文件来验证你拥有该域名的权利。当用户访问域名时，GitHub Pages 服务就会检查你在 GitHub 仓库中是否存在 CNAME 文件，如果存在，则会将用户重定向到 GitHub Pages 网站。</p>
+
+                        </div>
+                        
+                            <div class="post-toc">
+                                <ul class="markdownIt-TOC">
+<li><a href="#%E5%BC%80%E7%AB%AF">开端</a></li>
+<li><a href="#%E8%A7%A3%E6%9E%90%E8%AE%BE%E7%BD%AE">解析设置</a>
+<ul>
+<li><a href="#%E9%98%BF%E9%87%8C%E4%BA%91%E5%9F%9F%E5%90%8D%E6%8E%A7%E5%88%B6%E5%8F%B0">阿里云域名控制台</a></li>
+<li><a href="#%E4%B8%BA%E7%BD%91%E9%A1%B5%E4%BB%93%E5%BA%93%E6%B7%BB%E5%8A%A0cname%E6%96%87%E4%BB%B6">为网页仓库添加CNAME文件</a></li>
+</ul>
+</li>
+<li><a href="#%E7%9F%A5%E8%AF%86%E6%8B%93%E5%B1%95-%E4%BB%80%E4%B9%88%E6%98%AFcname">知识拓展-什么是CNAME</a></li>
+</ul>
+
+                            </div>
+                            
+                                
+                                                    
+                                                                    <!--Share-->
+                                                                    <span style="margin-right:15px">
+                        <i class="post-share"></i>
+                        <span>&#x5206;&#x4EAB;:</span>
+                                                                    <a title="QR 码" target="_blank" href="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://blog.timestarry.asia/post/HtisZ_6ui/"><i class="fa fa-qrcode"></i></a>
+                                                                    <a title="QQ" target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://blog.timestarry.asia/post/HtisZ_6ui/&sharesource=qzone&title=上头！斥6元巨资买了个顶级域名&pics=https://blog.timestarry.asia/images/avatar.png?v=1684825376781&summary=&lt;p&gt;timestarry.asia&lt;/p&gt;
+"><i class="fa fa-qq"></i></a>
+                                                                    <a title="新浪微博" target="_blank" href="https://service.weibo.com/share/share.php?url=https://blog.timestarry.asia/post/HtisZ_6ui/&sharesource=weibo&title=上头！斥6元巨资买了个顶级域名 + " - " + &lt;p&gt;timestarry.asia&lt;/p&gt;
+&pic="https://blog.timestarry.asia/images/avatar.png?v=1684825376781 "><i class="fa fa-weibo "></i></a>
+
+                                                                    </span>
+                                                                    
+                                                                            <!--zh-->
+                                                                            <section class="post-tags zh ">
+                                                                                <div>
+                                                                                    <span>&#x6807;&#x7B7E;:</span>
+                                                                                    <span class="tag ">
+                        
+                        
+                        <a href="https://blog.timestarry.asia/tag/TypeTechnology/">#
+                    分类：技术博客
+                        </a>
+                        
+                        <a href="https://blog.timestarry.asia/tag/qHHUw40s0B/">#
+                    域名
+                        </a>
+                        
+                        <a href="https://blog.timestarry.asia/tag/5MxeXga9V/">#
+                    网络
+                        </a>
+                        
+                        <a href="https://blog.timestarry.asia/tag/ClassInterest/">#
+                    大类标签：图一乐
+                        </a>
+                        
+                        <a href="https://blog.timestarry.asia/tag/Mt_9O5qqK/">#
+                    博客搭建
+                        </a>
+                        
+                            
+                                </span>
+                                                                                </div>
+                                                                                <div>
+                                                                                    <a href="javascript:window.history.back();">
+                        &#x8FD4;&#x56DE;</a>
+                                                                                    <span>&dot;</span>
+                                                                                    <a href="#">&#x4E3B;&#x9875;</a>
+                                                                                </div>
+                                                                            </section>
+
+                                                                            
+                                                                                <!---->
+                                                                                <section class="post-nav">
+                                                                                    
+                                                                                        <a class="prev" rel="prev" href="https://blog.timestarry.asia/post/T7kOzqfZ0/">
+                                                                                            使用 HTTPS 访问 GitHub Pages 站点
+                                                                                        </a>
+                                                                                        
+                                                                                            
+                                                                                                <a class="next" rel="next" href="https://blog.timestarry.asia/post/blogrecord/">
+                                                                                                    博客重大变化记录
+                                                                                                </a>
+                                                                                                
+                                                                                </section>
+                    </article>
+                </div>
+                
+                                            
+            </div>
+    </div>
+    </div>
+    </div>
+    
+        <footer id="footer" class="footer">
+            <div class="copyright">
+                
+                        <p>
+<a href="https://beian.miit.gov.cn">蜀ICP备2023002327号</a>
+</p>
+                            
+                                        <svg viewBox="0 0 1024 1024" style="margin-left: 5px;margin-right: 5px;" version="1.0" width="8" height="8" class="my-face">
+            <path
+                d="M863.597631 513.574282l-271.33965-140.213484L729.783667 81.926656c3.583731-7.87141 7.167462-15.742819 7.167462-25.214109C736.887134 25.226908 708.345275 0.012799 672.635953 0.012799a63.611229 63.611229 0 0 0-39.293053 12.607055c-1.791866 1.59988-3.519736 3.19976-5.311602 3.19976L147.87531 418.925381a55.547834 55.547834 0 0 0-19.646527 47.356448c1.791866 17.278704 14.27093 33.021523 32.125591 42.492813l271.33965 141.749369L292.504463 945.221908c-12.479064 25.214109-1.791866 53.563983 23.166262 69.306802 10.751194 6.335525 23.230258 9.47129 35.709322 9.47129 16.062795 0 32.125591-4.735645 44.604655-15.742819l480.091993-403.297753a55.547834 55.547834 0 0 0 19.646526-47.228458 61.243407 61.243407 0 0 0-32.12559-44.156688z"
+                fill="#93b5cf"></path>
+        </svg>
+                                        光溯星河 &copy;Copyright
+                                            <script>
+                                                var date = new Date();
+                                                document.write("" + date.getFullYear());
+                                            </script>
+                                            | Powered by
+                                            <a href="https://github.com/getgridea/gridea" target="_blank">
+                                                Gridea
+                                            </a>
+            </div>
+            <div id="update" style="display:none;">
+                off
+            </div>
+            
+                    <script>
+                        var port = '';
+                        
+                        document.write('<div id="home_path" style="display:none;">' + document.location.protocol + '//' + window.document.location.hostname + port + '</div>')
+                    </script>
+        </footer>
+        
+                <script>
+                    
+                    
+                    
+                    getStar();
+                    hljs.initHighlighting();
+                    console.clear();
+                    
+                    var newDate = new Date();
+                    newDate.setTime(1684825376781);
+                    console.log(" Blog Update Time: " + newDate.toLocaleDateString());
+                    console.log("\n %c \u26a1Theme:Chic Author's Blog:https://blog.itjoker.cn  Write By ITJoker  \n\n", "color: #ffffff; background: rgba(49, 49, 49, 0.85); padding:5px 0;border-radius:5px;");
+                </script>
+        </div>
+</body>
+<script>
+    scroll();
+</script>
+
+</html>

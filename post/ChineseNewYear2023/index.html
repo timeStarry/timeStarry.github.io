@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+<title>
+    光溯星河
+</title>
+<!--[if lt IE 9]><script src="//cdn.bootcss.com/html5shiv/r29/html5.js"></script><![endif]-->
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+<meta http-equiv="x-dns-prefetch-control" content="on">
+<link rel="dns-prefetch" href="https://fastly.jsdelivr.net">
+<meta name="author" content="timeStarry">
+<meta name="description" content="博学笃志，切问近思。">
+<meta name="keywords" content="博客,技术,笔记,分享,生活">
+<script async src="//instant.page/3.0.0" type="module" defer integrity="sha384-OeDn4XE77tdHo8pGtE1apMPmAipjoxUQ++eeJa6EtJCfHlvijigWiJpD7VDPWXV1"></script>
+<link rel="stylesheet" href="https://blog.timestarry.asia/styles/main.css" />
+<link href="https://fastly.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script type="text/javascript" src="https://apps.bdimg.com/libs/jquery/1.7.1/jquery.min.js"></script>
+
+        <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/css/style.min.css" />
+        <script src="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/tocbot.min.js"></script>
+        <script src="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/script.min.js"></script>
+        <script src="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/icon.min.js"></script>
+        
+            <script src="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/js/Card/prism.min.js"></script>
+            <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/css/Card/prism.min.css" />
+            <link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.css">
+            <script defer src="https://fastly.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.js"></script>
+            
+                        <!--CDN样式-->
+                        <script src="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/js/hit-kounter-lc-0.3.0.js"></script>
+                        <script src="https://cdn1.lncld.net/static/js/av-min-1.5.0.js"></script>
+                        
+                            <script>
+                                (function() {
+                                    var bp = document.createElement('script');
+                                    var curProtocol = window.location.protocol.split(':')[0];
+                                    if (curProtocol === 'https') {
+                                        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+                                    } else {
+                                        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+                                    }
+                                    var s = document.getElementsByTagName("script")[0];
+                                    s.parentNode.insertBefore(bp, s);
+                                })();
+                            </script>
+                            
+                                    <script type="text/javascript">
+                                        var _hmt = _hmt || [];
+                                        (function() {
+                                            var hm = document.createElement("script");
+                                            hm.src = "https://hm.baidu.com/hm.js?996b348e80ff3bbd39a129200e99bb6e";
+                                            var s = document.getElementsByTagName("script")[0];
+                                            s.parentNode.insertBefore(hm, s);
+                                        })();
+                                    </script>
+                                    
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo">
+                <a href="https://blog.timestarry.asia">
+                    光溯星河
+                </a>
+            </div>
+            <div id="tp-weather-widget"></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/posts">
+                        全部文章
+                    </a>
+                    
+                    <a class="menu-item" href="https://quan.timestarry.asia/">
+                        短文随笔
+                    </a>
+                    
+                    <a class="menu-item" href="/post/log">
+                        日志
+                    </a>
+                    
+                    <a class="menu-item" href="/archives">
+                        归档
+                    </a>
+                    
+                    <a class="menu-item" href="/post/about">
+                        关于
+                    </a>
+                    
+                        <input id="switch_default" type="checkbox" class="switch_default">
+                        <label for="switch_default" class="toggleBtn"></label>
+            </div>
+            <form id="gridea-search-form" data-update="1684825376781" action="/search/index.html">
+                <input class="search-input" autocomplete="off" spellcheck="false" name="q" autofocus="true" placeholder="Search...">
+            </form>
+        </div>
+    </nav>
+
+    
+        <nav class="navbar-mobile" id="nav-mobile">
+            <div class="container">
+                <div class="navbar-header">
+                    <div>
+                        <a href="https://blog.timestarry.asia">
+                            光溯星河
+                        </a>
+                        <!--en-->
+                        <a id="mobile-toggle-theme-en" class="a en">&nbsp;Dark</a>
+                        <!--zh-->
+                        <a id="mobile-toggle-theme-zh" class="a zh">&nbsp;&#x6697;&#x9ED1;</a>
+                    </div>
+                    <form id="gridea-search-form" data-update="1684825376781" action="/search/index.html">
+                        <input class="search-input" autocomplete="off" spellcheck="false" name="q" autofocus="true" placeholder="Search...">
+                    </form>
+                    <!--en-->
+                    <div class="menu-toggle" id="menu-toggle-en" onclick="mobileBtn()">&#9776; Menu</div>
+                    <!--zh-->
+                    <div class="menu-toggle" id="menu-toggle-zh" onclick="mobileBtn()">&#9776; &#x83DC;&#x5355;</div>
+
+                </div>
+                <div class="menu" id="mobile-menu">
+                    
+                        <a class="menu-item" href="/posts">
+                            全部文章
+                        </a>
+                        
+                        <a class="menu-item" href="https://quan.timestarry.asia/">
+                            短文随笔
+                        </a>
+                        
+                        <a class="menu-item" href="/post/log">
+                            日志
+                        </a>
+                        
+                        <a class="menu-item" href="/archives">
+                            归档
+                        </a>
+                        
+                        <a class="menu-item" href="/post/about">
+                            关于
+                        </a>
+                        
+                </div>
+            </div>
+        </nav>
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementById("menu-toggle-en");
+        var toggleMenu_zh = document.getElementById("menu-toggle-zh");
+
+        var mobileMenu = document.getElementById("mobile-menu");
+        if (toggleMenu.display != "none") {
+            if (toggleMenu.classList.contains("active")) {
+                toggleMenu.classList.remove("active")
+                mobileMenu.classList.remove("active")
+            } else {
+                toggleMenu.classList.add("active")
+                mobileMenu.classList.add("active")
+            }
+        } else if (toggleMenu_zh.display != "none") {
+            if (toggleMenu_zh.classList.contains("active")) {
+                toggleMenu_zh.classList.remove("active")
+                mobileMenu.classList.remove("active")
+            } else {
+                toggleMenu_zh.classList.add("active")
+                mobileMenu.classList.add("active")
+            }
+        }
+
+    }
+</script>
+
+            <div class="main">
+                <div class="container">
+                    <article class="post-wrap">
+                        <header class="post-header">
+                            <h1 class="post-title">
+                                癸卯兔年|2023年新年的一点点小想法
+                            </h1>
+                            
+                                    <!--zh-->
+                                    <div class="post-meta zh">
+                                        &#x4F5C;&#x8005;:
+                                        <a itemprop="author" rel="author" href="/">
+                                            光溯星河
+                                        </a>
+                                        <span class="post-time">&#x65E5;&#x671F;: <a href="#">2023-01-22</a></span>
+                                        <span class="post-readtime">&#x9605;&#x8BFB;&#x65F6;&#x95F4;:<a
+                                    href="#">4.6
+                                    &#x5206;&#x949F;</a></span>
+                                        <span class="post-words">&#x5B57;&#x6570;:<a href="#">1367</a></span>
+                                        
+                                            <span class="post-category">&#x5206;&#x7C7B;:
+                                
+                                <a href="https://blog.timestarry.asia/tag/TypeLife/">分类：生活吐槽</a>
+                                
+                                <a href="https://blog.timestarry.asia/tag/3wdRQUHAz/">新年贺词</a>
+                                
+                                <a href="https://blog.timestarry.asia/tag/ClassThink/">大类标签：思考</a>
+                                
+                            </span>
+                                            
+                                                阅读量:
+                                                <span data-hk-page="current"> - </span>
+                                                
+                                    </div>
+                                    
+                        </header>
+                        
+                            <img class="post-feature-image" src="https://blog.timestarry.asia/post-images/ChineseNewYear2023.png" alt="">
+                          
+                        <div class="post-content">
+                            <p>新春快乐！兔年吉祥</p>
+<!-- more -->
+<p>  春节快到了，按照以往习惯，我们总要到社交软件上去发布一些图文来纪念这一传承上千年的习俗，庆祝我们的星球和我们民族的历法又正常运转了一周。在我的圈子里，我无需发表贺岁辞，也无需回应什么礼节发言，所以我认为，用博客来辞旧迎新，更有意义。<br>
+  提前两天开始写这篇博客，以便赶上除夕夜晚在网站上发布。</p>
+<h1 id="回顾即将过去的壬寅虎年">回顾即将过去的壬寅虎年</h1>
+<h2 id="一些杂言">一些杂言</h2>
+<p>  年初，人们许下了许多美好的愿望，希望虎年虎虎生威，让新冠带来的阴霾就此散去，期望回到疫情前简单纯净的生活。人们在瘟疫中给过去添上了一层美好的滤镜。一年过去了，我们知道俄乌战争让世界变得更加紧张了，对普通人来说“世界和平与发展的趋势收到严重挑战”的判断也变得越发清晰，“百年未有之大变局”也逐渐明显又迷离……</p>
+<h2 id="关于新冠">关于新冠</h2>
+<p>  持续近三年的封控为守护了我们的安全，也让很多人难以忍受走到哪都要扫码、核酸的生活，更无法想象今后不知道多长时间都要与核酸为伴。不同于执行编译器中的代码，在人构成的庞大的社会机器中政策的执行有误差、有延迟。也不同于调试模式下的监控，数据从下至上的反馈也是有误差、有延迟的。在巨大的社会中，人人都有自己的想法。终于，在十二月初，终结了为期三年的封控政策。在我看来，放开的决策有对经济、民意等因素综合研判的政治依据，也有omicron致死、重症普遍下降的科学依据，这是两者权衡的结果。<br>
+  政府和人民组成的集体在面对着来自病毒的威胁，却还要面对来自同类的恶意挑拨，人类啊。人们在科幻小说中寄予希望，认为人类会在面对外星威胁的时候联合起来，组成一个集体，这种场景也只能在科幻小说中了吗？人们也说，待来自外星威胁来临的时候，资本家会先兜售恐惧，贩卖焦虑，大资本家和外星人勾连剥削普通人类……我想，唯一能让我从这些负面的想法中，相信人类未来的，是一代代信奉“开源精神”的计算机前辈们，还有到如今仍然饱含开源激情的开源战士们。</p>
+<h2 id="我这一年">我这一年</h2>
+<p>  这一年，借助学校的平台做了很多个人做不了的事情，去飞行、去拍摄、去思考，去交朋友。这一年，对自己专业的兴趣和未来的思考更加清晰，Coding有了更丰富的含义。<br>
+  这一年，学识有些许增加，见识有些许扩展，判断有些许变化，初心没有丝毫动摇，信念愈发清晰且坚定。随着越来越多的学长学姐、身边年龄近似的人离开学校，进入社会，越发见识到生活的不易，现实的残酷，但对理想的描绘也愈发清晰。这一年，于我自身而言，没有大事发生，但我能感受到自己在学习和思考中的变化。<br>
+  春节临近，我却还不能休息，我需要在年前完成现在这个.NET基础功能的开发，以保证开学前能完成整个项目的优化、完善，使其成为一个能拿得出手的东西。</p>
+<h2 id="年度图片">年度图片</h2>
+<p>这一年拍了很多东西，选九张吧，没有太特别的含义。<br>
+<img src="http://cloud.timestarry.asia/Gridea%E5%8D%9A%E5%AE%A2%E5%9B%BE%E7%89%87/1674182432045.jpg" alt="2023图1" loading="lazy"><br>
+<img src="http://cloud.timestarry.asia/Gridea%E5%8D%9A%E5%AE%A2%E5%9B%BE%E7%89%87/1674182440775.jpg" alt="2023图2" loading="lazy"><br>
+<img src="http://cloud.timestarry.asia/Gridea%E5%8D%9A%E5%AE%A2%E5%9B%BE%E7%89%87/1674182455019.jpg" alt="2023图3" loading="lazy"><br>
+<img src="http://cloud.timestarry.asia/Gridea%E5%8D%9A%E5%AE%A2%E5%9B%BE%E7%89%87/1674182473334.jpg" alt="2023图4" loading="lazy"><br>
+<img src="http://cloud.timestarry.asia/Gridea%E5%8D%9A%E5%AE%A2%E5%9B%BE%E7%89%87/1674182481979.jpg" alt="2023图5" loading="lazy"><br>
+<img src="http://cloud.timestarry.asia/Gridea%E5%8D%9A%E5%AE%A2%E5%9B%BE%E7%89%87/1674182487964.jpg" alt="2023图6" loading="lazy"><br>
+<img src="http://cloud.timestarry.asia/Gridea%E5%8D%9A%E5%AE%A2%E5%9B%BE%E7%89%87/1674182513012.jpg" alt="2023图7" loading="lazy"><br>
+<img src="http://cloud.timestarry.asia/Gridea%E5%8D%9A%E5%AE%A2%E5%9B%BE%E7%89%87/1674182518247.jpg" alt="2023图8" loading="lazy"><br>
+<img src="http://cloud.timestarry.asia/Gridea%E5%8D%9A%E5%AE%A2%E5%9B%BE%E7%89%87/1674182531774.jpg" alt="2023图9" loading="lazy"></p>
+<h2 id="年度箴言">年度箴言</h2>
+<p>这一年在不同时候用来告诉自己的话，或劝诫，或思考，有些往年也说过。捡一些写在这里，共勉。</p>
+<ul>
+<li>人无远虑，必有近忧。</li>
+<li>博学笃志，切问近思。</li>
+<li>事物都是不断发展发展变化的。</li>
+<li>学而不思则罔，思而不学则殆。</li>
+<li>要分得清手段和目的。</li>
+</ul>
+<h1 id="新年新期待">新年新期待</h1>
+<p>  有新年愿望，也有新年目标。<br>
+  新的一年，理想从抽象的概念变为逐渐清晰的方向。<br>
+  这些东西什么时候写都行，但写在新年，是我们的传统，是我们的期待。</p>
+<h2 id="一些小目标">一些小目标</h2>
+<ul>
+<li>深度学习，尽早拥有自己熟练掌握的、可以实用的技术；</li>
+<li>广泛学习，要快速拓宽知识面，了解新兴技术、行业发展趋势；</li>
+<li>学得更好，尽早有拿得出手的东西，参得上赛的项目；</li>
+<li>然后是争取能在今年有面试的实力、机会和勇气，争取拿到offer；</li>
+</ul>
+<h2 id="一些大的想法">一些大的想法</h2>
+<ul>
+<li>待我学成时，实现经济独立，家庭幸福；</li>
+<li>待我小有成就，解决实际问题，为开源社区做出贡献；</li>
+<li>待我经验丰富时，我要让后来者的学习更轻松，至少要让他们在满是抄袭教程的论坛中找到真理；</li>
+<li>待我知识充沛，技术专精时，我们将用技术推进生产力的发展，用科学寻求人类的未来，我们要改变这个世界；</li>
+</ul>
+
+                        </div>
+                        
+                            <div class="post-toc">
+                                <ul class="markdownIt-TOC">
+<li><a href="#%E5%9B%9E%E9%A1%BE%E5%8D%B3%E5%B0%86%E8%BF%87%E5%8E%BB%E7%9A%84%E5%A3%AC%E5%AF%85%E8%99%8E%E5%B9%B4">回顾即将过去的壬寅虎年</a>
+<ul>
+<li><a href="#%E4%B8%80%E4%BA%9B%E6%9D%82%E8%A8%80">一些杂言</a></li>
+<li><a href="#%E5%85%B3%E4%BA%8E%E6%96%B0%E5%86%A0">关于新冠</a></li>
+<li><a href="#%E6%88%91%E8%BF%99%E4%B8%80%E5%B9%B4">我这一年</a></li>
+<li><a href="#%E5%B9%B4%E5%BA%A6%E5%9B%BE%E7%89%87">年度图片</a></li>
+<li><a href="#%E5%B9%B4%E5%BA%A6%E7%AE%B4%E8%A8%80">年度箴言</a></li>
+</ul>
+</li>
+<li><a href="#%E6%96%B0%E5%B9%B4%E6%96%B0%E6%9C%9F%E5%BE%85">新年新期待</a>
+<ul>
+<li><a href="#%E4%B8%80%E4%BA%9B%E5%B0%8F%E7%9B%AE%E6%A0%87">一些小目标</a></li>
+<li><a href="#%E4%B8%80%E4%BA%9B%E5%A4%A7%E7%9A%84%E6%83%B3%E6%B3%95">一些大的想法</a></li>
+</ul>
+</li>
+</ul>
+
+                            </div>
+                            
+                                
+                                                    
+                                                                    <!--Share-->
+                                                                    <span style="margin-right:15px">
+                        <i class="post-share"></i>
+                        <span>&#x5206;&#x4EAB;:</span>
+                                                                    <a title="QR 码" target="_blank" href="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://blog.timestarry.asia/post/ChineseNewYear2023/"><i class="fa fa-qrcode"></i></a>
+                                                                    <a title="QQ" target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://blog.timestarry.asia/post/ChineseNewYear2023/&sharesource=qzone&title=癸卯兔年|2023年新年的一点点小想法&pics=https://blog.timestarry.asia/images/avatar.png?v=1684825376781&summary=&lt;p&gt;新春快乐！兔年吉祥&lt;/p&gt;
+"><i class="fa fa-qq"></i></a>
+                                                                    <a title="新浪微博" target="_blank" href="https://service.weibo.com/share/share.php?url=https://blog.timestarry.asia/post/ChineseNewYear2023/&sharesource=weibo&title=癸卯兔年|2023年新年的一点点小想法 + " - " + &lt;p&gt;新春快乐！兔年吉祥&lt;/p&gt;
+&pic="https://blog.timestarry.asia/images/avatar.png?v=1684825376781 "><i class="fa fa-weibo "></i></a>
+
+                                                                    </span>
+                                                                    
+                                                                            <!--zh-->
+                                                                            <section class="post-tags zh ">
+                                                                                <div>
+                                                                                    <span>&#x6807;&#x7B7E;:</span>
+                                                                                    <span class="tag ">
+                        
+                        
+                        <a href="https://blog.timestarry.asia/tag/TypeLife/">#
+                    分类：生活吐槽
+                        </a>
+                        
+                        <a href="https://blog.timestarry.asia/tag/3wdRQUHAz/">#
+                    新年贺词
+                        </a>
+                        
+                        <a href="https://blog.timestarry.asia/tag/ClassThink/">#
+                    大类标签：思考
+                        </a>
+                        
+                            
+                                </span>
+                                                                                </div>
+                                                                                <div>
+                                                                                    <a href="javascript:window.history.back();">
+                        &#x8FD4;&#x56DE;</a>
+                                                                                    <span>&dot;</span>
+                                                                                    <a href="#">&#x4E3B;&#x9875;</a>
+                                                                                </div>
+                                                                            </section>
+
+                                                                            
+                                                                                <!---->
+                                                                                <section class="post-nav">
+                                                                                    
+                                                                                        <a class="prev" rel="prev" href="https://blog.timestarry.asia/post/qSqgD4UC2/">
+                                                                                            【Python学习笔记】基础之一：基本语法
+                                                                                        </a>
+                                                                                        
+                                                                                            
+                                                                                                <a class="next" rel="next" href="https://blog.timestarry.asia/post/T7kOzqfZ0/">
+                                                                                                    使用 HTTPS 访问 GitHub Pages 站点
+                                                                                                </a>
+                                                                                                
+                                                                                </section>
+                    </article>
+                </div>
+                
+                                            
+            </div>
+    </div>
+    </div>
+    </div>
+    
+        <footer id="footer" class="footer">
+            <div class="copyright">
+                
+                        <p>
+<a href="https://beian.miit.gov.cn">蜀ICP备2023002327号</a>
+</p>
+                            
+                                        <svg viewBox="0 0 1024 1024" style="margin-left: 5px;margin-right: 5px;" version="1.0" width="8" height="8" class="my-face">
+            <path
+                d="M863.597631 513.574282l-271.33965-140.213484L729.783667 81.926656c3.583731-7.87141 7.167462-15.742819 7.167462-25.214109C736.887134 25.226908 708.345275 0.012799 672.635953 0.012799a63.611229 63.611229 0 0 0-39.293053 12.607055c-1.791866 1.59988-3.519736 3.19976-5.311602 3.19976L147.87531 418.925381a55.547834 55.547834 0 0 0-19.646527 47.356448c1.791866 17.278704 14.27093 33.021523 32.125591 42.492813l271.33965 141.749369L292.504463 945.221908c-12.479064 25.214109-1.791866 53.563983 23.166262 69.306802 10.751194 6.335525 23.230258 9.47129 35.709322 9.47129 16.062795 0 32.125591-4.735645 44.604655-15.742819l480.091993-403.297753a55.547834 55.547834 0 0 0 19.646526-47.228458 61.243407 61.243407 0 0 0-32.12559-44.156688z"
+                fill="#93b5cf"></path>
+        </svg>
+                                        光溯星河 &copy;Copyright
+                                            <script>
+                                                var date = new Date();
+                                                document.write("" + date.getFullYear());
+                                            </script>
+                                            | Powered by
+                                            <a href="https://github.com/getgridea/gridea" target="_blank">
+                                                Gridea
+                                            </a>
+            </div>
+            <div id="update" style="display:none;">
+                off
+            </div>
+            
+                    <script>
+                        var port = '';
+                        
+                        document.write('<div id="home_path" style="display:none;">' + document.location.protocol + '//' + window.document.location.hostname + port + '</div>')
+                    </script>
+        </footer>
+        
+                <script>
+                    
+                    
+                    
+                    getStar();
+                    hljs.initHighlighting();
+                    console.clear();
+                    
+                    var newDate = new Date();
+                    newDate.setTime(1684825376781);
+                    console.log(" Blog Update Time: " + newDate.toLocaleDateString());
+                    console.log("\n %c \u26a1Theme:Chic Author's Blog:https://blog.itjoker.cn  Write By ITJoker  \n\n", "color: #ffffff; background: rgba(49, 49, 49, 0.85); padding:5px 0;border-radius:5px;");
+                </script>
+        </div>
+</body>
+<script>
+    scroll();
+</script>
+
+</html>

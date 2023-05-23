@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+<title>
+    光溯星河
+</title>
+<!--[if lt IE 9]><script src="//cdn.bootcss.com/html5shiv/r29/html5.js"></script><![endif]-->
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+<meta http-equiv="x-dns-prefetch-control" content="on">
+<link rel="dns-prefetch" href="https://fastly.jsdelivr.net">
+<meta name="author" content="timeStarry">
+<meta name="description" content="博学笃志，切问近思。">
+<meta name="keywords" content="博客,技术,笔记,分享,生活">
+<script async src="//instant.page/3.0.0" type="module" defer integrity="sha384-OeDn4XE77tdHo8pGtE1apMPmAipjoxUQ++eeJa6EtJCfHlvijigWiJpD7VDPWXV1"></script>
+<link rel="stylesheet" href="https://blog.timestarry.asia/styles/main.css" />
+<link href="https://fastly.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script type="text/javascript" src="https://apps.bdimg.com/libs/jquery/1.7.1/jquery.min.js"></script>
+
+        <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/css/style.min.css" />
+        <script src="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/tocbot.min.js"></script>
+        <script src="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/script.min.js"></script>
+        <script src="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/icon.min.js"></script>
+        
+            <script src="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/js/Card/prism.min.js"></script>
+            <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/css/Card/prism.min.css" />
+            <link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.css">
+            <script defer src="https://fastly.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.js"></script>
+            
+                        <!--CDN样式-->
+                        <script src="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/js/hit-kounter-lc-0.3.0.js"></script>
+                        <script src="https://cdn1.lncld.net/static/js/av-min-1.5.0.js"></script>
+                        
+                            <script>
+                                (function() {
+                                    var bp = document.createElement('script');
+                                    var curProtocol = window.location.protocol.split(':')[0];
+                                    if (curProtocol === 'https') {
+                                        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+                                    } else {
+                                        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+                                    }
+                                    var s = document.getElementsByTagName("script")[0];
+                                    s.parentNode.insertBefore(bp, s);
+                                })();
+                            </script>
+                            
+                                    <script type="text/javascript">
+                                        var _hmt = _hmt || [];
+                                        (function() {
+                                            var hm = document.createElement("script");
+                                            hm.src = "https://hm.baidu.com/hm.js?996b348e80ff3bbd39a129200e99bb6e";
+                                            var s = document.getElementsByTagName("script")[0];
+                                            s.parentNode.insertBefore(hm, s);
+                                        })();
+                                    </script>
+                                    
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo">
+                <a href="https://blog.timestarry.asia">
+                    光溯星河
+                </a>
+            </div>
+            <div id="tp-weather-widget"></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/posts">
+                        全部文章
+                    </a>
+                    
+                    <a class="menu-item" href="https://quan.timestarry.asia/">
+                        短文随笔
+                    </a>
+                    
+                    <a class="menu-item" href="/post/log">
+                        日志
+                    </a>
+                    
+                    <a class="menu-item" href="/archives">
+                        归档
+                    </a>
+                    
+                    <a class="menu-item" href="/post/about">
+                        关于
+                    </a>
+                    
+                        <input id="switch_default" type="checkbox" class="switch_default">
+                        <label for="switch_default" class="toggleBtn"></label>
+            </div>
+            <form id="gridea-search-form" data-update="1684825376781" action="/search/index.html">
+                <input class="search-input" autocomplete="off" spellcheck="false" name="q" autofocus="true" placeholder="Search...">
+            </form>
+        </div>
+    </nav>
+
+    
+        <nav class="navbar-mobile" id="nav-mobile">
+            <div class="container">
+                <div class="navbar-header">
+                    <div>
+                        <a href="https://blog.timestarry.asia">
+                            光溯星河
+                        </a>
+                        <!--en-->
+                        <a id="mobile-toggle-theme-en" class="a en">&nbsp;Dark</a>
+                        <!--zh-->
+                        <a id="mobile-toggle-theme-zh" class="a zh">&nbsp;&#x6697;&#x9ED1;</a>
+                    </div>
+                    <form id="gridea-search-form" data-update="1684825376781" action="/search/index.html">
+                        <input class="search-input" autocomplete="off" spellcheck="false" name="q" autofocus="true" placeholder="Search...">
+                    </form>
+                    <!--en-->
+                    <div class="menu-toggle" id="menu-toggle-en" onclick="mobileBtn()">&#9776; Menu</div>
+                    <!--zh-->
+                    <div class="menu-toggle" id="menu-toggle-zh" onclick="mobileBtn()">&#9776; &#x83DC;&#x5355;</div>
+
+                </div>
+                <div class="menu" id="mobile-menu">
+                    
+                        <a class="menu-item" href="/posts">
+                            全部文章
+                        </a>
+                        
+                        <a class="menu-item" href="https://quan.timestarry.asia/">
+                            短文随笔
+                        </a>
+                        
+                        <a class="menu-item" href="/post/log">
+                            日志
+                        </a>
+                        
+                        <a class="menu-item" href="/archives">
+                            归档
+                        </a>
+                        
+                        <a class="menu-item" href="/post/about">
+                            关于
+                        </a>
+                        
+                </div>
+            </div>
+        </nav>
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementById("menu-toggle-en");
+        var toggleMenu_zh = document.getElementById("menu-toggle-zh");
+
+        var mobileMenu = document.getElementById("mobile-menu");
+        if (toggleMenu.display != "none") {
+            if (toggleMenu.classList.contains("active")) {
+                toggleMenu.classList.remove("active")
+                mobileMenu.classList.remove("active")
+            } else {
+                toggleMenu.classList.add("active")
+                mobileMenu.classList.add("active")
+            }
+        } else if (toggleMenu_zh.display != "none") {
+            if (toggleMenu_zh.classList.contains("active")) {
+                toggleMenu_zh.classList.remove("active")
+                mobileMenu.classList.remove("active")
+            } else {
+                toggleMenu_zh.classList.add("active")
+                mobileMenu.classList.add("active")
+            }
+        }
+
+    }
+</script>
+
+            <div class="main">
+                <div class="container">
+                    <article class="post-wrap">
+                        <header class="post-header">
+                            <h1 class="post-title">
+                                【Python学习笔记】基础之一：基本语法
+                            </h1>
+                            
+                                    <!--zh-->
+                                    <div class="post-meta zh">
+                                        &#x4F5C;&#x8005;:
+                                        <a itemprop="author" rel="author" href="/">
+                                            光溯星河
+                                        </a>
+                                        <span class="post-time">&#x65E5;&#x671F;: <a href="#">2023-02-09</a></span>
+                                        <span class="post-readtime">&#x9605;&#x8BFB;&#x65F6;&#x95F4;:<a
+                                    href="#">10.5
+                                    &#x5206;&#x949F;</a></span>
+                                        <span class="post-words">&#x5B57;&#x6570;:<a href="#">2495</a></span>
+                                        
+                                            <span class="post-category">&#x5206;&#x7C7B;:
+                                
+                                <a href="https://blog.timestarry.asia/tag/TypeTechnology/">分类：技术博客</a>
+                                
+                                <a href="https://blog.timestarry.asia/tag/hdAczE2dL/">语言学习</a>
+                                
+                                <a href="https://blog.timestarry.asia/tag/ClassTechnology/">大类标签：技术</a>
+                                
+                                <a href="https://blog.timestarry.asia/tag/JlNlm4wvp/">Python</a>
+                                
+                                <a href="https://blog.timestarry.asia/tag/FCZ45eLdHr/">笔记</a>
+                                
+                            </span>
+                                            
+                                                阅读量:
+                                                <span data-hk-page="current"> - </span>
+                                                
+                                    </div>
+                                    
+                        </header>
+                        
+                            <img class="post-feature-image" src="https://blog.timestarry.asia/post-images/qSqgD4UC2.png" alt="">
+                          
+                        <div class="post-content">
+                            <p>本文为Python学习笔记系列第一篇，仅列出我在Python基础知识学习过程中，遇到的以往学习语言不同之处或其它值得注意的地方。如有缺漏还请原谅。<br>
+文中标记⭐的内容是我认为比较重要或需要多加理解的地方。</p>
+<!-- more -->
+<h1 id="算术运算符">算术运算符</h1>
+<p><strong>整除</strong>（//）在Python中，可以用//符号进行整除（向上取整）：</p>
+<pre><code class="language-python">print(5/2)  # 输出2.5
+print(5//2)  # 输出2
+</code></pre>
+<h1 id="逻辑语句">逻辑语句</h1>
+<h2 id="判断语句">判断语句</h2>
+<p>if……elif……else</p>
+<pre><code class="language-python">a = 5
+if a &gt; 0:
+    print('+')
+elif a &lt; 0:
+    print('-')
+else:
+    print('0')
+</code></pre>
+<h2 id="循环语句">循环语句</h2>
+<h3 id="forin">for...in</h3>
+<pre><code class="language-python">for item in (0, 1, 2, 3, 4):
+    print(item)
+    
+for item in range(0, 5):  # [0, 5)
+    print(item)
+</code></pre>
+<p><strong>💕tip: Python中若无特殊说明，范围一般都是左闭右开的</strong></p>
+<h3 id="while">while</h3>
+<p>continue 提前结束本次循环，直接开始下一次循环</p>
+<p>break 退出循环（<strong>break仅可退出本层循环</strong>）</p>
+<pre><code class="language-python"># 打印10以内的奇数
+n = 0
+while n &lt; 10:
+    n += 1
+    if n % 2 == 0:
+        continue
+    print(n)
+</code></pre>
+<p><strong>💕tip: Python中没有switch语句</strong></p>
+<h1 id="数据类型">数据类型</h1>
+<p>Python中的数据类型分为两大类：<strong>数字类型</strong>和<strong>序列类型</strong>。</p>
+<h2 id="数字类型">数字类型</h2>
+<p>数字类型的值可以用于数学运算，包括<strong>整数类型（int）</strong>、<strong>浮点型（float）<strong>和</strong>布尔类型（bool）</strong>，没太多可说的。</p>
+<p>不过有一点和其他语言差异较大的是，<strong>Python中的数字是无限长的</strong>，至于它的实现原理，参考这个：</p>
+<blockquote>
+<p>是因为 Python 使用了可变长度的二进制补码来存储整数和浮点数，并且在执行运算时可以自动扩展存储空间。这与其他语言（如 C/C++）不同，在这些语言中整数和浮点数的存储长度是固定的，如果数值超出了存储长度的限制，就会产生溢出或舍入误差。需要注意的是,在 python 中,小数的精度是有限的。这是因为python中的浮点数都是用二进制表示的,<strong>而二进制有时无法精确的表示十进制的小数,所以可能会出现精度丢失的问题</strong>。</p>
+<p>——chatGPT</p>
+</blockquote>
+<h2 id="序列类型">序列类型</h2>
+<p>重点来说序列类型。Python中的序列类型包括<strong>字符串（str）</strong>、<strong>列表（list）</strong>、<strong>元组（tuple）</strong>，下面来分别说说它们各自的特点，注意本部分的最后一小节，序列类型的共同特点。</p>
+<h3 id="字符串str">字符串（str）</h3>
+<h4 id="字符串的格式化">字符串的格式化</h4>
+<p>在Python中有好几种字符串格式化方法，常用的如下：</p>
+<pre><code class="language-python"># 1.%格式化字符串
+print(&quot;hello,%s&quot; % name)
+# 2.使用{}和format()函数
+print(&quot;hello,{}&quot;.format(name))
+# 3.f-strings，格式化字符串文字，是Python3.6及其以上版本提供的新语法
+print(f&quot;hello, {name}&quot;)
+</code></pre>
+<p><strong>💕tip: Python中的单双引号含义是相同的</strong></p>
+<h4 id="字符串常用内容">字符串常用内容</h4>
+<ul>
+<li>支持多种变量与字符串拼接</li>
+</ul>
+<pre><code class="language-python">a = &quot;hello&quot;
+print(&quot;Python {} World&quot;.format(a))
+print(&quot;Python&quot; + a + &quot;World&quot;)
+</code></pre>
+<ul>
+<li>取消转义(r&quot;...&quot;)</li>
+</ul>
+<pre><code class="language-python">print(r&quot;D:\test.txt&quot;)
+</code></pre>
+<ul>
+<li>常用方法</li>
+</ul>
+<pre><code class="language-python">a = &quot;Hello world&quot;
+print(a.split())  # 将字符串拆分为列表，输出[&quot;Hello&quot;, &quot;world&quot;]
+print(a.split(&quot;l&quot;))  # 将字符串按&quot;l&quot;拆分为列表，输出[&quot;He&quot;, &quot;&quot;, &quot;o&quot;, &quot;wor&quot;, &quot;d&quot;]
+print(&quot;-&quot;.join(a))  # 将字符串 &quot;-&quot; 作为分隔符，将 a 中的字符连接起来，输出 H-e-l-l-o- -w-o-r-l-d
+
+# 查找字符串，find(str, 开始位置, 结束位置)
+print(a.find(&quot;lo&quot;))  # 输出3
+print(a.find(&quot;l&quot;, 1, 5))  # 输出2
+
+# 字符是否均为数字
+print(&quot;123&quot;.isdigit())
+# 字符是否均为字母
+print(&quot;abc&quot;.isalpha())
+
+# 大小写验证/转换
+print(&quot;abc&quot;.islower())
+print(&quot;abc&quot;.upper)
+
+# 替换字符串，第三个参数代表替换前n个
+print(a.replace(&quot;1&quot;, &quot;n&quot;, 1))
+</code></pre>
+<h3 id="列表list">列表（list）</h3>
+<p>列表和其他语言有相似之处（但不多）。用<strong>方括号</strong>括起来：</p>
+<pre><code class="language-python">[1, 2, 3, 4, 5]
+[1， True, &quot;hello&quot;, ['w', 3]] # 列表中支持多种类型
+</code></pre>
+<p>💕tip: 列表的索引可以为负数，-1代表最后一位，<strong>索引的范围为-n ~ n-1</strong>.例如<code>list1[-1]</code></p>
+<h4 id="添加-插入-删除">添加、插入、删除</h4>
+<pre><code class="language-python">list1 = [1, 5, 8, 7]
+list1.append(4)  # 末尾添加4
+list1.insert(2, 'a')  # 在索引为2处添加'a'
+list1.pop() # 删除末尾，加索引则删除索引处
+</code></pre>
+<h4 id="遍历列表">遍历列表</h4>
+<pre><code class="language-python">list1 =[1, 2, 9, 6]
+for item in list1:
+    print(item)
+
+# 循环时获取下标
+for i, item in enumerate(list1):
+    print(i, item)
+</code></pre>
+<h4 id="排序-逆序-反向">排序、逆序、反向</h4>
+<pre><code class="language-python">list1 =[1, 2, 9, 6]
+list1.sort() # 正序
+list1.sort(reverse=True) # 逆序
+list1.reverse() # 反向
+</code></pre>
+<h4 id="列表复制涉及深浅拷贝问题">⭐列表复制（涉及深浅拷贝问题）</h4>
+<pre><code class="language-python">list1 = [1, 3, 6, 8, 5, [2, 3]]
+# 直接赋值：对象引用
+list2 = list1
+print(list2)
+list1[1] = 0
+print(list2)
+
+# 浅拷贝：拷贝对象，不拷贝对象内部的子对象
+list2 = list1.copy()
+print(list2)
+list1[1] = 0
+print(list2)    # list2的输出不随list1改变
+list1[5][0] = 0
+print(list2)    # list2的输出改变：子对象不会被拷贝
+
+# 深拷贝：完全拷贝对象及其子对象
+list3 = copy.deepcopy(list1)
+print(list3)
+list1[5][0] = 10
+print(list1)
+print(list3) # list3的输出不随list1改变
+</code></pre>
+<h3 id="元组tuple">元组（tuple）</h3>
+<p>元组和列表比较相似，但是元组一旦创建就不可再更改其中的元素。用<strong>括号</strong>括起来：</p>
+<pre><code class="language-python">(1, 2, 3, 4, 5)
+</code></pre>
+<p>那么问题来了，下面这个例子会输出些什么呢？（本例为元组的元素值替换问题）</p>
+<pre><code class="language-python"># 1
+tuple1 =(1, 5)
+tuple[0] = 0
+print(tuple1)
+# 2
+tuple2 = (1, 5, [2, 4])
+tuple2[2][0] = 1
+print(tuple2)
+tuple2[2] = [6, 8]
+print(tuple2)
+</code></pre>
+<p>答案如下</p>
+<pre><code class="language-python"># 1
+(1, 5)
+# 2
+(1, 5, [1, 4]) # 可以修改元组包含的子对象
+(1, 5, [1, 4]) # 而不能修改选组的元素
+</code></pre>
+<p>💕tip: 对于元组包含的子对象如列表，字典等 可以进行修改, 而不能修改元组的元素</p>
+<h3 id="共同特性及函数">⭐共同特性及函数</h3>
+<h4 id="共同特点">共同特点</h4>
+<ul>
+<li>
+<p>可以通过索引访问元素：可以使用索引下标访问序列中的元素。</p>
+</li>
+<li>
+<p>可以切片：可以使用切片语法获取序列的一段元素。</p>
+</li>
+<li>
+<p>支持连接和重复：可以使用加号（+）连接两个序列，使用乘号（*）重复一个序列。</p>
+</li>
+<li>
+<p>元素类型可以不同：序列中的元素类型可以不同。</p>
+</li>
+<li>
+<p>不可修改：字符串和字节串是不可变的，列表和元组是可变的。</p>
+</li>
+</ul>
+<h4 id="序列函数">序列函数</h4>
+<p><code>len()</code> 长度</p>
+<p><code>'c' in str</code>  判断元素'c'是否在str序列中</p>
+<p><code>max() min() </code>最大值 最小值</p>
+<p><code>count()</code> 元素出现次数</p>
+<p><code>index(x,i,j)</code> 查找指定元素的索引（第一个），i和j分别代表查找的索引范围</p>
+<h2 id="字典和集合">字典和集合</h2>
+<h3 id="字典dict">字典（dict）</h3>
+<p>映射类型：<code>{key:value}</code></p>
+<pre><code class="language-python">dict1 = {
+    &quot;name&quot;:&quot;Li&quot;,
+    &quot;age&quot;:&quot;20&quot;,
+    &quot;family_info&quot;:{
+        &quot;address&quot;:&quot;beijing&quot;
+    },
+    &quot;list1&quot;:[1, 2],
+    (1, 2):&quot;turple&quot;  # key是不可变类型
+}
+</code></pre>
+<h4 id="获取字典中的元素">获取字典中的元素</h4>
+<ol>
+<li>通过key</li>
+</ol>
+<pre><code class="language-python">print(dict1[&quot;name&quot;], dict1[&quot;age&quot;])
+dict1[&quot;age&quot;] = 18
+</code></pre>
+<ol start="2">
+<li>通过get()方法</li>
+</ol>
+<p>如果没有对应值，会输出None，不会报错，可在后附加默认值</p>
+<pre><code class="language-python">print(dict1.get(&quot;name&quot;))
+print(dict1.get(&quot;name&quot;, &quot;jack&quot;))
+</code></pre>
+<h4 id="遍历字典">遍历字典</h4>
+<pre><code class="language-python">for k in dict2:
+    print(k)
+    
+for k, v in dict2.items():
+    print(k, &quot;:&quot;, v)
+    
+print(dict1.keys())
+print(dict1.values())
+</code></pre>
+<h4 id="赋值-添加-删除-更新">赋值、添加、删除、更新</h4>
+<pre><code class="language-python">print(dict1[&quot;name&quot;], dict1[&quot;age&quot;])
+dict1[&quot;age&quot;] = 18 #赋值
+dict1[&quot;weight&quot;] = 120 #添加
+dict1.pop(&quot;weight&quot;) #删除
+del dict1[&quot;weight&quot;] #删除
+dict1.update({&quot;age&quot;:20, &quot;weight&quot;:120}) #更新
+</code></pre>
+<h4 id="字典和json">字典和JSON</h4>
+<p>二者均由键值对构成，格式上略有差别，掌握二者的转换对实际应用有很大帮助：</p>
+<pre><code class="language-python">import json
+
+# 将字典转换为JSON
+person = {
+    &quot;name&quot;: &quot;John Doe&quot;,
+    &quot;age&quot;: 30,
+    &quot;city&quot;: &quot;New York&quot;
+}
+
+person_json = json.dumps(person)
+print(person_json)
+
+# 将JSON转换为字典
+person = json.loads(person_json)
+print(person)
+</code></pre>
+<p>💕tip: [JSON（JavaScript Object Notation）](<a href="https://www.runoob.com/json/json-tutorial.html">JSON 教程 | 菜鸟教程 (runoob.com)</a>)是一种轻量级的数据交换格式。它的语法基于JavaScript对象的语法，但是它被许多语言支持，包括Python。</p>
+<h3 id="集合set">集合（set）</h3>
+<p>一组key的集合，但集合中的元素都是唯一的，互不相同。</p>
+<pre><code class="language-python">set1 = {&quot;name&quot;, &quot;height&quot;, &quot;height&quot;}
+print(set1)  #将输出{&quot;name&quot;, &quot;height&quot;}
+</code></pre>
+<h1 id="推导式">⭐推导式</h1>
+<blockquote>
+<p>推导式（comprehension）在内存中的工作是通过对一个已知序列的元素进行简单的操作（例如过滤，转换），创建一个新的序列。</p>
+<p>推导式的优点在于代码简洁，并且有效地利用了内存，因为它不需要在内存中创建一个临时的列表或元组，而是在每一步生成新的元素。</p>
+<p>在运行时，推导式会通过迭代对序列中的每个元素进行简单的操作，并在每一步生成新的元素。当推导式结束后，它返回产生的新的序列，并将它保存在内存中。</p>
+<p>总而言之，推导式是一种高效的方法，可以用于从已知序列中生成新的序列，并在内存上利用了更少的空间。</p>
+<p>——chatGPT</p>
+</blockquote>
+<h2 id="列表推导式">列表推导式</h2>
+<p><code>[expression for item in iterable if condition]</code></p>
+<p>在一个列表的基础上用一个简单的语句创建一个新的列表：</p>
+<pre><code class="language-python">numbers = [1, 2, 3, 4, 5]
+squared_numbers = [n**2 for n in numbers]
+print(squared_numbers)
+# 输出：[1, 4, 9, 16, 25]
+
+# list2 里的每个元素是list1中每奇数个元素的2倍
+list1 = [1, 5, 8, 7]
+list2 = [item * 2 if item % 2 == 1 else item // 2 for item in list1]
+</code></pre>
+<h2 id="字典推导式">字典推导式</h2>
+<pre><code class="language-python"># 字典推导式
+name_age = {'Alice': 23, 'Bob': 25, 'Charlie': 27}
+age_name = {age: name for name, age in name_age.items()}
+print(age_name)
+# 输出：{23: 'Alice', 25: 'Bob', 27: 'Charlie'}
+</code></pre>
+<h2 id="元组推导式">元组推导式</h2>
+<p>如果利用列表推导式生成的列表中元素很多，而只是用前面几个元素会浪费大量的内存控件。</p>
+<p>生成器可以边循环边生成元素，生成器表达式的优势在于它仅在需要时生成元素。</p>
+<pre><code class="language-python">tuple1 = [1, 5, 8, 7]
+
+tuple2 = (item * 2 for item in tuple1)
+print(next(tuple2))
+print(next(tuple2))
+print(next(tuple2))
+print(next(tuple2))
+print(next(tuple2))
+# next 到没有元素会报错，可用for循环
+for item in tuple2:
+    print(item)
+</code></pre>
+
+                        </div>
+                        
+                            <div class="post-toc">
+                                <ul class="markdownIt-TOC">
+<li><a href="#%E7%AE%97%E6%9C%AF%E8%BF%90%E7%AE%97%E7%AC%A6">算术运算符</a></li>
+<li><a href="#%E9%80%BB%E8%BE%91%E8%AF%AD%E5%8F%A5">逻辑语句</a>
+<ul>
+<li><a href="#%E5%88%A4%E6%96%AD%E8%AF%AD%E5%8F%A5">判断语句</a></li>
+<li><a href="#%E5%BE%AA%E7%8E%AF%E8%AF%AD%E5%8F%A5">循环语句</a>
+<ul>
+<li><a href="#forin">for...in</a></li>
+<li><a href="#while">while</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B">数据类型</a>
+<ul>
+<li><a href="#%E6%95%B0%E5%AD%97%E7%B1%BB%E5%9E%8B">数字类型</a></li>
+<li><a href="#%E5%BA%8F%E5%88%97%E7%B1%BB%E5%9E%8B">序列类型</a>
+<ul>
+<li><a href="#%E5%AD%97%E7%AC%A6%E4%B8%B2str">字符串（str）</a>
+<ul>
+<li><a href="#%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%9A%84%E6%A0%BC%E5%BC%8F%E5%8C%96">字符串的格式化</a></li>
+<li><a href="#%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%B8%B8%E7%94%A8%E5%86%85%E5%AE%B9">字符串常用内容</a></li>
+</ul>
+</li>
+<li><a href="#%E5%88%97%E8%A1%A8list">列表（list）</a>
+<ul>
+<li><a href="#%E6%B7%BB%E5%8A%A0-%E6%8F%92%E5%85%A5-%E5%88%A0%E9%99%A4">添加、插入、删除</a></li>
+<li><a href="#%E9%81%8D%E5%8E%86%E5%88%97%E8%A1%A8">遍历列表</a></li>
+<li><a href="#%E6%8E%92%E5%BA%8F-%E9%80%86%E5%BA%8F-%E5%8F%8D%E5%90%91">排序、逆序、反向</a></li>
+<li><a href="#%E5%88%97%E8%A1%A8%E5%A4%8D%E5%88%B6%E6%B6%89%E5%8F%8A%E6%B7%B1%E6%B5%85%E6%8B%B7%E8%B4%9D%E9%97%AE%E9%A2%98">⭐列表复制（涉及深浅拷贝问题）</a></li>
+</ul>
+</li>
+<li><a href="#%E5%85%83%E7%BB%84tuple">元组（tuple）</a></li>
+<li><a href="#%E5%85%B1%E5%90%8C%E7%89%B9%E6%80%A7%E5%8F%8A%E5%87%BD%E6%95%B0">⭐共同特性及函数</a>
+<ul>
+<li><a href="#%E5%85%B1%E5%90%8C%E7%89%B9%E7%82%B9">共同特点</a></li>
+<li><a href="#%E5%BA%8F%E5%88%97%E5%87%BD%E6%95%B0">序列函数</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#%E5%AD%97%E5%85%B8%E5%92%8C%E9%9B%86%E5%90%88">字典和集合</a>
+<ul>
+<li><a href="#%E5%AD%97%E5%85%B8dict">字典（dict）</a>
+<ul>
+<li><a href="#%E8%8E%B7%E5%8F%96%E5%AD%97%E5%85%B8%E4%B8%AD%E7%9A%84%E5%85%83%E7%B4%A0">获取字典中的元素</a></li>
+<li><a href="#%E9%81%8D%E5%8E%86%E5%AD%97%E5%85%B8">遍历字典</a></li>
+<li><a href="#%E8%B5%8B%E5%80%BC-%E6%B7%BB%E5%8A%A0-%E5%88%A0%E9%99%A4-%E6%9B%B4%E6%96%B0">赋值、添加、删除、更新</a></li>
+<li><a href="#%E5%AD%97%E5%85%B8%E5%92%8Cjson">字典和JSON</a></li>
+</ul>
+</li>
+<li><a href="#%E9%9B%86%E5%90%88set">集合（set）</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#%E6%8E%A8%E5%AF%BC%E5%BC%8F">⭐推导式</a>
+<ul>
+<li><a href="#%E5%88%97%E8%A1%A8%E6%8E%A8%E5%AF%BC%E5%BC%8F">列表推导式</a></li>
+<li><a href="#%E5%AD%97%E5%85%B8%E6%8E%A8%E5%AF%BC%E5%BC%8F">字典推导式</a></li>
+<li><a href="#%E5%85%83%E7%BB%84%E6%8E%A8%E5%AF%BC%E5%BC%8F">元组推导式</a></li>
+</ul>
+</li>
+</ul>
+
+                            </div>
+                            
+                                
+                                                    
+                                                                    <!--Share-->
+                                                                    <span style="margin-right:15px">
+                        <i class="post-share"></i>
+                        <span>&#x5206;&#x4EAB;:</span>
+                                                                    <a title="QR 码" target="_blank" href="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://blog.timestarry.asia/post/qSqgD4UC2/"><i class="fa fa-qrcode"></i></a>
+                                                                    <a title="QQ" target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://blog.timestarry.asia/post/qSqgD4UC2/&sharesource=qzone&title=【Python学习笔记】基础之一：基本语法&pics=https://blog.timestarry.asia/images/avatar.png?v=1684825376781&summary=&lt;p&gt;本文为Python学习笔记系列第一篇，仅列出我在Python基础知识学习过程中，遇到的以往学习语言不同之处或其它值得注意的地方。如有缺漏还请原谅。&lt;br&gt;
+文中标记⭐的内容是我认为比较重要或需要多加理解的地方。&lt;/p&gt;
+"><i class="fa fa-qq"></i></a>
+                                                                    <a title="新浪微博" target="_blank" href="https://service.weibo.com/share/share.php?url=https://blog.timestarry.asia/post/qSqgD4UC2/&sharesource=weibo&title=【Python学习笔记】基础之一：基本语法 + " - " + &lt;p&gt;本文为Python学习笔记系列第一篇，仅列出我在Python基础知识学习过程中，遇到的以往学习语言不同之处或其它值得注意的地方。如有缺漏还请原谅。&lt;br&gt;
+文中标记⭐的内容是我认为比较重要或需要多加理解的地方。&lt;/p&gt;
+&pic="https://blog.timestarry.asia/images/avatar.png?v=1684825376781 "><i class="fa fa-weibo "></i></a>
+
+                                                                    </span>
+                                                                    
+                                                                            <!--zh-->
+                                                                            <section class="post-tags zh ">
+                                                                                <div>
+                                                                                    <span>&#x6807;&#x7B7E;:</span>
+                                                                                    <span class="tag ">
+                        
+                        
+                        <a href="https://blog.timestarry.asia/tag/TypeTechnology/">#
+                    分类：技术博客
+                        </a>
+                        
+                        <a href="https://blog.timestarry.asia/tag/hdAczE2dL/">#
+                    语言学习
+                        </a>
+                        
+                        <a href="https://blog.timestarry.asia/tag/ClassTechnology/">#
+                    大类标签：技术
+                        </a>
+                        
+                        <a href="https://blog.timestarry.asia/tag/JlNlm4wvp/">#
+                    Python
+                        </a>
+                        
+                        <a href="https://blog.timestarry.asia/tag/FCZ45eLdHr/">#
+                    笔记
+                        </a>
+                        
+                            
+                                </span>
+                                                                                </div>
+                                                                                <div>
+                                                                                    <a href="javascript:window.history.back();">
+                        &#x8FD4;&#x56DE;</a>
+                                                                                    <span>&dot;</span>
+                                                                                    <a href="#">&#x4E3B;&#x9875;</a>
+                                                                                </div>
+                                                                            </section>
+
+                                                                            
+                                                                                <!---->
+                                                                                <section class="post-nav">
+                                                                                    
+                                                                                        <a class="prev" rel="prev" href="https://blog.timestarry.asia/post/Yu_NAeyhn/">
+                                                                                            【Python学习笔记】基础之二：函数
+                                                                                        </a>
+                                                                                        
+                                                                                            
+                                                                                                <a class="next" rel="next" href="https://blog.timestarry.asia/post/ChineseNewYear2023/">
+                                                                                                    癸卯兔年|2023年新年的一点点小想法
+                                                                                                </a>
+                                                                                                
+                                                                                </section>
+                    </article>
+                </div>
+                
+                                            
+            </div>
+    </div>
+    </div>
+    </div>
+    
+        <footer id="footer" class="footer">
+            <div class="copyright">
+                
+                        <p>
+<a href="https://beian.miit.gov.cn">蜀ICP备2023002327号</a>
+</p>
+                            
+                                        <svg viewBox="0 0 1024 1024" style="margin-left: 5px;margin-right: 5px;" version="1.0" width="8" height="8" class="my-face">
+            <path
+                d="M863.597631 513.574282l-271.33965-140.213484L729.783667 81.926656c3.583731-7.87141 7.167462-15.742819 7.167462-25.214109C736.887134 25.226908 708.345275 0.012799 672.635953 0.012799a63.611229 63.611229 0 0 0-39.293053 12.607055c-1.791866 1.59988-3.519736 3.19976-5.311602 3.19976L147.87531 418.925381a55.547834 55.547834 0 0 0-19.646527 47.356448c1.791866 17.278704 14.27093 33.021523 32.125591 42.492813l271.33965 141.749369L292.504463 945.221908c-12.479064 25.214109-1.791866 53.563983 23.166262 69.306802 10.751194 6.335525 23.230258 9.47129 35.709322 9.47129 16.062795 0 32.125591-4.735645 44.604655-15.742819l480.091993-403.297753a55.547834 55.547834 0 0 0 19.646526-47.228458 61.243407 61.243407 0 0 0-32.12559-44.156688z"
+                fill="#93b5cf"></path>
+        </svg>
+                                        光溯星河 &copy;Copyright
+                                            <script>
+                                                var date = new Date();
+                                                document.write("" + date.getFullYear());
+                                            </script>
+                                            | Powered by
+                                            <a href="https://github.com/getgridea/gridea" target="_blank">
+                                                Gridea
+                                            </a>
+            </div>
+            <div id="update" style="display:none;">
+                off
+            </div>
+            
+                    <script>
+                        var port = '';
+                        
+                        document.write('<div id="home_path" style="display:none;">' + document.location.protocol + '//' + window.document.location.hostname + port + '</div>')
+                    </script>
+        </footer>
+        
+                <script>
+                    
+                    
+                    
+                    getStar();
+                    hljs.initHighlighting();
+                    console.clear();
+                    
+                    var newDate = new Date();
+                    newDate.setTime(1684825376781);
+                    console.log(" Blog Update Time: " + newDate.toLocaleDateString());
+                    console.log("\n %c \u26a1Theme:Chic Author's Blog:https://blog.itjoker.cn  Write By ITJoker  \n\n", "color: #ffffff; background: rgba(49, 49, 49, 0.85); padding:5px 0;border-radius:5px;");
+                </script>
+        </div>
+</body>
+<script>
+    scroll();
+</script>
+
+</html>

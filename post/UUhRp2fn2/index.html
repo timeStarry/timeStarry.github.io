@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+<title>
+    光溯星河
+</title>
+<!--[if lt IE 9]><script src="//cdn.bootcss.com/html5shiv/r29/html5.js"></script><![endif]-->
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+<meta http-equiv="x-dns-prefetch-control" content="on">
+<link rel="dns-prefetch" href="https://fastly.jsdelivr.net">
+<meta name="author" content="timeStarry">
+<meta name="description" content="博学笃志，切问近思。">
+<meta name="keywords" content="博客,技术,笔记,分享,生活">
+<script async src="//instant.page/3.0.0" type="module" defer integrity="sha384-OeDn4XE77tdHo8pGtE1apMPmAipjoxUQ++eeJa6EtJCfHlvijigWiJpD7VDPWXV1"></script>
+<link rel="stylesheet" href="https://blog.timestarry.asia/styles/main.css" />
+<link href="https://fastly.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script type="text/javascript" src="https://apps.bdimg.com/libs/jquery/1.7.1/jquery.min.js"></script>
+
+        <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/css/style.min.css" />
+        <script src="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/tocbot.min.js"></script>
+        <script src="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/script.min.js"></script>
+        <script src="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/icon.min.js"></script>
+        
+            <script src="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/js/Card/prism.min.js"></script>
+            <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/css/Card/prism.min.css" />
+            <link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.css">
+            <script defer src="https://fastly.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.js"></script>
+            
+                        <!--CDN样式-->
+                        <script src="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/js/hit-kounter-lc-0.3.0.js"></script>
+                        <script src="https://cdn1.lncld.net/static/js/av-min-1.5.0.js"></script>
+                        
+                            <script>
+                                (function() {
+                                    var bp = document.createElement('script');
+                                    var curProtocol = window.location.protocol.split(':')[0];
+                                    if (curProtocol === 'https') {
+                                        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+                                    } else {
+                                        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+                                    }
+                                    var s = document.getElementsByTagName("script")[0];
+                                    s.parentNode.insertBefore(bp, s);
+                                })();
+                            </script>
+                            
+                                    <script type="text/javascript">
+                                        var _hmt = _hmt || [];
+                                        (function() {
+                                            var hm = document.createElement("script");
+                                            hm.src = "https://hm.baidu.com/hm.js?996b348e80ff3bbd39a129200e99bb6e";
+                                            var s = document.getElementsByTagName("script")[0];
+                                            s.parentNode.insertBefore(hm, s);
+                                        })();
+                                    </script>
+                                    
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo">
+                <a href="https://blog.timestarry.asia">
+                    光溯星河
+                </a>
+            </div>
+            <div id="tp-weather-widget"></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/posts">
+                        全部文章
+                    </a>
+                    
+                    <a class="menu-item" href="https://quan.timestarry.asia/">
+                        短文随笔
+                    </a>
+                    
+                    <a class="menu-item" href="/post/log">
+                        日志
+                    </a>
+                    
+                    <a class="menu-item" href="/archives">
+                        归档
+                    </a>
+                    
+                    <a class="menu-item" href="/post/about">
+                        关于
+                    </a>
+                    
+                        <input id="switch_default" type="checkbox" class="switch_default">
+                        <label for="switch_default" class="toggleBtn"></label>
+            </div>
+            <form id="gridea-search-form" data-update="1684825376781" action="/search/index.html">
+                <input class="search-input" autocomplete="off" spellcheck="false" name="q" autofocus="true" placeholder="Search...">
+            </form>
+        </div>
+    </nav>
+
+    
+        <nav class="navbar-mobile" id="nav-mobile">
+            <div class="container">
+                <div class="navbar-header">
+                    <div>
+                        <a href="https://blog.timestarry.asia">
+                            光溯星河
+                        </a>
+                        <!--en-->
+                        <a id="mobile-toggle-theme-en" class="a en">&nbsp;Dark</a>
+                        <!--zh-->
+                        <a id="mobile-toggle-theme-zh" class="a zh">&nbsp;&#x6697;&#x9ED1;</a>
+                    </div>
+                    <form id="gridea-search-form" data-update="1684825376781" action="/search/index.html">
+                        <input class="search-input" autocomplete="off" spellcheck="false" name="q" autofocus="true" placeholder="Search...">
+                    </form>
+                    <!--en-->
+                    <div class="menu-toggle" id="menu-toggle-en" onclick="mobileBtn()">&#9776; Menu</div>
+                    <!--zh-->
+                    <div class="menu-toggle" id="menu-toggle-zh" onclick="mobileBtn()">&#9776; &#x83DC;&#x5355;</div>
+
+                </div>
+                <div class="menu" id="mobile-menu">
+                    
+                        <a class="menu-item" href="/posts">
+                            全部文章
+                        </a>
+                        
+                        <a class="menu-item" href="https://quan.timestarry.asia/">
+                            短文随笔
+                        </a>
+                        
+                        <a class="menu-item" href="/post/log">
+                            日志
+                        </a>
+                        
+                        <a class="menu-item" href="/archives">
+                            归档
+                        </a>
+                        
+                        <a class="menu-item" href="/post/about">
+                            关于
+                        </a>
+                        
+                </div>
+            </div>
+        </nav>
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementById("menu-toggle-en");
+        var toggleMenu_zh = document.getElementById("menu-toggle-zh");
+
+        var mobileMenu = document.getElementById("mobile-menu");
+        if (toggleMenu.display != "none") {
+            if (toggleMenu.classList.contains("active")) {
+                toggleMenu.classList.remove("active")
+                mobileMenu.classList.remove("active")
+            } else {
+                toggleMenu.classList.add("active")
+                mobileMenu.classList.add("active")
+            }
+        } else if (toggleMenu_zh.display != "none") {
+            if (toggleMenu_zh.classList.contains("active")) {
+                toggleMenu_zh.classList.remove("active")
+                mobileMenu.classList.remove("active")
+            } else {
+                toggleMenu_zh.classList.add("active")
+                mobileMenu.classList.add("active")
+            }
+        }
+
+    }
+</script>
+
+            <div class="main">
+                <div class="container">
+                    <article class="post-wrap">
+                        <header class="post-header">
+                            <h1 class="post-title">
+                                【折腾】白嫖5T的OneDrive空间|Mircosoft 365开发人员计划
+                            </h1>
+                            
+                                    <!--zh-->
+                                    <div class="post-meta zh">
+                                        &#x4F5C;&#x8005;:
+                                        <a itemprop="author" rel="author" href="/">
+                                            光溯星河
+                                        </a>
+                                        <span class="post-time">&#x65E5;&#x671F;: <a href="#">2023-02-16</a></span>
+                                        <span class="post-readtime">&#x9605;&#x8BFB;&#x65F6;&#x95F4;:<a
+                                    href="#">3.2
+                                    &#x5206;&#x949F;</a></span>
+                                        <span class="post-words">&#x5B57;&#x6570;:<a href="#">902</a></span>
+                                        
+                                            <span class="post-category">&#x5206;&#x7C7B;:
+                                
+                                <a href="https://blog.timestarry.asia/tag/TypeTechnology/">分类：技术博客</a>
+                                
+                                <a href="https://blog.timestarry.asia/tag/WYBntCH2Q/">折腾</a>
+                                
+                                <a href="https://blog.timestarry.asia/tag/CMNxjHYTOH/">OneDrive</a>
+                                
+                            </span>
+                                            
+                                                阅读量:
+                                                <span data-hk-page="current"> - </span>
+                                                
+                                    </div>
+                                    
+                        </header>
+                        
+                            <img class="post-feature-image" src="https://cloud.timestarry.asia/GrideaCover/OneDrive.png" alt="">
+                          
+                        <div class="post-content">
+                            <p>在听说了申请开发者计划可以直接获得OneDrive 5T的空间时，我立马跑去申请了开发者账户。这玩意还真好是折腾，从注册到使用，处处都是问题，浪费了不少时间，现在把踩过的坑都写一写。</p>
+<!-- more -->
+<p>虽然国内的同学们不是很喜欢OneDrive，但不得不说白嫖5T的空间，加上Windows原生的自动同步，谁不爱呢，在挂载到AList上，更是极为方便的。</p>
+<p>**特别提示：**拥有5T空间的不是你的个人账户，而是你申请后得到的开发者账户。</p>
+<h1 id="注册开发者账户">注册开发者账户</h1>
+<p>访问<a href="https://developer.microsoft.com/zh-cn/microsoft-365">Microsoft 365开发人员中心</a>，选择<strong>开发人员计划</strong>-&gt;<strong>立即加入</strong>。然后配置<strong>E5计划</strong>.</p>
+<p>注意<strong>全程关闭代理</strong>，微软的很多服务开了代理反而不能访问。然后配置有关信息，用手机号接收验证码即可。</p>
+<p>这里最大的坑就是我当时挂着New Bing，开着代理，发送验证码死活报错，一直超时，关了代理瞬间好了。</p>
+<p>完成注册后，会获得一个<strong>组织账户邮箱</strong>，我直接使用它默认分配的邮箱域名，懒得自己匹配了，毕竟我就是直接盯着OneDrive的5T空间来的，不想搞那些乱七八糟的。重点是记住这个邮箱，它就是拥有5T空间的账户。</p>
+<figure data-type="image" tabindex="1"><img src="https://cloud.timestarry.asia/Gridea%E5%8D%9A%E5%AE%A2%E5%9B%BE%E7%89%87/image-20230216095809106.png" alt="image-20230216095809106" loading="lazy"></figure>
+<p>接下来，从这个地方转到订阅。</p>
+<p>**注意：**此账户仅有90天时间，到期前需要按指引完成开发者续订，据目前了解，仅需要保持活跃开发即可，到续期时，再写文章讲。</p>
+<h1 id="配置onedrive容量为5t">配置OneDrive容量为5T</h1>
+<p>注册完成后，默认可用的OneDrive容量为1T，可以在管理菜单中自行配置至5T.</p>
+<p>进入<a href="https://admin.sharepoint.com/">SharePoint管理中心</a>，点击左侧菜单栏中的设置，选择OneDrive储存限制项，配置空间.</p>
+<figure data-type="image" tabindex="2"><img src="https://cloud.timestarry.asia/Gridea%E5%8D%9A%E5%AE%A2%E5%9B%BE%E7%89%87/image-20230216100553199.png" alt="image-20230216100553199" loading="lazy"></figure>
+<p>到这里，你就拥有了一个5T容量的OneDrive账户.</p>
+<h1 id="在个人电脑的onedrive上登录开发人员账户">在个人电脑的OneDrive上登录开发人员账户</h1>
+<p>每一个单独列出来的条目都是我踩过的坑啊。这是最大的一个坑了。</p>
+<p>我打开OneDrive，添加账户-&gt;添加学校和组织账户，然后填入上面分配的邮箱，死活进不去。一直报错：“OneDrive登录遇到了问题，请检查网络bulabula”，但是登录个人账户又好好的。上网搜，说问题是工作账户对网络安全性的要求高于个人账户，给出的办法大致都是关闭本地代理，重启OneDrive之类的。我都挨着试过了，都不行，还是报错。用Microsoft 365登录这个账户也报错。</p>
+<p>最终，我一怒之下，关闭代理，重装OneDrive，然后……它就行了。只能说，玄学。</p>
+<h1 id="用onedrive同步任意文件夹">用OneDrive同步任意文件夹</h1>
+<p>OneDrive默认只能同步文档、图片、桌面三个文件夹。我们需要用创建符号链接的方式来将其他目录添加到OneDrive中。</p>
+<figure data-type="image" tabindex="3"><img src="https://cloud.timestarry.asia/Gridea%E5%8D%9A%E5%AE%A2%E5%9B%BE%E7%89%87/image-20230216101257769.png" alt="image-20230216101257769" loading="lazy"></figure>
+<p>操作步骤（本例中目标文件夹为E:\Example，OneDrive目录为C:\Users\Usr\OneDrive）：</p>
+<ul>
+<li>以管理员身份运行cmd</li>
+<li>输入以下指令：<code>mklink /d &quot;C:\Users\Usr\OneDrive\Exaple&quot; &quot;E:\Example&quot;</code></li>
+<li>得到提示：<code>为Example &lt;&lt;===&gt;&gt; E:\Exaple创建了符号链接</code></li>
+</ul>
+<p>这时，在OneDrive文件夹中看到一个名为Example的文件夹，它实际上是指向E:\Example目录的符号链接。你可以在这个文件夹中添加、修改或删除文件，它们会自动同步到OneDrive云端和E:\Example目录中。</p>
+
+                        </div>
+                        
+                            <div class="post-toc">
+                                <ul class="markdownIt-TOC">
+<li><a href="#%E6%B3%A8%E5%86%8C%E5%BC%80%E5%8F%91%E8%80%85%E8%B4%A6%E6%88%B7">注册开发者账户</a></li>
+<li><a href="#%E9%85%8D%E7%BD%AEonedrive%E5%AE%B9%E9%87%8F%E4%B8%BA5t">配置OneDrive容量为5T</a></li>
+<li><a href="#%E5%9C%A8%E4%B8%AA%E4%BA%BA%E7%94%B5%E8%84%91%E7%9A%84onedrive%E4%B8%8A%E7%99%BB%E5%BD%95%E5%BC%80%E5%8F%91%E4%BA%BA%E5%91%98%E8%B4%A6%E6%88%B7">在个人电脑的OneDrive上登录开发人员账户</a></li>
+<li><a href="#%E7%94%A8onedrive%E5%90%8C%E6%AD%A5%E4%BB%BB%E6%84%8F%E6%96%87%E4%BB%B6%E5%A4%B9">用OneDrive同步任意文件夹</a></li>
+</ul>
+
+                            </div>
+                            
+                                
+                                                    
+                                                                    <!--Share-->
+                                                                    <span style="margin-right:15px">
+                        <i class="post-share"></i>
+                        <span>&#x5206;&#x4EAB;:</span>
+                                                                    <a title="QR 码" target="_blank" href="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://blog.timestarry.asia/post/UUhRp2fn2/"><i class="fa fa-qrcode"></i></a>
+                                                                    <a title="QQ" target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://blog.timestarry.asia/post/UUhRp2fn2/&sharesource=qzone&title=【折腾】白嫖5T的OneDrive空间|Mircosoft 365开发人员计划&pics=https://blog.timestarry.asia/images/avatar.png?v=1684825376781&summary=&lt;p&gt;在听说了申请开发者计划可以直接获得OneDrive 5T的空间时，我立马跑去申请了开发者账户。这玩意还真好是折腾，从注册到使用，处处都是问题，浪费了不少时间，现在把踩过的坑都写一写。&lt;/p&gt;
+"><i class="fa fa-qq"></i></a>
+                                                                    <a title="新浪微博" target="_blank" href="https://service.weibo.com/share/share.php?url=https://blog.timestarry.asia/post/UUhRp2fn2/&sharesource=weibo&title=【折腾】白嫖5T的OneDrive空间|Mircosoft 365开发人员计划 + " - " + &lt;p&gt;在听说了申请开发者计划可以直接获得OneDrive 5T的空间时，我立马跑去申请了开发者账户。这玩意还真好是折腾，从注册到使用，处处都是问题，浪费了不少时间，现在把踩过的坑都写一写。&lt;/p&gt;
+&pic="https://blog.timestarry.asia/images/avatar.png?v=1684825376781 "><i class="fa fa-weibo "></i></a>
+
+                                                                    </span>
+                                                                    
+                                                                            <!--zh-->
+                                                                            <section class="post-tags zh ">
+                                                                                <div>
+                                                                                    <span>&#x6807;&#x7B7E;:</span>
+                                                                                    <span class="tag ">
+                        
+                        
+                        <a href="https://blog.timestarry.asia/tag/TypeTechnology/">#
+                    分类：技术博客
+                        </a>
+                        
+                        <a href="https://blog.timestarry.asia/tag/WYBntCH2Q/">#
+                    折腾
+                        </a>
+                        
+                        <a href="https://blog.timestarry.asia/tag/CMNxjHYTOH/">#
+                    OneDrive
+                        </a>
+                        
+                            
+                                </span>
+                                                                                </div>
+                                                                                <div>
+                                                                                    <a href="javascript:window.history.back();">
+                        &#x8FD4;&#x56DE;</a>
+                                                                                    <span>&dot;</span>
+                                                                                    <a href="#">&#x4E3B;&#x9875;</a>
+                                                                                </div>
+                                                                            </section>
+
+                                                                            
+                                                                                <!---->
+                                                                                <section class="post-nav">
+                                                                                    
+                                                                                        <a class="prev" rel="prev" href="https://blog.timestarry.asia/post/3RVfMAWpy/">
+                                                                                            【折腾】GNOME桌面美化分享
+                                                                                        </a>
+                                                                                        
+                                                                                            
+                                                                                                <a class="next" rel="next" href="https://blog.timestarry.asia/post/iRoouFuqR/">
+                                                                                                    NB的New Bing|简单体验新必应的聊天服务
+                                                                                                </a>
+                                                                                                
+                                                                                </section>
+                    </article>
+                </div>
+                
+                                            
+            </div>
+    </div>
+    </div>
+    </div>
+    
+        <footer id="footer" class="footer">
+            <div class="copyright">
+                
+                        <p>
+<a href="https://beian.miit.gov.cn">蜀ICP备2023002327号</a>
+</p>
+                            
+                                        <svg viewBox="0 0 1024 1024" style="margin-left: 5px;margin-right: 5px;" version="1.0" width="8" height="8" class="my-face">
+            <path
+                d="M863.597631 513.574282l-271.33965-140.213484L729.783667 81.926656c3.583731-7.87141 7.167462-15.742819 7.167462-25.214109C736.887134 25.226908 708.345275 0.012799 672.635953 0.012799a63.611229 63.611229 0 0 0-39.293053 12.607055c-1.791866 1.59988-3.519736 3.19976-5.311602 3.19976L147.87531 418.925381a55.547834 55.547834 0 0 0-19.646527 47.356448c1.791866 17.278704 14.27093 33.021523 32.125591 42.492813l271.33965 141.749369L292.504463 945.221908c-12.479064 25.214109-1.791866 53.563983 23.166262 69.306802 10.751194 6.335525 23.230258 9.47129 35.709322 9.47129 16.062795 0 32.125591-4.735645 44.604655-15.742819l480.091993-403.297753a55.547834 55.547834 0 0 0 19.646526-47.228458 61.243407 61.243407 0 0 0-32.12559-44.156688z"
+                fill="#93b5cf"></path>
+        </svg>
+                                        光溯星河 &copy;Copyright
+                                            <script>
+                                                var date = new Date();
+                                                document.write("" + date.getFullYear());
+                                            </script>
+                                            | Powered by
+                                            <a href="https://github.com/getgridea/gridea" target="_blank">
+                                                Gridea
+                                            </a>
+            </div>
+            <div id="update" style="display:none;">
+                off
+            </div>
+            
+                    <script>
+                        var port = '';
+                        
+                        document.write('<div id="home_path" style="display:none;">' + document.location.protocol + '//' + window.document.location.hostname + port + '</div>')
+                    </script>
+        </footer>
+        
+                <script>
+                    
+                    
+                    
+                    getStar();
+                    hljs.initHighlighting();
+                    console.clear();
+                    
+                    var newDate = new Date();
+                    newDate.setTime(1684825376781);
+                    console.log(" Blog Update Time: " + newDate.toLocaleDateString());
+                    console.log("\n %c \u26a1Theme:Chic Author's Blog:https://blog.itjoker.cn  Write By ITJoker  \n\n", "color: #ffffff; background: rgba(49, 49, 49, 0.85); padding:5px 0;border-radius:5px;");
+                </script>
+        </div>
+</body>
+<script>
+    scroll();
+</script>
+
+</html>

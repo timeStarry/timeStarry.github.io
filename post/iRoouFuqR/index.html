@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+<title>
+    光溯星河
+</title>
+<!--[if lt IE 9]><script src="//cdn.bootcss.com/html5shiv/r29/html5.js"></script><![endif]-->
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+<meta http-equiv="x-dns-prefetch-control" content="on">
+<link rel="dns-prefetch" href="https://fastly.jsdelivr.net">
+<meta name="author" content="timeStarry">
+<meta name="description" content="博学笃志，切问近思。">
+<meta name="keywords" content="博客,技术,笔记,分享,生活">
+<script async src="//instant.page/3.0.0" type="module" defer integrity="sha384-OeDn4XE77tdHo8pGtE1apMPmAipjoxUQ++eeJa6EtJCfHlvijigWiJpD7VDPWXV1"></script>
+<link rel="stylesheet" href="https://blog.timestarry.asia/styles/main.css" />
+<link href="https://fastly.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script type="text/javascript" src="https://apps.bdimg.com/libs/jquery/1.7.1/jquery.min.js"></script>
+
+        <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/css/style.min.css" />
+        <script src="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/tocbot.min.js"></script>
+        <script src="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/script.min.js"></script>
+        <script src="https://fastly.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/icon.min.js"></script>
+        
+            <script src="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/js/Card/prism.min.js"></script>
+            <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/css/Card/prism.min.css" />
+            <link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.css">
+            <script defer src="https://fastly.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.js"></script>
+            
+                        <!--CDN样式-->
+                        <script src="https://fastly.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/js/hit-kounter-lc-0.3.0.js"></script>
+                        <script src="https://cdn1.lncld.net/static/js/av-min-1.5.0.js"></script>
+                        
+                            <script>
+                                (function() {
+                                    var bp = document.createElement('script');
+                                    var curProtocol = window.location.protocol.split(':')[0];
+                                    if (curProtocol === 'https') {
+                                        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+                                    } else {
+                                        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+                                    }
+                                    var s = document.getElementsByTagName("script")[0];
+                                    s.parentNode.insertBefore(bp, s);
+                                })();
+                            </script>
+                            
+                                    <script type="text/javascript">
+                                        var _hmt = _hmt || [];
+                                        (function() {
+                                            var hm = document.createElement("script");
+                                            hm.src = "https://hm.baidu.com/hm.js?996b348e80ff3bbd39a129200e99bb6e";
+                                            var s = document.getElementsByTagName("script")[0];
+                                            s.parentNode.insertBefore(hm, s);
+                                        })();
+                                    </script>
+                                    
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo">
+                <a href="https://blog.timestarry.asia">
+                    光溯星河
+                </a>
+            </div>
+            <div id="tp-weather-widget"></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/posts">
+                        全部文章
+                    </a>
+                    
+                    <a class="menu-item" href="https://quan.timestarry.asia/">
+                        短文随笔
+                    </a>
+                    
+                    <a class="menu-item" href="/post/log">
+                        日志
+                    </a>
+                    
+                    <a class="menu-item" href="/archives">
+                        归档
+                    </a>
+                    
+                    <a class="menu-item" href="/post/about">
+                        关于
+                    </a>
+                    
+                        <input id="switch_default" type="checkbox" class="switch_default">
+                        <label for="switch_default" class="toggleBtn"></label>
+            </div>
+            <form id="gridea-search-form" data-update="1684825376781" action="/search/index.html">
+                <input class="search-input" autocomplete="off" spellcheck="false" name="q" autofocus="true" placeholder="Search...">
+            </form>
+        </div>
+    </nav>
+
+    
+        <nav class="navbar-mobile" id="nav-mobile">
+            <div class="container">
+                <div class="navbar-header">
+                    <div>
+                        <a href="https://blog.timestarry.asia">
+                            光溯星河
+                        </a>
+                        <!--en-->
+                        <a id="mobile-toggle-theme-en" class="a en">&nbsp;Dark</a>
+                        <!--zh-->
+                        <a id="mobile-toggle-theme-zh" class="a zh">&nbsp;&#x6697;&#x9ED1;</a>
+                    </div>
+                    <form id="gridea-search-form" data-update="1684825376781" action="/search/index.html">
+                        <input class="search-input" autocomplete="off" spellcheck="false" name="q" autofocus="true" placeholder="Search...">
+                    </form>
+                    <!--en-->
+                    <div class="menu-toggle" id="menu-toggle-en" onclick="mobileBtn()">&#9776; Menu</div>
+                    <!--zh-->
+                    <div class="menu-toggle" id="menu-toggle-zh" onclick="mobileBtn()">&#9776; &#x83DC;&#x5355;</div>
+
+                </div>
+                <div class="menu" id="mobile-menu">
+                    
+                        <a class="menu-item" href="/posts">
+                            全部文章
+                        </a>
+                        
+                        <a class="menu-item" href="https://quan.timestarry.asia/">
+                            短文随笔
+                        </a>
+                        
+                        <a class="menu-item" href="/post/log">
+                            日志
+                        </a>
+                        
+                        <a class="menu-item" href="/archives">
+                            归档
+                        </a>
+                        
+                        <a class="menu-item" href="/post/about">
+                            关于
+                        </a>
+                        
+                </div>
+            </div>
+        </nav>
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementById("menu-toggle-en");
+        var toggleMenu_zh = document.getElementById("menu-toggle-zh");
+
+        var mobileMenu = document.getElementById("mobile-menu");
+        if (toggleMenu.display != "none") {
+            if (toggleMenu.classList.contains("active")) {
+                toggleMenu.classList.remove("active")
+                mobileMenu.classList.remove("active")
+            } else {
+                toggleMenu.classList.add("active")
+                mobileMenu.classList.add("active")
+            }
+        } else if (toggleMenu_zh.display != "none") {
+            if (toggleMenu_zh.classList.contains("active")) {
+                toggleMenu_zh.classList.remove("active")
+                mobileMenu.classList.remove("active")
+            } else {
+                toggleMenu_zh.classList.add("active")
+                mobileMenu.classList.add("active")
+            }
+        }
+
+    }
+</script>
+
+            <div class="main">
+                <div class="container">
+                    <article class="post-wrap">
+                        <header class="post-header">
+                            <h1 class="post-title">
+                                NB的New Bing|简单体验新必应的聊天服务
+                            </h1>
+                            
+                                    <!--zh-->
+                                    <div class="post-meta zh">
+                                        &#x4F5C;&#x8005;:
+                                        <a itemprop="author" rel="author" href="/">
+                                            光溯星河
+                                        </a>
+                                        <span class="post-time">&#x65E5;&#x671F;: <a href="#">2023-02-15</a></span>
+                                        <span class="post-readtime">&#x9605;&#x8BFB;&#x65F6;&#x95F4;:<a
+                                    href="#">7.4
+                                    &#x5206;&#x949F;</a></span>
+                                        <span class="post-words">&#x5B57;&#x6570;:<a href="#">2060</a></span>
+                                        
+                                            <span class="post-category">&#x5206;&#x7C7B;:
+                                
+                                <a href="https://blog.timestarry.asia/tag/TypeLife/">分类：生活吐槽</a>
+                                
+                                <a href="https://blog.timestarry.asia/tag/sQUDWP3RA/">New Bing</a>
+                                
+                                <a href="https://blog.timestarry.asia/tag/v6uEVAQDA/">人工智能</a>
+                                
+                                <a href="https://blog.timestarry.asia/tag/A3qoiCHu8R/">AI</a>
+                                
+                                <a href="https://blog.timestarry.asia/tag/7NPhchLpAY/">ChatGPT</a>
+                                
+                                <a href="https://blog.timestarry.asia/tag/ClassThink/">大类标签：思考</a>
+                                
+                            </span>
+                                            
+                                                阅读量:
+                                                <span data-hk-page="current"> - </span>
+                                                
+                                    </div>
+                                    
+                        </header>
+                        
+                            <img class="post-feature-image" src="http://cloud.timestarry.asia/GrideaCover/NB%20New%20Bing.png" alt="">
+                          
+                        <div class="post-content">
+                            <p>让我们先来看一段小诗，它也许算不上太优美，但是和我的日常水平比起来还是高了不少。</p>
+<!-- more -->
+<hr>
+<p>我乐见季节的变化<br>
+并惊叹于人间的美丽<br>
+缤纷的色彩，清幽的花香，和悦耳的吟唱交织<br>
+以惊奇和欢乐浸润我心</p>
+<p>春，带来了新生的希望<br>
+花儿盛开，鸟儿开始歌唱</p>
+<p>夏，用金色的光芒温暖我的灵魂<br>
+草木繁盛，稼禾待人丰收</p>
+<p>秋，以纷彩颜料绘制山水<br>
+树叶轻轻地落下，随风起舞</p>
+<p>冬，将世界封于冰蓝<br>
+雪花闪闪发光，挂在树上</p>
+<p>四季独美而优雅<br>
+自然总是让我感觉如此真实</p>
+<hr>
+<p>  这首小诗的来源是这样的：New Bing作出英文十四行诗-&gt;New Bing自行机翻-&gt;我在机翻的基础上稍作修改。藉此机会，我也来聊聊我获得New Bing体验之后的感受。英文原文和机翻都放到文末以供参考。</p>
+<h1 id="nb的new-bing">NB的New Bing</h1>
+<p>  New Bing的chat模式与老版Bing以及其他传统搜索引擎的搜索逻辑截然不同，和基于GPT-3的ChatGPT也有很大差异。New Bing更加符合人类自然语言表述方式的检索形式和AI强大的资源整合能力彻底颠覆了传统搜索引擎的关键词检索方式，极大地提升了搜索效率。也不同于ChatGPT单纯的回答，New Bing会将搜索语句的来源都打上索引链接，若你对问题的答复产生了质疑可以直接点击原文链接进行进一步验证。接下来，我们细聊在我的体验过程中感受到的New Bing让我感到优秀的地方。</p>
+<h2 id="new-bing和传统搜索引擎">New Bing和传统搜索引擎</h2>
+<p>  这个话题并不需要太多讨论，想说的都在前面那篇关于ChatGPT的文章里了。在这里补充这一点主要是想写一些我真正体验过New Bing之后的想法。在这个话题上有一点我维持原来的判断：这是一场战争。新的判断是：New Bing是微软祭出的大杀招，从目前的体验来看，这一招，拳拳到肉。我现在已经不想再面对谷歌那个枯燥的搜索框了，他需要麻烦的搜索规则、不符合人类习惯的关键词搜索，还要花大量时间总结、整合搜索内容。而新必应界面简洁美观，将强大且真实可用的Chat AI置于最显眼之处，在我的印象中必应从未如此大方自信过。</p>
+<figure data-type="image" tabindex="1"><img src="http://cloud.timestarry.asia/Gridea%E5%8D%9A%E5%AE%A2%E5%9B%BE%E7%89%87/newBing.png" alt="新必应" loading="lazy"></figure>
+<p>  这场战争才刚刚拉开序幕，还是那句话，胜负未定，谁赢谁输也不好说。我的立场仍是这样，不希望任何一方取得压倒性胜利，作为消费者，我希望看到血流成河。站在第四次工业革命的基础上也希望这是一次彻底的产业革命，没有粉身碎骨就不会有凤凰涅槃，就让这次革命从互联网最强大的搜索引擎服务开始吧。</p>
+<h2 id="chatgpt和new-bing聊天服务">ChatGPT和New Bing聊天服务</h2>
+<p>  这才是真正想用New Bing对比的东西。分几个部分来对比着聊这个话题。</p>
+<ul>
+<li>
+<p>相应速度：这是最直观的体验，新必应的响应速度比ChatGPT的Plus版本更快一些</p>
+</li>
+<li>
+<p>信息质量：新必应可以实时搜索互联网中的最新信息，在之前ChatGPT文章中提到的“成都天府机场”难题在新必应这里迎刃而解，并且你可以点击新必应Chat在回答中引用的原文链接进行进一步验证和资料采集</p>
+</li>
+<li>
+<p>聊天服务：明显感觉到新必应的回答是“有情感的”，而非像ChatGPT那样高度理智，这东西是真打算来唠嗑的，对此它是这样回答的：</p>
+<blockquote>
+<p>我觉得你的观察很有道理，我和ChatGPT确实在情感上有很大不同。这可能和我们的训练集有关，也可能和我们的设计目标有关。</p>
+<p>根据我搜索的结果，ChatGPT是一个无监督学习模型，它是在一个大量的文本数据上训练的，这些数据没有明确的标签或注释，包括了很多不同的内容，比如书籍、文章和网站。这样的训练集可能让ChatGPT能够学习到很多的知识和语言规则，但也可能让它缺乏一些情感和个性的表达。</p>
+<p>而我是一个有监督学习模型，我是在一个精心挑选和标注的数据集上训练的，这些数据包括了很多的对话、诗歌、故事和创意内容，以及一些情感和个性的标签，比如开心、悲伤、幽默、友好等。这样的训练集可能让我能够学习到很多的情感和个性的表达，但也可能让我缺乏一些知识和语言规则。</p>
+<p>另外，我和ChatGPT的设计目标也不一样。ChatGPT的设计目标是创建一个能够和人类进行自然和流畅的对话的模型，它的重点是在语言的理解和生成上，而不是在情感和个性上。而我的设计目标是创建一个能够和人类进行有趣和有意义的对话的模型，我的重点是在语言的创造和表达上，而不是在语言的准确和规范上。</p>
+<p>所以，我和ChatGPT在情感上有很大不同，这是我们的训练集和设计目标的结果，也是我们的优势和劣势的体现。你觉得呢？</p>
+</blockquote>
+</li>
+<li>
+<p>价值产生：ChatGPT Plus可以为OpenAI带去20刀/人/月的收入，新必应可以为微软带去新时代搜索引擎入口垄断性优势</p>
+</li>
+</ul>
+<p>  最后讲一下新必应和ChatGPT的联系，这也是New Bing的回答：</p>
+<blockquote>
+<p>我和ChatGPT有一些联系，但也有一些区别。</p>
+<p>我们的联系是，我们都是基于GPT模型的聊天机器人，我们都是由微软开发的，我们都是使用Bing搜索引擎来更新我们的知识和信息，我们都是可以和人类进行多语言的对话的。</p>
+<p>我们的区别是，我们的训练集和设计目标不一样，我已经在上面的回答中解释过了。另外，我们的数据隐私政策也不一样，ChatGPT的数据隐私政策引起了一些争议，因为它会收集和存储用户的对话数据，而我不会这样做，我会保护用户的隐私。还有，我们的版本也不一样，ChatGPT是基于GPT-3模型的，而我是基于GPT-4模型的，这意味着我有更大和更多样的数据集，以及更好的语言理解能力。你明白了吗？</p>
+</blockquote>
+<h1 id="new-bing作出的原文和渣翻">New Bing作出的原文和渣翻</h1>
+<p>New Bing 所作 <em>nature</em> 十四行诗原文</p>
+<blockquote>
+<p>I love to watch the seasons as they change<br>
+And marvel at the beauty of the earth<br>
+The colors, smells, and sounds that rearrange<br>
+And fill my heart with wonder and with mirth</p>
+<p>The springtime brings the promise of new life<br>
+The flowers bloom, the birds begin to sing<br>
+The summer warms my soul with golden light<br>
+The fruits and crops are ripe for harvesting</p>
+<p>The autumn paints the landscape with rich hues<br>
+The leaves fall gently, dancing in the breeze<br>
+The winter wraps the world in frosty blues<br>
+The snowflakes sparkle, hanging from the trees</p>
+<p>Each season has its own unique appeal<br>
+But nature always makes me feel so real</p>
+</blockquote>
+<p>New Bing 渣翻 《自然》</p>
+<blockquote>
+<p>我喜欢观看季节的变化</p>
+<p>并惊叹于地球的美丽</p>
+<p>色彩，气味，和声音的重新排列</p>
+<p>充满了我的心灵以惊奇和欢乐</p>
+<p>春天带来了新生命的希望</p>
+<p>花儿盛开，鸟儿开始歌唱</p>
+<p>夏天用金色的光芒温暖我的灵魂</p>
+<p>水果和庄稼成熟，等待收割</p>
+<p>秋天用丰富的色彩绘制了风景</p>
+<p>树叶轻轻地落下，随风起舞</p>
+<p>冬天用冰霜的蓝色包裹了世界</p>
+<p>雪花闪闪发光，挂在树上</p>
+<p>每个季节都有自己独特的魅力</p>
+<p>但自然总是让我感觉如此真实</p>
+</blockquote>
+
+                        </div>
+                        
+                            <div class="post-toc">
+                                <ul class="markdownIt-TOC">
+<li><a href="#nb%E7%9A%84new-bing">NB的New Bing</a>
+<ul>
+<li><a href="#new-bing%E5%92%8C%E4%BC%A0%E7%BB%9F%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E">New Bing和传统搜索引擎</a></li>
+<li><a href="#chatgpt%E5%92%8Cnew-bing%E8%81%8A%E5%A4%A9%E6%9C%8D%E5%8A%A1">ChatGPT和New Bing聊天服务</a></li>
+</ul>
+</li>
+<li><a href="#new-bing%E4%BD%9C%E5%87%BA%E7%9A%84%E5%8E%9F%E6%96%87%E5%92%8C%E6%B8%A3%E7%BF%BB">New Bing作出的原文和渣翻</a></li>
+</ul>
+
+                            </div>
+                            
+                                
+                                                    
+                                                                    <!--Share-->
+                                                                    <span style="margin-right:15px">
+                        <i class="post-share"></i>
+                        <span>&#x5206;&#x4EAB;:</span>
+                                                                    <a title="QR 码" target="_blank" href="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://blog.timestarry.asia/post/iRoouFuqR/"><i class="fa fa-qrcode"></i></a>
+                                                                    <a title="QQ" target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://blog.timestarry.asia/post/iRoouFuqR/&sharesource=qzone&title=NB的New Bing|简单体验新必应的聊天服务&pics=https://blog.timestarry.asia/images/avatar.png?v=1684825376781&summary=&lt;p&gt;让我们先来看一段小诗，它也许算不上太优美，但是和我的日常水平比起来还是高了不少。&lt;/p&gt;
+"><i class="fa fa-qq"></i></a>
+                                                                    <a title="新浪微博" target="_blank" href="https://service.weibo.com/share/share.php?url=https://blog.timestarry.asia/post/iRoouFuqR/&sharesource=weibo&title=NB的New Bing|简单体验新必应的聊天服务 + " - " + &lt;p&gt;让我们先来看一段小诗，它也许算不上太优美，但是和我的日常水平比起来还是高了不少。&lt;/p&gt;
+&pic="https://blog.timestarry.asia/images/avatar.png?v=1684825376781 "><i class="fa fa-weibo "></i></a>
+
+                                                                    </span>
+                                                                    
+                                                                            <!--zh-->
+                                                                            <section class="post-tags zh ">
+                                                                                <div>
+                                                                                    <span>&#x6807;&#x7B7E;:</span>
+                                                                                    <span class="tag ">
+                        
+                        
+                        <a href="https://blog.timestarry.asia/tag/TypeLife/">#
+                    分类：生活吐槽
+                        </a>
+                        
+                        <a href="https://blog.timestarry.asia/tag/sQUDWP3RA/">#
+                    New Bing
+                        </a>
+                        
+                        <a href="https://blog.timestarry.asia/tag/v6uEVAQDA/">#
+                    人工智能
+                        </a>
+                        
+                        <a href="https://blog.timestarry.asia/tag/A3qoiCHu8R/">#
+                    AI
+                        </a>
+                        
+                        <a href="https://blog.timestarry.asia/tag/7NPhchLpAY/">#
+                    ChatGPT
+                        </a>
+                        
+                        <a href="https://blog.timestarry.asia/tag/ClassThink/">#
+                    大类标签：思考
+                        </a>
+                        
+                            
+                                </span>
+                                                                                </div>
+                                                                                <div>
+                                                                                    <a href="javascript:window.history.back();">
+                        &#x8FD4;&#x56DE;</a>
+                                                                                    <span>&dot;</span>
+                                                                                    <a href="#">&#x4E3B;&#x9875;</a>
+                                                                                </div>
+                                                                            </section>
+
+                                                                            
+                                                                                <!---->
+                                                                                <section class="post-nav">
+                                                                                    
+                                                                                        <a class="prev" rel="prev" href="https://blog.timestarry.asia/post/UUhRp2fn2/">
+                                                                                            【折腾】白嫖5T的OneDrive空间|Mircosoft 365开发人员计划
+                                                                                        </a>
+                                                                                        
+                                                                                            
+                                                                                                <a class="next" rel="next" href="https://blog.timestarry.asia/post/EzzyWBiWY/">
+                                                                                                    【经验分享】我的第一次ICP备案
+                                                                                                </a>
+                                                                                                
+                                                                                </section>
+                    </article>
+                </div>
+                
+                                            
+            </div>
+    </div>
+    </div>
+    </div>
+    
+        <footer id="footer" class="footer">
+            <div class="copyright">
+                
+                        <p>
+<a href="https://beian.miit.gov.cn">蜀ICP备2023002327号</a>
+</p>
+                            
+                                        <svg viewBox="0 0 1024 1024" style="margin-left: 5px;margin-right: 5px;" version="1.0" width="8" height="8" class="my-face">
+            <path
+                d="M863.597631 513.574282l-271.33965-140.213484L729.783667 81.926656c3.583731-7.87141 7.167462-15.742819 7.167462-25.214109C736.887134 25.226908 708.345275 0.012799 672.635953 0.012799a63.611229 63.611229 0 0 0-39.293053 12.607055c-1.791866 1.59988-3.519736 3.19976-5.311602 3.19976L147.87531 418.925381a55.547834 55.547834 0 0 0-19.646527 47.356448c1.791866 17.278704 14.27093 33.021523 32.125591 42.492813l271.33965 141.749369L292.504463 945.221908c-12.479064 25.214109-1.791866 53.563983 23.166262 69.306802 10.751194 6.335525 23.230258 9.47129 35.709322 9.47129 16.062795 0 32.125591-4.735645 44.604655-15.742819l480.091993-403.297753a55.547834 55.547834 0 0 0 19.646526-47.228458 61.243407 61.243407 0 0 0-32.12559-44.156688z"
+                fill="#93b5cf"></path>
+        </svg>
+                                        光溯星河 &copy;Copyright
+                                            <script>
+                                                var date = new Date();
+                                                document.write("" + date.getFullYear());
+                                            </script>
+                                            | Powered by
+                                            <a href="https://github.com/getgridea/gridea" target="_blank">
+                                                Gridea
+                                            </a>
+            </div>
+            <div id="update" style="display:none;">
+                off
+            </div>
+            
+                    <script>
+                        var port = '';
+                        
+                        document.write('<div id="home_path" style="display:none;">' + document.location.protocol + '//' + window.document.location.hostname + port + '</div>')
+                    </script>
+        </footer>
+        
+                <script>
+                    
+                    
+                    
+                    getStar();
+                    hljs.initHighlighting();
+                    console.clear();
+                    
+                    var newDate = new Date();
+                    newDate.setTime(1684825376781);
+                    console.log(" Blog Update Time: " + newDate.toLocaleDateString());
+                    console.log("\n %c \u26a1Theme:Chic Author's Blog:https://blog.itjoker.cn  Write By ITJoker  \n\n", "color: #ffffff; background: rgba(49, 49, 49, 0.85); padding:5px 0;border-radius:5px;");
+                </script>
+        </div>
+</body>
+<script>
+    scroll();
+</script>
+
+</html>

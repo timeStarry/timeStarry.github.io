@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://blog.timestarry.asia</id>
+    <title>光溯星河</title>
+    <updated>2023-05-23T07:03:39.038Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://blog.timestarry.asia"/>
+    <link rel="self" href="https://blog.timestarry.asia/atom.xml"/>
+    <subtitle>博学而笃志，切问而近思</subtitle>
+    <logo>https://blog.timestarry.asia/images/avatar.png</logo>
+    <icon>https://blog.timestarry.asia/favicon.ico</icon>
+    <rights>All rights reserved 2023, 光溯星河</rights>
+    <entry>
+        <title type="html"><![CDATA[【面试题】记2023.03.04一些关于C语言的问答]]></title>
+        <id>https://blog.timestarry.asia/post/-wd1cQHuH/</id>
+        <link href="https://blog.timestarry.asia/post/-wd1cQHuH/">
+        </link>
+        <updated>2023-03-04T15:46:22.000Z</updated>
+        <summary type="html"><![CDATA[<p>本文是今天六叔抽问的一些问题，关于C语言的散装知识，特此记录。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>本文是今天六叔抽问的一些问题，关于C语言的散装知识，特此记录。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[【随手记】图床是什么？为什么要用图床？]]></title>
+        <id>https://blog.timestarry.asia/post/OejcYU2E6/</id>
+        <link href="https://blog.timestarry.asia/post/OejcYU2E6/">
+        </link>
+        <updated>2023-02-17T14:00:27.000Z</updated>
+        <summary type="html"><![CDATA[<p>自从这次决心写博客以来，看了很多博客，也加了一些讨论社区。于是，我注意到了大家都在提的一个词语——图床。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>自从这次决心写博客以来，看了很多博客，也加了一些讨论社区。于是，我注意到了大家都在提的一个词语——图床。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[【折腾】GNOME桌面美化分享]]></title>
+        <id>https://blog.timestarry.asia/post/3RVfMAWpy/</id>
+        <link href="https://blog.timestarry.asia/post/3RVfMAWpy/">
+        </link>
+        <updated>2023-02-17T12:42:02.000Z</updated>
+        <summary type="html"><![CDATA[<p>简单地分享一下我的ubuntu gnome桌面美化成果，跟着这个做的：<a href="https://www.bilibili.com/video/BV14A411Z73k/">GNOME桌面定制|极简主义深色桌面与诺德颜色主题</a>.</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>简单地分享一下我的ubuntu gnome桌面美化成果，跟着这个做的：<a href="https://www.bilibili.com/video/BV14A411Z73k/">GNOME桌面定制|极简主义深色桌面与诺德颜色主题</a>.</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[【折腾】白嫖5T的OneDrive空间|Mircosoft 365开发人员计划]]></title>
+        <id>https://blog.timestarry.asia/post/UUhRp2fn2/</id>
+        <link href="https://blog.timestarry.asia/post/UUhRp2fn2/">
+        </link>
+        <updated>2023-02-16T02:34:53.000Z</updated>
+        <summary type="html"><![CDATA[<p>在听说了申请开发者计划可以直接获得OneDrive 5T的空间时，我立马跑去申请了开发者账户。这玩意还真好是折腾，从注册到使用，处处都是问题，浪费了不少时间，现在把踩过的坑都写一写。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>在听说了申请开发者计划可以直接获得OneDrive 5T的空间时，我立马跑去申请了开发者账户。这玩意还真好是折腾，从注册到使用，处处都是问题，浪费了不少时间，现在把踩过的坑都写一写。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[NB的New Bing|简单体验新必应的聊天服务]]></title>
+        <id>https://blog.timestarry.asia/post/iRoouFuqR/</id>
+        <link href="https://blog.timestarry.asia/post/iRoouFuqR/">
+        </link>
+        <updated>2023-02-15T14:51:01.000Z</updated>
+        <summary type="html"><![CDATA[<p>让我们先来看一段小诗，它也许算不上太优美，但是和我的日常水平比起来还是高了不少。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>让我们先来看一段小诗，它也许算不上太优美，但是和我的日常水平比起来还是高了不少。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[【经验分享】我的第一次ICP备案]]></title>
+        <id>https://blog.timestarry.asia/post/EzzyWBiWY/</id>
+        <link href="https://blog.timestarry.asia/post/EzzyWBiWY/">
+        </link>
+        <updated>2023-02-15T03:07:16.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[清灰记（划掉，清灰寄）]]></title>
+        <id>https://blog.timestarry.asia/post/M4lFDBp1U/</id>
+        <link href="https://blog.timestarry.asia/post/M4lFDBp1U/">
+        </link>
+        <updated>2023-02-14T13:15:47.000Z</updated>
+        <summary type="html"><![CDATA[<h1 id="警告后来者拆机有风险清灰需谨慎">警告后来者：拆机有风险，清灰需谨慎！</h1>
+<p>如你所见，清了灰，但是寄了。</p>
+]]></summary>
+        <content type="html"><![CDATA[<h1 id="警告后来者拆机有风险清灰需谨慎">警告后来者：拆机有风险，清灰需谨慎！</h1>
+<p>如你所见，清了灰，但是寄了。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[【杂思】聊一聊近期由ChatGPT引起的人工智能热议]]></title>
+        <id>https://blog.timestarry.asia/post/2Mhj0DmDE/</id>
+        <link href="https://blog.timestarry.asia/post/2Mhj0DmDE/">
+        </link>
+        <updated>2023-02-10T09:15:50.000Z</updated>
+        <summary type="html"><![CDATA[<p>  近年来，人工智能的发展越来越受关注，声浪渐高，最近chatGPT的爆火和媒体的推波助澜更是将关于人工智能的讨论热度推向峰顶。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>  近年来，人工智能的发展越来越受关注，声浪渐高，最近chatGPT的爆火和媒体的推波助澜更是将关于人工智能的讨论热度推向峰顶。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[【Python学习笔记】基础之三：模块]]></title>
+        <id>https://blog.timestarry.asia/post/BQMAgaZqO/</id>
+        <link href="https://blog.timestarry.asia/post/BQMAgaZqO/">
+        </link>
+        <updated>2023-02-09T16:13:16.000Z</updated>
+        <summary type="html"><![CDATA[<p>本文为Python学习笔记系列第二篇，仅列出我在Python基础知识学习过程中，遇到的以往学习语言不同之处或其它值得注意的地方。如有缺漏还请原谅。<br>
+文中标记⭐的内容是我认为比较重要或需要多加理解的地方。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>本文为Python学习笔记系列第二篇，仅列出我在Python基础知识学习过程中，遇到的以往学习语言不同之处或其它值得注意的地方。如有缺漏还请原谅。<br>
+文中标记⭐的内容是我认为比较重要或需要多加理解的地方。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[【Python学习笔记】基础之二：函数]]></title>
+        <id>https://blog.timestarry.asia/post/Yu_NAeyhn/</id>
+        <link href="https://blog.timestarry.asia/post/Yu_NAeyhn/">
+        </link>
+        <updated>2023-02-09T15:50:01.000Z</updated>
+        <summary type="html"><![CDATA[<p>本文为Python学习笔记系列第二篇，仅列出我在Python基础知识学习过程中，遇到的以往学习语言不同之处或其它值得注意的地方。如有缺漏还请原谅。<br>
+文中标记⭐的内容是我认为比较重要或需要多加理解的地方。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>本文为Python学习笔记系列第二篇，仅列出我在Python基础知识学习过程中，遇到的以往学习语言不同之处或其它值得注意的地方。如有缺漏还请原谅。<br>
+文中标记⭐的内容是我认为比较重要或需要多加理解的地方。</p>
+]]></content>
+    </entry>
+</feed>
