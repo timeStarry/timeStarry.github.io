@@ -1,0 +1,366 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+<meta name="description" content="" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<title>链表 | 光溯星河的复习笔记</title>
+
+<link rel="shortcut icon" href="https://timestarry.github.io/favicon.ico?v=1729859530611">
+
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://timestarry.github.io/styles/main.css">
+<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css"> -->
+
+<script src="https://cdn.jsdelivr.net/npm/@highlightjs/cdn-assets/highlight.min.js"></script>
+<script src="https://cdn.bootcdn.net/ajax/libs/highlight.js/9.12.0/languages/dockerfile.min.js"></script>
+<script src="https://cdn.bootcdn.net/ajax/libs/highlight.js/9.12.0/languages//dart.min.js"></script>
+
+<!-- <script src="https://cdn.jsdelivr.net/npm/moment@2.27.0/moment.min.js"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/js/bootstrap.min.js"></script> -->
+<!-- DEMO JS -->
+<!--<script src="media/scripts/index.js"></script>-->
+
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.css">
+    
+</head>
+<body>
+<div class="main gt-bg-theme-color-first">
+    <nav class="navbar navbar-expand-lg">
+    <a class="navbar-brand" href="/">
+        <img class="user-avatar" src="/images/avatar.png" alt="头像">
+        <div class="site-name gt-c-content-color-first">
+            光溯星河的复习笔记
+        </div>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" id="changeNavbar">
+        <i class="fas fa-bars gt-c-content-color-first" style="font-size: 18px"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="navbar-nav mr-auto" style="text-align: center">
+            
+            <div class="nav-item">
+                
+                <a href="https://blog.tsio.top" class="menu gt-a-link" target="_blank">
+                    博客主站✈
+                </a>
+                
+            </div>
+            
+            <div class="nav-item">
+                
+                <a href="/tag/model_cpp" class="menu gt-a-link">
+                    C++
+                </a>
+                
+            </div>
+            
+            <div class="nav-item">
+                
+                <a href="/tag/os" class="menu gt-a-link">
+                    操作系统
+                </a>
+                
+            </div>
+            
+            <div class="nav-item">
+                
+                <a href="/tag/model_algo" class="menu gt-a-link">
+                    数据结构与算法
+                </a>
+                
+            </div>
+            
+            <div class="nav-item">
+                
+                <a href="/tag/model_net" class="menu gt-a-link">
+                    网络
+                </a>
+                
+            </div>
+            
+            <div class="nav-item">
+                
+                <a href="/tag/model_db" class="menu gt-a-link">
+                    数据库
+                </a>
+                
+            </div>
+            
+        </div>
+        <div style="text-align: center">
+            <form id="gridea-search-form" style="position: relative" data-update="1729859530611"
+                action="/search/">
+                <input class="search-input" autocomplete="off" spellcheck="false" name="q" placeholder="搜索文章" />
+                <i class="fas fa-search gt-c-content-color-first" style="position: absolute; top: 9px; left: 10px;"></i>
+            </form>
+        </div>
+    </div>
+</nav>
+<script>
+    /* 移动端导航栏展开/收起切换 */
+    document.getElementById('changeNavbar').onclick = () => {
+        var element = document.getElementById('navbarSupportedContent');
+        if (element.style.display === 'none' || element.style.display === '') {
+            element.style.display = 'block';
+        } else {
+            element.style.display = 'none';
+        }
+    }
+</script>
+
+    <div class="post-container">
+        <div class="post-detail gt-bg-theme-color-second">
+            <article class="gt-post-content">
+                <h2 class="post-title">
+                    链表
+                </h2>
+                <div class="post-info">
+                    <time class="post-time gt-c-content-color-first">
+                        · 2024-10-23 ·
+                    </time>
+                    
+                        <a href="https://timestarry.github.io/tag/model_algo/" class="post-tags">
+                            # 数据结构与算法
+                        </a>
+                    
+                </div>
+                <div class="post-content">
+                    <h1 id="链表的基础知识">链表的基础知识</h1>
+<ul>
+<li>链表节点需存储值和一个next指针，所以在相同数据量下，链表比数组占用更多空间；</li>
+<li>在链表中<strong>插入/删除</strong>元素的时间复杂度为<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo>(</mo><mn>1</mn><mo>)</mo></mrow><annotation encoding="application/x-tex">O(1)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord">1</span><span class="mclose">)</span></span></span></span>；</li>
+<li>在链表中<strong>访问/查找</strong>元素的时间复杂度为<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo>(</mo><mi>n</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">O(n)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord mathdefault">n</span><span class="mclose">)</span></span></span></span>；</li>
+</ul>
+<h1 id="链表与数组">链表与数组</h1>
+<table>
+<thead>
+<tr>
+<th>对比项</th>
+<th>数组</th>
+<th>链表</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>存储方式</td>
+<td>连续的内存空间</td>
+<td>非连续的内存空间，通过节点的指针连接</td>
+</tr>
+<tr>
+<td>随机访问</td>
+<td>支持随机访问，可以通过下标在 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo>(</mo><mn>1</mn><mo>)</mo></mrow><annotation encoding="application/x-tex">O(1)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord">1</span><span class="mclose">)</span></span></span></span> 时间内访问任意元素</td>
+<td>不支持随机访问，访问特定元素需要从链表头开始遍历，时间复杂度为 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo>(</mo><mi>n</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">O(n)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord mathdefault">n</span><span class="mclose">)</span></span></span></span></td>
+</tr>
+<tr>
+<td>插入/删除操作</td>
+<td>在中间位置插入或删除元素时，需要移动大量元素，时间复杂度为 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo>(</mo><mi>n</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">O(n)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord mathdefault">n</span><span class="mclose">)</span></span></span></span></td>
+<td>只需要修改指针，时间复杂度为 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo>(</mo><mn>1</mn><mo>)</mo></mrow><annotation encoding="application/x-tex">O(1)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord">1</span><span class="mclose">)</span></span></span></span>（在已知节点位置的情况下）</td>
+</tr>
+<tr>
+<td>内存分配</td>
+<td>分配连续的大块内存，可能会出现内存不足导致分配失败的情况</td>
+<td>按需分配内存，较为灵活</td>
+</tr>
+<tr>
+<td>内存开销</td>
+<td>除了存储数据本身，只需要少量额外的空间记录数组长度等信息</td>
+<td>每个节点都需要额外的空间存储指针，内存开销相对较大</td>
+</tr>
+<tr>
+<td>适用场景</td>
+<td>适合频繁随机访问，元素数量相对固定的场景</td>
+<td>适合频繁插入、删除操作，元素数量动态变化较大的场景</td>
+</tr>
+</tbody>
+</table>
+<h1 id="链表结构">链表结构</h1>
+<h2 id="设计链表">设计链表</h2>
+<p>设计链表包含这些关键元素：链表节点（值和next指针）、初始化构造函数、访问、插入、删除、遍历方法。</p>
+<ul>
+<li><a href="https://www.programmercarl.com/0707.%E8%AE%BE%E8%AE%A1%E9%93%BE%E8%A1%A8.html#%E7%AE%97%E6%B3%95%E5%85%AC%E5%BC%80%E8%AF%BE">设计链表-代码随想录 (programmercarl.com)</a></li>
+<li><a href="https://leetcode.cn/problems/design-linked-list/description/">707. 设计链表 - 力扣（LeetCode）</a></li>
+</ul>
+<p>测试通过代码：</p>
+<pre><code class="language-cpp">#include&lt;iostream&gt;
+
+class MyLinkedList {
+
+public:
+
+    struct LinkedNode {
+        int val;
+        LinkedNode* next;
+
+        LinkedNode() : val(0), next(nullptr) {};
+        LinkedNode(int _val) :val(_val), next(nullptr) {};
+    };
+
+    MyLinkedList() {
+        this-&gt;_dummyHead = new LinkedNode();
+        this-&gt;_size = 0;
+    }
+
+    int get(int index) {
+        if (index &lt; 0 || index &gt; _size - 1) {
+            return -1;
+        }
+
+        LinkedNode* cur = _dummyHead-&gt;next;
+        while (index--) {
+            cur = cur-&gt;next;
+        }
+        return cur-&gt;val;
+    }
+
+    void addAtHead(int val) {
+        LinkedNode* newNode = new LinkedNode(val);
+        newNode-&gt;next = _dummyHead-&gt;next;
+        _dummyHead-&gt;next = newNode;
+        _size++;
+    }
+
+    void addAtTail(int val) {
+        LinkedNode* newNode = new LinkedNode(val);
+
+        LinkedNode* cur = _dummyHead;
+        while (cur-&gt;next != nullptr) {
+            cur = cur-&gt;next;
+        }
+        
+        cur-&gt;next = newNode;
+        _size++;
+    }
+
+    void addAtIndex(int index, int val) {
+        if (index &lt; 0 || index &gt; _size) {
+            return;
+        }
+
+        LinkedNode* newNode = new LinkedNode(val);
+        LinkedNode* cur = _dummyHead;
+        while (index--) {
+            cur = cur-&gt;next;
+            std::cout &lt;&lt;&quot;index = &quot; &lt;&lt; index &lt;&lt; &quot;cur-&gt;val =  &quot; &lt;&lt; cur-&gt;val&lt;&lt;std::endl;
+        }
+
+        newNode-&gt;next = cur-&gt;next;
+        cur-&gt;next = newNode;
+        _size++;
+    }
+
+    void deleteAtIndex(int index) {
+        if (index &lt; 0 || index &gt; _size - 1) {
+            return;
+        }
+
+        LinkedNode* cur = _dummyHead;
+        while (index--) {
+            cur = cur-&gt;next;
+        }
+        
+        cur-&gt;next = cur-&gt;next-&gt;next;
+        _size--;
+    }
+
+    void printLinkedList() {
+        LinkedNode* cur = _dummyHead-&gt;next;
+
+        while (cur) {
+            std::cout &lt;&lt; cur-&gt;val &lt;&lt; &quot; &quot;;
+            cur = cur-&gt;next;
+        }
+        std::cout &lt;&lt; std::endl;
+        std::cout &lt;&lt; &quot;size:&quot; &lt;&lt; _size &lt;&lt; std::endl;
+    }
+private:
+    LinkedNode* _dummyHead;
+    int _size;
+};
+</code></pre>
+<h2 id="常见链表结构">常见链表结构</h2>
+<p>除了单链表外，还有两种常见的链表类型：</p>
+<ul>
+<li><strong>环形链表</strong>：链表的尾节点指向它的头节点，即可得到一个环形链表；在环形链表中，任意节点都可以被视为头节点；</li>
+<li><strong>双向链表</strong>：不同于单链表，双向链表中还放有它前驱节点的pre指针，其遍历灵活性更强，但占用空间也更多。</li>
+</ul>
+<h1 id="常考题型">常考题型</h1>
+<h2 id="链表成环">链表成环</h2>
+<p><strong>力扣</strong>：<a href="https://leetcode.cn/problems/linked-list-cycle-ii/description/">142. 环形链表 II - 力扣（LeetCode）</a></p>
+<p><strong>难度</strong>：中等</p>
+<p><strong>考察重点</strong></p>
+<ol>
+<li>确认链表是否成环；</li>
+<li>快指针追上慢指针的原理；</li>
+<li>找到链表环的入口；</li>
+<li>寻找入口过程中三个指针走过的路程涉及的数学关系。</li>
+</ol>
+<h2 id="合并链表">合并链表</h2>
+<p><strong>力扣</strong>：<a href="https://leetcode.cn/problems/merge-two-sorted-lists/description/">21. 合并两个有序链表 - 力扣（LeetCode）</a></p>
+<p><strong>难度</strong>：简单</p>
+<p><strong>考察重点</strong></p>
+<ol>
+<li>双指针；</li>
+<li>虚拟头节点；</li>
+<li>递归或迭代。</li>
+</ol>
+<p><strong>拓展（困难）</strong>：<a href="https://leetcode.cn/problems/merge-k-sorted-lists/description/">23. 合并 K 个升序链表 - 力扣（LeetCode）</a></p>
+
+                </div>
+            </article>
+        </div>
+
+        
+            <div class="next-post">
+                <div class="next gt-c-content-color-first">下一篇</div>
+                <a href="https://timestarry.github.io/post/cpp11-smart-pointers/" class="post-title gt-a-link">
+                    C++11智能指针
+                </a>
+            </div>
+        
+
+        
+
+        
+
+        
+
+        <div class="site-footer gt-c-content-color-first">
+    <div class="slogan gt-c-content-color-first">温故而知新</div>
+    <div class="social-container">
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    </div>
+    <div class="footer-info">
+        <p>© <a href="https://blog.tsio.top/about">光溯星河</a> 2024 <a href="/post/about">关于</a></p>
+    </div>
+    <div>
+        Theme <a href="https://github.com/imhanjie/gridea-theme-pure" target="_blank">Pure</a>, Powered by <a
+                href="https://gridea.dev" target="_blank">Gridea</a> | <a href="https://timestarry.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+</div>
+
+<script>
+  hljs.highlightAll()
+</script>
+
+    </div>
+</div>
+</body>
+</html>

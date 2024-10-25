@@ -1,0 +1,269 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+<meta name="description" content="" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<title>IO多路复用 | 光溯星河的复习笔记</title>
+
+<link rel="shortcut icon" href="https://timestarry.github.io/favicon.ico?v=1729859530611">
+
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://timestarry.github.io/styles/main.css">
+<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css"> -->
+
+<script src="https://cdn.jsdelivr.net/npm/@highlightjs/cdn-assets/highlight.min.js"></script>
+<script src="https://cdn.bootcdn.net/ajax/libs/highlight.js/9.12.0/languages/dockerfile.min.js"></script>
+<script src="https://cdn.bootcdn.net/ajax/libs/highlight.js/9.12.0/languages//dart.min.js"></script>
+
+<!-- <script src="https://cdn.jsdelivr.net/npm/moment@2.27.0/moment.min.js"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/js/bootstrap.min.js"></script> -->
+<!-- DEMO JS -->
+<!--<script src="media/scripts/index.js"></script>-->
+
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.css">
+    
+</head>
+<body>
+<div class="main gt-bg-theme-color-first">
+    <nav class="navbar navbar-expand-lg">
+    <a class="navbar-brand" href="/">
+        <img class="user-avatar" src="/images/avatar.png" alt="头像">
+        <div class="site-name gt-c-content-color-first">
+            光溯星河的复习笔记
+        </div>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" id="changeNavbar">
+        <i class="fas fa-bars gt-c-content-color-first" style="font-size: 18px"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="navbar-nav mr-auto" style="text-align: center">
+            
+            <div class="nav-item">
+                
+                <a href="https://blog.tsio.top" class="menu gt-a-link" target="_blank">
+                    博客主站✈
+                </a>
+                
+            </div>
+            
+            <div class="nav-item">
+                
+                <a href="/tag/model_cpp" class="menu gt-a-link">
+                    C++
+                </a>
+                
+            </div>
+            
+            <div class="nav-item">
+                
+                <a href="/tag/os" class="menu gt-a-link">
+                    操作系统
+                </a>
+                
+            </div>
+            
+            <div class="nav-item">
+                
+                <a href="/tag/model_algo" class="menu gt-a-link">
+                    数据结构与算法
+                </a>
+                
+            </div>
+            
+            <div class="nav-item">
+                
+                <a href="/tag/model_net" class="menu gt-a-link">
+                    网络
+                </a>
+                
+            </div>
+            
+            <div class="nav-item">
+                
+                <a href="/tag/model_db" class="menu gt-a-link">
+                    数据库
+                </a>
+                
+            </div>
+            
+        </div>
+        <div style="text-align: center">
+            <form id="gridea-search-form" style="position: relative" data-update="1729859530611"
+                action="/search/">
+                <input class="search-input" autocomplete="off" spellcheck="false" name="q" placeholder="搜索文章" />
+                <i class="fas fa-search gt-c-content-color-first" style="position: absolute; top: 9px; left: 10px;"></i>
+            </form>
+        </div>
+    </div>
+</nav>
+<script>
+    /* 移动端导航栏展开/收起切换 */
+    document.getElementById('changeNavbar').onclick = () => {
+        var element = document.getElementById('navbarSupportedContent');
+        if (element.style.display === 'none' || element.style.display === '') {
+            element.style.display = 'block';
+        } else {
+            element.style.display = 'none';
+        }
+    }
+</script>
+
+    <div class="post-container">
+        <div class="post-detail gt-bg-theme-color-second">
+            <article class="gt-post-content">
+                <h2 class="post-title">
+                    IO多路复用
+                </h2>
+                <div class="post-info">
+                    <time class="post-time gt-c-content-color-first">
+                        · 2024-10-25 ·
+                    </time>
+                    
+                        <a href="https://timestarry.github.io/tag/model_os/" class="post-tags">
+                            # 操作系统
+                        </a>
+                    
+                </div>
+                <div class="post-content">
+                    <h1 id="为什么需要io多路复用">为什么需要I/O多路复用</h1>
+<p>IO多路复用的本质是为了提升操作系统维护对外连接的能力，在尽可能节省资源的同时，在网络编程中提升操作系统维护Socket的能力。</p>
+<p>在基础的TCP Socket通信模型下，服务端和客户端会分别通过Socket建立一对一的连接，大致流程如下：</p>
+<ul>
+<li>服务端创建Socket（可选网络层和传输层协议），并使用<code>bind()</code>绑定IP和端口，启动调用<code>listen()</code>开始监听连接</li>
+<li>客户端创建Socket（可选网络层和传输层协议），使用<code>connect()</code>建立连接</li>
+<li>接下来进行TCP三次握手，完成后，服务端使用<code>accept()</code>从TCP全连接队列中取出该socket，进行数据传输</li>
+</ul>
+<p>这个过程中，服务端的进程会通过自己的文件描述符数组找到自己在内核中的Socket数据结构，其中包含一个发送队列和一个接收队列，两个队列里存放了许多<code>sk_buff</code>，它们由链表的形式进行组织。</p>
+<p><strong>多进程模型</strong>：如果我们需要让服务器连接多个客户端，最简单的方案便是创建多个进程，父进程使用<code>fork()</code>创建和自己一样的子进程。在创建时，两个进程除了返回值是一模一样的，这就包括了指向Socket的文件描述符，即子进程可以使用父进程的“已连接Socket”进行通信。</p>
+<p>但这一模型下存在一个巨大的问题，便是资源消耗。进程有自己独立的地址空间，包括虚拟内存、进程栈、内核堆栈等等资源，多进程的上下文切换代价极大。此外，子进程退出时，如有未被及时回收的子进程资源便会产生大量僵尸进程，消耗系统资源，这时我们便会考虑代价更小的多线程模型。</p>
+<p><strong>多线程模型</strong>：总所周知，同一进程内的线程会共享线程栈以外的一切资源，包括文件描述符列表、代码、全局数据等等，其资源消耗和上下文切换代价比进程要小得多。当然，在网络连接的场景下，频繁创建和销毁大量线程的代价也决不可小觑，这时我们便可以考虑使用线程池。</p>
+<p>父进程可以通过创建一个队列（注意线程安全），将<code>accept()</code>取得的已连接Socket连接放入该队列中，线程池则从其中取出已连接Socket进行处理。但当服务器需要维护的连接达到更大规模时（参考C10K），大量线程带来的消耗也是相当恐怖的。</p>
+<p>这时我们便会想能否使用一种方式无需创建大量进程或线程，以更小的代价让操作系统维护更多的连接？</p>
+<h1 id="io多路复用">I/O多路复用</h1>
+<p>I/O多路复用（Input/Output Multiplexing）是一种在单个线程中管理多个输入/输出通道的技术。它允许一个线程同时监听多个输入流（比如文件描述符），并在有数据可读或可写时进行相应的处理，而不需要为每个通道创建一个独立的线程。</p>
+<p>常见的I/O多路复用机制包括select、poll和epoll.</p>
+<h2 id="select">select</h2>
+<p><strong>数据结构</strong>：<code>bitsmap[FD_SETSIZE]</code></p>
+<p><strong>fd检查</strong>：轮询</p>
+<p><strong>应用场景</strong>：低并发需求，有少量的fd需要监控</p>
+<p>select会将已连接的Socket文件描述符集合<strong>拷贝</strong>到内核空间，内核<strong>遍历</strong>整个Socket集合检查连接中是否有网络事件发生，并标记该Socket为可读或可写，然后将这个集合整个<strong>拷贝</strong>回用户空间，在用户空间中<strong>再次遍历</strong>找到那些被标记的Socket，并进行处理。</p>
+<p>整个过程发生了2次拷贝和两次遍历，随着文件描述符的增加，其性能会线性下降（线性数据结构遍历<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo>(</mo><mi>n</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">O(n)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord mathdefault">n</span><span class="mclose">)</span></span></span></span>、反复拷贝操作）；</p>
+<p>select表示文件描述符集合的数据结构是<strong>固定长度的BitsMap</strong>，大小由内核<code>FD_SETSIZE</code>宏定义，默认值为1024，即select最多可以监听0~1023的文件描述符。</p>
+<h2 id="poll">poll</h2>
+<p><strong>数据结构</strong>：结构体数组</p>
+<p><strong>fd检查</strong>：轮询</p>
+<p><strong>应用场景</strong>：低并发需求，有大量的fd需要监控</p>
+<p>poll在select的基础上将底层数据结构改为结构体数组，解决了select文件描述符上限的问题。由此，在连接数较多时，性能会优于select。</p>
+<h2 id="epoll">epoll</h2>
+<p><strong>数据结构</strong>：红黑树</p>
+<p><strong>fd检查</strong>：事件驱动</p>
+<p><strong>应用场景</strong>：高并发需求，有大量fd需要监控，fd活跃数较低</p>
+<p>epoll在内核中维护了一个红黑树。调用<code>epoll_ctl()</code>将需要监控的socket放入内核的数据结构中，解决了select/poll每次都完整拷贝整个数据结构和时间复杂度高的问题（红黑树增删改效率一般为<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo>(</mo><mi>l</mi><mi>o</mi><mi>g</mi><mi>n</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">O(logn)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord mathdefault" style="margin-right:0.01968em;">l</span><span class="mord mathdefault">o</span><span class="mord mathdefault" style="margin-right:0.03588em;">g</span><span class="mord mathdefault">n</span><span class="mclose">)</span></span></span></span>）。</p>
+<p>epoll引入了事件驱动机制和回调机制。epoll在内核中维护了一个就绪队列，仅在fd状态有改变时才会触发回调，当用户调用 <code>epoll_wait()</code> 函数时，只会返回有事件发生的文件描述符的个数。解决了select/poll完整轮询遍历整个socket列表的问题，且在fd活跃数较低时，epoll优势更加明显。</p>
+<h3 id="epoll的事件触发">epoll的事件触发</h3>
+<p>epoll支持两种事件触发模式：<strong>水平触发（level-triggered，LT）<strong>和</strong>边缘触发（edge-triggered，ET）</strong>。</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>水平触发（LT）</th>
+<th>边缘触发（ET）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>触发条件</td>
+<td>只要文件描述符（fd）对应的事件条件满足（如缓冲区有数据可读或可写），每次调用<code>epoll_wait</code>都会触发。</td>
+<td>只有在fd状态发生变化的边缘时刻触发，如从不可读变为可读、从不可写变为可写时触发，之后状态不变则不再触发（除非再次变化）。</td>
+</tr>
+<tr>
+<td>事件通知频率</td>
+<td>相对较高。如果应用程序处理事件不及时，会频繁收到相同事件的通知。</td>
+<td>相对较低。只有状态改变边缘才触发，减少了不必要的通知。</td>
+</tr>
+<tr>
+<td>编程难度</td>
+<td>较简单。开发人员可以按照自己的节奏处理事件，不用担心错过事件，因为会持续收到通知。</td>
+<td>较复杂。要求应用程序在一次触发后尽可能完整地处理相关事件，否则可能错过事件，需要更精细的编程逻辑。</td>
+</tr>
+<tr>
+<td>适用场景</td>
+<td>适用于简单的网络编程场景或对性能要求不是极高，处理事件速度能跟上的情况。</td>
+<td>适用于高并发、高性能要求的场景，如大型网络服务器，能有效降低系统开销。</td>
+</tr>
+<tr>
+<td>数据处理方式</td>
+<td>可以每次处理部分数据，剩余数据下次调用<code>epoll_wait</code>时还会收到通知。</td>
+<td>通常需要在一次触发后循环处理数据，尽量一次性处理完所有相关数据，否则可能遗漏。</td>
+</tr>
+</tbody>
+</table>
+<h1 id="参考阅读">参考阅读</h1>
+<ul>
+<li>
+<p><a href="https://xiaolincoding.com/os/8_network_system/selete_poll_epoll.html">9.2 I/O 多路复用：select/poll/epoll | 小林coding</a></p>
+</li>
+<li>
+<p><a href="https://blog.csdn.net/m0_67318913/article/details/138442134">什么是IO 多路复用（超详细-读这一篇就够）_io多路复用是什么-CSDN博客</a></p>
+</li>
+</ul>
+
+                </div>
+            </article>
+        </div>
+
+        
+            <div class="next-post">
+                <div class="next gt-c-content-color-first">下一篇</div>
+                <a href="https://timestarry.github.io/post/os-thread-sync/" class="post-title gt-a-link">
+                    线程同步：锁、条件变量、信号量
+                </a>
+            </div>
+        
+
+        
+
+        
+
+        
+
+        <div class="site-footer gt-c-content-color-first">
+    <div class="slogan gt-c-content-color-first">温故而知新</div>
+    <div class="social-container">
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    </div>
+    <div class="footer-info">
+        <p>© <a href="https://blog.tsio.top/about">光溯星河</a> 2024 <a href="/post/about">关于</a></p>
+    </div>
+    <div>
+        Theme <a href="https://github.com/imhanjie/gridea-theme-pure" target="_blank">Pure</a>, Powered by <a
+                href="https://gridea.dev" target="_blank">Gridea</a> | <a href="https://timestarry.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+</div>
+
+<script>
+  hljs.highlightAll()
+</script>
+
+    </div>
+</div>
+</body>
+</html>

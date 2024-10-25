@@ -1,0 +1,330 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+<meta name="description" content="" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<title>C++11智能指针 | 光溯星河的复习笔记</title>
+
+<link rel="shortcut icon" href="https://timestarry.github.io/favicon.ico?v=1729859530611">
+
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://timestarry.github.io/styles/main.css">
+<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css"> -->
+
+<script src="https://cdn.jsdelivr.net/npm/@highlightjs/cdn-assets/highlight.min.js"></script>
+<script src="https://cdn.bootcdn.net/ajax/libs/highlight.js/9.12.0/languages/dockerfile.min.js"></script>
+<script src="https://cdn.bootcdn.net/ajax/libs/highlight.js/9.12.0/languages//dart.min.js"></script>
+
+<!-- <script src="https://cdn.jsdelivr.net/npm/moment@2.27.0/moment.min.js"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/js/bootstrap.min.js"></script> -->
+<!-- DEMO JS -->
+<!--<script src="media/scripts/index.js"></script>-->
+
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.css">
+    
+</head>
+<body>
+<div class="main gt-bg-theme-color-first">
+    <nav class="navbar navbar-expand-lg">
+    <a class="navbar-brand" href="/">
+        <img class="user-avatar" src="/images/avatar.png" alt="头像">
+        <div class="site-name gt-c-content-color-first">
+            光溯星河的复习笔记
+        </div>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" id="changeNavbar">
+        <i class="fas fa-bars gt-c-content-color-first" style="font-size: 18px"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="navbar-nav mr-auto" style="text-align: center">
+            
+            <div class="nav-item">
+                
+                <a href="https://blog.tsio.top" class="menu gt-a-link" target="_blank">
+                    博客主站✈
+                </a>
+                
+            </div>
+            
+            <div class="nav-item">
+                
+                <a href="/tag/model_cpp" class="menu gt-a-link">
+                    C++
+                </a>
+                
+            </div>
+            
+            <div class="nav-item">
+                
+                <a href="/tag/os" class="menu gt-a-link">
+                    操作系统
+                </a>
+                
+            </div>
+            
+            <div class="nav-item">
+                
+                <a href="/tag/model_algo" class="menu gt-a-link">
+                    数据结构与算法
+                </a>
+                
+            </div>
+            
+            <div class="nav-item">
+                
+                <a href="/tag/model_net" class="menu gt-a-link">
+                    网络
+                </a>
+                
+            </div>
+            
+            <div class="nav-item">
+                
+                <a href="/tag/model_db" class="menu gt-a-link">
+                    数据库
+                </a>
+                
+            </div>
+            
+        </div>
+        <div style="text-align: center">
+            <form id="gridea-search-form" style="position: relative" data-update="1729859530611"
+                action="/search/">
+                <input class="search-input" autocomplete="off" spellcheck="false" name="q" placeholder="搜索文章" />
+                <i class="fas fa-search gt-c-content-color-first" style="position: absolute; top: 9px; left: 10px;"></i>
+            </form>
+        </div>
+    </div>
+</nav>
+<script>
+    /* 移动端导航栏展开/收起切换 */
+    document.getElementById('changeNavbar').onclick = () => {
+        var element = document.getElementById('navbarSupportedContent');
+        if (element.style.display === 'none' || element.style.display === '') {
+            element.style.display = 'block';
+        } else {
+            element.style.display = 'none';
+        }
+    }
+</script>
+
+    <div class="post-container">
+        <div class="post-detail gt-bg-theme-color-second">
+            <article class="gt-post-content">
+                <h2 class="post-title">
+                    C++11智能指针
+                </h2>
+                <div class="post-info">
+                    <time class="post-time gt-c-content-color-first">
+                        · 2024-10-23 ·
+                    </time>
+                    
+                        <a href="https://timestarry.github.io/tag/model_cpp/" class="post-tags">
+                            # C++
+                        </a>
+                    
+                </div>
+                <div class="post-content">
+                    <p>C++98中的<code>auto_ptr</code>存在诸多问题，未被广泛使用。在C++11标准库中真正引入了智能指针，包括<code>unique_ptr</code>，<code>shared_ptr</code>和<code>weak_ptr</code>，智能指针的设计初衷就是为了帮助开发者管理内存。</p>
+<h1 id="unique_ptr">unique_ptr</h1>
+<p><code>std::unique_ptr&lt;T&gt;</code>比<code>std::shared_ptr&lt;T&gt;</code>具有更小的内存，而且不需要维护引用计数，因此它的性能更好。当我们需要一个独占的指针时，应该优先使用<code>unique_ptr</code>。</p>
+<h2 id="特性">特性</h2>
+<p>字面意思，<code>unique_ptr</code>最大的特性就是独占所有权，即同一时间只能有一个 <code>unique_ptr</code> 拥有某个对象的所有权。它能够自动管理内存并在不再使用时释放资源，从而避免内存泄漏。</p>
+<ol>
+<li><strong>独占所有权</strong>：独占所指对象的所有权，不能共享；</li>
+<li><strong>不能复制</strong>：禁止拷贝，确保了资源的唯一所有权；</li>
+<li><strong>自动销毁</strong>：当 <code>unique_ptr</code> 离开其作用域时（如函数结束或对象被销毁），它会自动释放所指向的资源，不需要显式调用 <code>delete</code>；</li>
+<li><strong>轻量高效</strong>：相比于 <code>shared_ptr</code>，<code>unique_ptr</code> 没有额外的引用计数开销。</li>
+</ol>
+<h2 id="特性实现">特性实现</h2>
+<h3 id="独占所有权">独占所有权</h3>
+<p><strong>禁止拷贝</strong>：</p>
+<pre><code class="language-cpp">    // 删除了拷贝构造函数，确保同一时间只有一个 MyUniquePtr 对象拥有资源的所有权，防止拷贝操作
+    MyUniquePtr(const MyUniquePtr&amp; other) = delete;
+    
+    // 删除了拷贝赋值操作符，确保不会通过赋值创建多个 MyUniquePtr 对象同时管理同一资源
+    MyUniquePtr&amp; operator=(const MyUniquePtr&amp; other) = delete;
+</code></pre>
+<p><strong>移动语义</strong>：</p>
+<pre><code class="language-cpp">    // 移动构造函数：转移所有权
+    MyUniquePtr(MyUniquePtr&amp;&amp; other) noexcept : ptr(other.ptr) {
+        other.ptr = nullptr;  // 将源指针置空，确保只有一个指针管理资源
+    }
+
+    MyUniquePtr&amp; operator=(MyUniquePtr&amp;&amp; other) noexcept {
+        if (this != &amp;other) {  // 防止自我赋值
+            delete ptr;         // 释放当前持有的资源
+            ptr = other.ptr;    // 转移新资源的所有权
+            other.ptr = nullptr; // 将源指针置空
+        }
+        return *this;
+    }
+</code></pre>
+<h3 id="自动销毁">自动销毁</h3>
+<p><strong>析构释放</strong>：</p>
+<pre><code class="language-cpp">    // 析构函数：释放管理的资源
+    ~MyUniquePtr() {
+        delete ptr;  // 自动删除所管理的对象
+    }
+</code></pre>
+<h3 id="访问对象">访问对象</h3>
+<pre><code class="language-cpp">    // 重载 * 操作符，方便访问对象
+    T&amp; operator*() const {
+        return *ptr;
+    }
+
+    // 重载 -&gt; 操作符，方便访问对象的成员
+    T* operator-&gt;() const {
+        return ptr;
+    }
+
+    // 获取原始指针
+    T* get() const {
+        return ptr;
+    }
+
+    // 放弃所有权，不删除对象，并返回指针
+    T* release() {
+        T* temp = ptr;
+        ptr = nullptr;
+        return temp;
+    }
+</code></pre>
+<h1 id="shared_ptr">shared_ptr</h1>
+<p>通常用于一些资源创建昂贵比较耗时的场景， 比如涉及到文件读写、网络连接、数据库连接等。当需要共享资源的所有权时，例如，一个资源需要被多个对象共享，但是不知道哪个对象会最后释放它，这时候就可以使用<code>std::shared_ptr&lt;T&gt;</code>。</p>
+<h2 id="特性-2">特性</h2>
+<p>不同于unique，<code>shared_ptr</code>可以共享所有权，并引入了引用计数特性。</p>
+<ol>
+<li><strong>共享所有权</strong>：多个 <code>shared_ptr</code> 对象可以共享管理同一个资源；</li>
+<li><strong>引用计数</strong>：维护一个引用计数，每当有新的 <code>shared_ptr</code> 复制或移动该资源时，引用计数会增加；当某个 <code>shared_ptr</code> 被销毁时，引用计数减少。只有当引用计数为零时，资源才会被释放；</li>
+<li><strong>线程安全的引用计数</strong>：<code>shared_ptr</code> 的引用计数操作是线程安全的，因此它可以安全地在多线程环境下使用；</li>
+<li><strong>联动<code>weak_ptr</code></strong>：与 <code>weak_ptr</code> 协作，防止循环引用的问题。</li>
+</ol>
+<h2 id="特性实现-2">特性实现</h2>
+<h3 id="共享所有权">共享所有权</h3>
+<p><code>MySharedPtr</code> 支持拷贝构造和赋值操作，通过增加引用计数实现共享所有权。</p>
+<pre><code class="language-cpp">    // 拷贝构造函数，增加引用计数
+    MySharedPtr(const MySharedPtr&amp; other) : ptr(other.ptr), ref_count(other.ref_count) {
+        (*ref_count)++;  // 引用计数增加
+        std::cout &lt;&lt; &quot;Copied shared_ptr, ref_count = &quot; &lt;&lt; *ref_count &lt;&lt; std::endl;
+    }
+</code></pre>
+<h3 id="引用计数">引用计数</h3>
+<p><code>ref_count</code> 用于跟踪有多少个 <code>MySharedPtr</code> 对象共享同一个资源。每当有新的 <code>MySharedPtr</code> 对象拷贝构造时，引用计数增加；当一个对象被销毁时，引用计数减少。</p>
+<pre><code class="language-cpp">    // 构造函数
+    explicit MySharedPtr(T* p = nullptr) : ptr(p), ref_count(new int(1)) {
+        std::cout &lt;&lt; &quot;Created shared_ptr, ref_count = 1&quot; &lt;&lt; std::endl;
+    }
+
+    // 赋值运算符，处理引用计数
+    MySharedPtr&amp; operator=(const MySharedPtr&amp; other) {
+        if (this != &amp;other) {
+            // 先减少当前对象的引用计数
+            release();
+            // 复制新对象的指针和引用计数
+            ptr = other.ptr;
+            ref_count = other.ref_count;
+            (*ref_count)++;  // 引用计数增加
+            std::cout &lt;&lt; &quot;Assigned shared_ptr, ref_count = &quot; &lt;&lt; *ref_count &lt;&lt; std::endl;
+        }
+        return *this;
+    }
+</code></pre>
+<h3 id="线程安全">线程安全</h3>
+<p><code>shared_ptr</code> 使用了<strong>原子操作</strong>来管理其引用计数。因此，当多个线程同时复制、销毁或重新赋值 <code>shared_ptr</code> 时，引用计数的增减操作是原子性的，不会发生竞态条件（race condition）。</p>
+<h1 id="weak_ptr">weak_ptr</h1>
+<p>常用于数据结构中防止 <code>shared_ptr</code> 之间的循环依赖。例如在树结构、图结构或观察者模式中，经常使用 <code>weak_ptr</code> 来防止内存泄漏。当你不希望影响对象生命周期，但需要临时访问某个对象时，可以使用 <code>weak_ptr</code>。</p>
+<h2 id="特性-3">特性</h2>
+<ol>
+<li><strong>不影响引用计数</strong>：<code>weak_ptr</code> 不会增加 <code>shared_ptr</code> 的强引用计数。这意味着，即使有 <code>weak_ptr</code> 指向某个对象，当所有 <code>shared_ptr</code> 都销毁时，该对象仍然会被释放。</li>
+<li><strong>避免循环引用</strong>：在复杂的数据结构中，两个对象可能互相引用。如果双方都使用 <code>shared_ptr</code>，则会产生循环引用，导致内存泄漏。使用 <code>weak_ptr</code> 可以解决这个问题，因为 <code>weak_ptr</code> 不会阻止对象的销毁。</li>
+<li><strong>只能通过 <code>lock()</code> 获取对象</strong>：由于 <code>weak_ptr</code> 不直接拥有对象，它无法直接访问被引用的对象。需要调用 <code>lock()</code> 方法将其转换为 <code>shared_ptr</code>，这样可以确保在访问对象时对象仍然存在。</li>
+</ol>
+<h2 id="特性实现-3">特性实现</h2>
+<h3 id="不影响生命周期">不影响生命周期</h3>
+<p><code>weak_ptr</code> 和 <code>shared_ptr</code> 共享同一个控制块，这个控制块包含了两个计数器：</p>
+<ul>
+<li><strong>强引用计数</strong>：跟踪有多少个 <code>shared_ptr</code> 实例引用同一个对象。</li>
+<li><strong>弱引用计数</strong>：跟踪有多少个 <code>weak_ptr</code> 引用该对象。</li>
+</ul>
+<p>控制块不仅存储对象的引用计数，还保存着对象的指针（对象的地址）。当 <code>shared_ptr</code> 引用的对象被销毁时，控制块不会立即被释放，因为 <code>weak_ptr</code> 可能还在使用它。</p>
+<p><code>weak_ptr</code> 不会增加对象的强引用计数，因此它不会影响对象的生命周期。即使有多个 <code>weak_ptr</code> 引用该对象，当所有的 <code>shared_ptr</code> 被销毁时，强引用计数为 0，资源会被释放。</p>
+<p>这通过引用计数的拆分实现，<code>weak_ptr</code> 只影响弱引用计数，不会干涉 <code>shared_ptr</code> 的强引用计数。</p>
+<pre><code class="language-cpp">weak_ptr() : ptr_(nullptr), ref_count_(nullptr), weak_count_(nullptr) {}
+
+    weak_ptr(const shared_ptr&lt;T&gt;&amp; sharedPtr) : ptr_(sharedPtr.ptr_), ref_count_(sharedPtr.ref_count_), weak_count_(sharedPtr.weak_count_) {
+        if (weak_count_) (*weak_count_)++;
+    }
+</code></pre>
+<h3 id="避免循环引用">避免循环引用</h3>
+<p><code>weak_ptr</code> 最典型的用途是解决循环引用问题。在两个对象互相引用时，如果都使用 <code>shared_ptr</code>，对象将无法自动释放，因为它们的强引用计数永远不会降到 0。<code>weak_ptr</code> 通过不增加强引用计数来打破这个循环，使对象在强引用计数归零时能够被正确销毁。</p>
+<h3 id="访问对象-2">访问对象</h3>
+<p><code>weak_ptr</code> 没有直接访问对象的能力，需要通过 <code>lock()</code> 将自己转换为一个临时的 <code>shared_ptr</code> 来访问对象。</p>
+<p><code>lock()</code> 的实现原理是检查<strong>强引用计数</strong>是否大于 0。如果大于 0，表示对象还存在，于是 <code>lock()</code> 返回一个新的 <code>shared_ptr</code>，并增加强引用计数；如果强引用计数为 0，<code>lock()</code> 返回一个空的 <code>shared_ptr</code>。</p>
+<pre><code class="language-cpp">    shared_ptr&lt;T&gt; lock() const {
+        // 检查强引用计数是否大于 0，如果大于 0，表示对象仍然存在
+        if (ref_count_ &amp;&amp; *ref_count_ &gt; 0) {
+            return shared_ptr&lt;T&gt;(*this);  // 创建并返回一个新的 shared_ptr
+        }
+        return shared_ptr&lt;T&gt;(nullptr);    // 否则返回一个空的 shared_ptr
+    }
+</code></pre>
+<h1 id="参考阅读">参考阅读</h1>
+<ul>
+<li><a href="https://zhuanlan.zhihu.com/p/436290273">C++ 智能指针最佳实践&amp;源码分析 - 知乎 (zhihu.com)</a></li>
+<li><a href="https://cplusplus.com/reference/memory/">cplusplus.com/reference/memory/</a></li>
+<li><a href="https://www.cnblogs.com/qiangz/p/17911186.html">万字长文全面详解现代C++智能指针：原理、应用和陷阱 - 七昂的技术之旅 - 博客园 (cnblogs.com)</a></li>
+</ul>
+
+                </div>
+            </article>
+        </div>
+
+        
+
+        
+
+        
+
+        
+
+        <div class="site-footer gt-c-content-color-first">
+    <div class="slogan gt-c-content-color-first">温故而知新</div>
+    <div class="social-container">
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    </div>
+    <div class="footer-info">
+        <p>© <a href="https://blog.tsio.top/about">光溯星河</a> 2024 <a href="/post/about">关于</a></p>
+    </div>
+    <div>
+        Theme <a href="https://github.com/imhanjie/gridea-theme-pure" target="_blank">Pure</a>, Powered by <a
+                href="https://gridea.dev" target="_blank">Gridea</a> | <a href="https://timestarry.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+</div>
+
+<script>
+  hljs.highlightAll()
+</script>
+
+    </div>
+</div>
+</body>
+</html>
